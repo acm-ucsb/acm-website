@@ -52,7 +52,7 @@
     chalk "^2.4.2"
     js-tokens "^4.0.0"
     picocolors "^1.0.0"
- 
+
 "@babel/parser@^7.25.0", "@babel/parser@^7.25.4":
   version "7.25.4"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.25.4.tgz#af4f2df7d02440286b7de57b1c21acfb2a6f257a"
