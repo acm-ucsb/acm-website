@@ -1,14 +1,18 @@
-"use client"
+// "use client"
 import React from 'react';
-import events from "../../../../../public/data/events";
 import EventCard from './EventCard';
 
-const EventsSection = () => {
+import { getEventsData } from '../../../../apis/getEventsData';
+
+const EventsSection = async () => {
+
+    const events = await getEventsData()
+
     return (
         <div className="flex flex-col items-center justify-center mb-36">
             <h1 className="text-5xl font-bold mb-8 text-black">Upcoming Events</h1>
             <div className="flex flex-row flex-wrap justify-center">
-                {events.map((event, index) => (
+                {events?.map((event, index) => (
                     <EventCard key={index} event={event} />
                 ))}
             </div>

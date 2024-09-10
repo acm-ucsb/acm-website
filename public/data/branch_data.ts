@@ -6,7 +6,9 @@ import { StaticImageData } from "next/image";
 export enum BranchType {
     Webdev,
     Research,
-    ICPC
+    ICPC,
+    Social,
+    General
 }
 
 type Branch = {
