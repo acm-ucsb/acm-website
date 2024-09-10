@@ -12,20 +12,20 @@ const EventCard = ({ event }: { event: ACMEvent }) => {
     <Card 
       sx={{
         width: 350,
-        height: 320, // Slightly taller to improve spacing
-        backgroundColor: '#ffffff', // White background
+        height: 320,
+        backgroundColor: '#ffffff',
         borderRadius: '12px',
-        boxShadow: '0 2px 10px rgba(0, 0, 0, 0.08)', // Subtle modern shadow
-        m: 2, // Margin between cards
+        boxShadow: '0 2px 10px rgba(0, 0, 0, 0.08)', 
+        m: 2,
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
         '&:hover': {
-          boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)', // More pronounced shadow on hover
+          boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
         }
       }}
     >
-      <CardContent sx={{ padding: '20px', flexGrow: 1 }}> {/* Adjusted padding for better spacing */}
+      <CardContent sx={{ padding: '20px', flexGrow: 1 }}> 
         <Typography variant="h5" component="div" sx={{ color: '#1e3a8a', fontWeight: 'bold', marginBottom: '9px' }}>
           {event.name}
         </Typography>
