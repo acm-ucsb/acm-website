@@ -18,10 +18,7 @@ const EventsSection = async () => {
                     )) : <Typography>No Upcoming Events!</Typography>
                 }
             </div>
-          );
-        })}
       </div>
-    </div>
   );
 };
 
