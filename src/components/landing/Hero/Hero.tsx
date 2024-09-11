@@ -28,20 +28,48 @@ const Hero = () => {
             text ever since the 1500s
           </Typography>
 
-          {/* TODO: Improve Button Styling */}
-          <Button
-            variant="contained"
-            sx={{
-              backgroundColor: "#D65A31",
-              color: "white",
-              fontWeight: "bold",
-              borderRadius: "30px",
-              padding: "0.5rem 2rem",
-            }}
-            endIcon={<ArrowRightAlt />}
-          >
-            Get Involved
-          </Button>
+          <Box sx={{ display: "flex", gap: "1rem", marginTop: "1.5rem" }}>
+            <Button
+              variant="contained"
+              sx={{
+                backgroundColor: "#18A2F2",
+                color: "white",
+                fontWeight: "bold",
+                borderRadius: "30px",
+                padding: "0.7rem 2.5rem",
+                textTransform: "none",
+                fontSize: "1rem",
+                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+                "&:hover": {
+                  backgroundColor: "#0868A0",
+                  boxShadow: "0px 6px 15px rgba(0, 0, 0, 0.15)",
+                },
+              }}
+              endIcon={<ArrowRightAlt />}
+            >
+              Events
+            </Button>
+
+            <Button
+              variant="outlined"
+              sx={{
+                borderColor: "#18A2F2",
+                color: "#18A2F2",
+                fontWeight: "bold",
+                borderRadius: "30px",
+                padding: "0.7rem 2.5rem",
+                textTransform: "none",
+                fontSize: "1rem",
+                "&:hover": {
+                  borderColor: "#0868A0",
+                  color: "#0868A0",
+                  backgroundColor: "rgba(0, 0, 0, 0.025)",
+                },
+              }}
+            >
+              Who Are We?
+            </Button>
+          </Box>
         </Grid>
 
         <Grid item xs={12} md={6} sx={{ position: "relative" }}>

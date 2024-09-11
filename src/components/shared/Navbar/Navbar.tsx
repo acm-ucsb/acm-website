@@ -1,4 +1,10 @@
-import { AppBar, Toolbar, Typography, IconButton } from "@mui/material";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  IconButton,
+  CardMedia,
+} from "@mui/material";
 import { DarkMode, LightMode } from "@mui/icons-material";
 import Link from "next/link";
 import StyledNavbarButton from "./StyledNavbarButton";
@@ -17,13 +23,16 @@ const Navbar = () => {
       sx={{ backgroundColor: "white", boxShadow: "none" }}
     >
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-        <Typography
-          variant="h6"
-          component="div"
-          sx={{ fontWeight: "bold", color: "black" }}
-        >
-          ACM@UCSB
-        </Typography>
+        <CardMedia
+          component="img"
+          src="/assets/ACM logo with text 2.png"
+          alt="ACM Logo"
+          sx={{
+            height: "110px",
+            width: "auto",
+            objectFit: "contain",
+          }}
+        />
 
         <div className="flex align-trailing px-10 gap-[5rem]">
           {Object.entries(buttonLabels).map(([key, value]) => (
