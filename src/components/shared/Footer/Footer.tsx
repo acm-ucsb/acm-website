@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import { FaLink, FaInstagram, FaDiscord } from "react-icons/fa";
