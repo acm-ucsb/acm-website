@@ -1,7 +1,11 @@
 import { google, sheets_v4 } from "googleapis";
 import { ACMEvent } from "../../public/data/events";
 
-const getRawEventsData = async () => {
+enum SheetName {
+  Events = "Events",
+}
+
+const getRawSheetData = async (sheetName: SheetName) => {
   const auth = new google.auth.GoogleAuth({
     credentials: {
       client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
@@ -15,7 +19,7 @@ const getRawEventsData = async () => {
     auth: (await auth.getClient()) as any,
   });
 
-  const range = "Sheet1!A:Z";
+  const range = `${sheetName}!A:Z`;
 
   try {
     const response = await sheets.spreadsheets.values.get({
@@ -30,7 +34,7 @@ const getRawEventsData = async () => {
 };
 
 export const getEventsData = async () => {
-  const rawEventsData = await getRawEventsData();
+  const rawEventsData = await getRawSheetData(SheetName.Events);
   if (!rawEventsData || !rawEventsData.length) return [];
 
   const [columnHeaders, ...eventsData] = rawEventsData;

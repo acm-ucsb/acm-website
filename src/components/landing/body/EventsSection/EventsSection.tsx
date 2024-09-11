@@ -1,7 +1,7 @@
 import React from "react";
 import EventCard from "./EventCard";
 
-import { getEventsData } from "../../../../apis/getEventsData";
+import { getEventsData } from "../../../../apis/getSheetsData";
 import { Typography } from "@mui/material";
 
 const EventsSection = async () => {
