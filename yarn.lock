@@ -2725,6 +2725,11 @@ react-is@^18.3.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.3.1.tgz#e83557dc12eae63a99e003a46388b1dcbb44db7e"
   integrity sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==
 
+react-terminal-ui@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/react-terminal-ui/-/react-terminal-ui-1.3.0.tgz#aaeb666d9e8e37753bf67b6aab0b17e32521573c"
+  integrity sha512-UhCDuYmvBFicduM3QxF5EQrI6ACt4coNt6bMgxX9BEr/v8NRFnYlwuPXtN4a5Q5yE8F090zsP9zIKZzZrxglZg==
+
 react-transition-group@^4.4.5:
   version "4.4.5"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.4.5.tgz#e53d4e3f3344da8521489fbef8f2581d42becdd1"

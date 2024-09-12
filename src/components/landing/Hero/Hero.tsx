@@ -2,6 +2,7 @@ import { Grid, Typography, Button, Box, CardMedia } from "@mui/material";
 import { ArrowRightAlt } from "@mui/icons-material";
 import TypewriterText from "./TypewriterText";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import EyePiece from "./EyePiece";
 
 const Hero = () => {
   return (
@@ -74,26 +75,7 @@ const Hero = () => {
 
         <Grid item xs={12} md={6} sx={{ position: "relative" }}>
           {/* Placeholder Image */}
-          <Box
-            sx={{
-              textAlign: "center",
-              position: "absolute",
-              top: "-12rem", // Adjust to control vertical overlap
-              left: "4rem", // Adjust to control horizontal overlap
-              zIndex: 1,
-            }}
-          >
-            <CardMedia
-              component="img"
-              src="/assets/HeroLogo.png"
-              alt="Hero Image"
-              sx={{
-                width: "120%",
-                maxWidth: "40rem",
-                margin: "0 auto",
-              }}
-            />
-          </Box>
+          <EyePiece />
         </Grid>
       </Grid>
 
