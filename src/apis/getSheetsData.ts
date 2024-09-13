@@ -1,8 +1,10 @@
 import { google, sheets_v4 } from "googleapis";
 import { ACMEvent } from "@public/data/events";
+import { FAQ } from "@public/data/faq";
 
 enum SheetName {
   Events = "Events",
+  FAQs = "FAQs",
 }
 
 const getRawSheetData = async (sheetName: SheetName) => {
@@ -45,4 +47,15 @@ export const getEventsData = async () => {
     datetime: event[3],
     location: event[4],
   })) as ACMEvent[];
+};
+
+export const getFAQData = async () => {
+  const rawFaqData = await getRawSheetData(SheetName.FAQs);
+  if (!rawFaqData || !rawFaqData.length) return [];
+
+  const [columnHeaders, ...faqData] = rawFaqData;
+  return faqData.map((faq) => ({
+    question: faq[0],
+    answer: faq[1],
+  })) as FAQ[];
 };
