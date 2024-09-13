@@ -8,6 +8,7 @@ import {
   Container,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { convertTextToLinks } from "@/util/convertTextToLinks";
 
 const FAQ = async () => {
   const faq = await getFAQData();
@@ -77,7 +78,7 @@ const FAQ = async () => {
               variant="body1"
               sx={{ color: "text.secondary", lineHeight: 1.6 }}
             >
-              {item.answer}
+              {convertTextToLinks(item.answer)}
             </Typography>
           </AccordionDetails>
         </Accordion>
