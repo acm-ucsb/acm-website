@@ -42,9 +42,9 @@ const Navbar = () => {
           ))}
 
           {/* TODO: Implement color theme functionality */}
-          <IconButton sx={{ marginLeft: "3rem" }}>
+          {/* <IconButton sx={{ marginLeft: "3rem" }}>
             <LightMode />
-          </IconButton>
+          </IconButton> */}
         </div>
       </Toolbar>
     </AppBar>
