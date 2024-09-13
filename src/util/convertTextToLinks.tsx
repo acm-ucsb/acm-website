@@ -7,7 +7,8 @@ export const convertTextToLinks = (text: string) => {
   const parts = text.split(linkRegex);
 
   return parts.map((part, index) => {
-    if (index % 3 === 1) { // The word before the URL
+    if (index % 3 === 1) {
+      // The word before the URL
       const link = parts[index + 1]; // The URL
       return (
         <Link
@@ -22,6 +23,6 @@ export const convertTextToLinks = (text: string) => {
       );
     }
     // Skip the URL part
-    return index % 3 === 2 ? null : part; 
+    return index % 3 === 2 ? null : part;
   });
 };
