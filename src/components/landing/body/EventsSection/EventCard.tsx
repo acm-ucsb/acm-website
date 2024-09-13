@@ -6,7 +6,7 @@ import {
   CardActions,
   Button,
 } from "@mui/material";
-import type { ACMEvent } from "../../../../../public/data/events";
+import type { ACMEvent } from "@public/data/events";
 import formatDateTime from "../../../../util/formatDateTime";
 
 const EventCard = ({ event }: { event: ACMEvent }) => {

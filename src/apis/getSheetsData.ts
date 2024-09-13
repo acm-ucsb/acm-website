@@ -1,5 +1,5 @@
 import { google, sheets_v4 } from "googleapis";
-import { ACMEvent } from "../../public/data/events";
+import { ACMEvent } from "@public/data/events";
 
 enum SheetName {
   Events = "Events",
