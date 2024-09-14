@@ -10,7 +10,7 @@ const Footer = () => {
         <p className="text-lg font-semibold mb-4">Connect with Us!</p>
         <div className="flex justify-center space-x-4">
           <a
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            href="https://www.instagram.com/acm.ucsb"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-gray-300 transition duration-300"
@@ -18,7 +18,7 @@ const Footer = () => {
             <FaInstagram className="w-8 h-8" />
           </a>
           <a
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            href="https://linktr.ee/acm_ucsb"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-gray-300 transition duration-300"
@@ -26,7 +26,7 @@ const Footer = () => {
             <FaLink className="w-8 h-8" />
           </a>
           <a
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            href="https://discord.com/invite/p6rcUUjWaU"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-gray-300 transition duration-300"
