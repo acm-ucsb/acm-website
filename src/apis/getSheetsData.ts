@@ -1,5 +1,6 @@
 import { google, sheets_v4 } from "googleapis";
 import { ACMEvent } from "@public/data/events";
+import { BranchType } from "@public/data/branch_data";
 
 enum SheetName {
   Events = "Events",
@@ -33,16 +34,39 @@ const getRawSheetData = async (sheetName: SheetName) => {
   }
 };
 
-export const getEventsData = async () => {
-  const rawEventsData = await getRawSheetData(SheetName.Events);
-  if (!rawEventsData || !rawEventsData.length) return [];
+const mockEventsData: ACMEvent[] = [
+  {
+    name: "Portfolio Workshop",
+    tagline: "Build Your First Website!",
+    description: "Learn how to create a website from scratch using HTML, CSS, JS.",
+    datetime: "TBD",
+    location: "TBD",
+    branch: BranchType.Webdev
+  },
+  {
+    name: "ICPC Practice",
+    tagline: "Prepare for the Ultimate Coding Challenge!",
+    description: "Train for the International Collegiate Programming Contest with practice problems and live coding sessions.",
+    datetime: "TBD",
+    location: "TBD",
+    branch: BranchType.ICPC
+  },
+]
 
-  const [columnHeaders, ...eventsData] = rawEventsData;
-  return eventsData.map((event) => ({
-    name: event[0],
-    tagline: event[1],
-    description: event[2],
-    datetime: event[3],
-    location: event[4],
-  })) as ACMEvent[];
+export const getEventsData = async () => {
+  // TODO: Replace with actual backend
+  return mockEventsData;
+
+  // TODO: Uncomment when backend issues are fixed
+  // const rawEventsData = await getRawSheetData(SheetName.Events);
+  // if (!rawEventsData || !rawEventsData.length) return [];
+
+  // const [columnHeaders, ...eventsData] = rawEventsData;
+  // return eventsData.map((event) => ({
+  //   name: event[0],
+  //   tagline: event[1],
+  //   description: event[2],
+  //   datetime: event[3],
+  //   location: event[4],
+  // })) as ACMEvent[];
 };
