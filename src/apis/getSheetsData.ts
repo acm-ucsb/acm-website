@@ -1,6 +1,7 @@
 import { google, sheets_v4 } from "googleapis";
 import { ACMEvent } from "@public/data/events";
 import { FAQ } from "@public/data/faq";
+import { BranchType } from "@public/data/branch_data";
 
 enum SheetName {
   Events = "Events",
@@ -33,20 +34,6 @@ const getRawSheetData = async (sheetName: SheetName) => {
     console.error("Error fetching sheets data: ", error);
     return [];
   }
-};
-
-export const getEventsData = async () => {
-  const rawEventsData = await getRawSheetData(SheetName.Events);
-  if (!rawEventsData || !rawEventsData.length) return [];
-
-  const [columnHeaders, ...eventsData] = rawEventsData;
-  return eventsData.map((event) => ({
-    name: event[0],
-    tagline: event[1],
-    description: event[2],
-    datetime: event[3],
-    location: event[4],
-  })) as ACMEvent[];
 };
 
 const mockFAQData: FAQ[] = [
@@ -106,4 +93,42 @@ export const getFAQData = async () => {
   //   question: faq[0],
   //   answer: faq[1],
   // })) as FAQ[];
+
+const mockEventsData: ACMEvent[] = [
+  {
+    name: "Portfolio Workshop",
+    tagline: "Build Your First Website!",
+    description:
+      "Learn how to create a website from scratch using HTML, CSS, JS.",
+    datetime: "TBD",
+    location: "TBD",
+    branch: BranchType.Webdev,
+  },
+  {
+    name: "ICPC Practice",
+    tagline: "Prepare for the Ultimate Coding Challenge!",
+    description:
+      "Train for the International Collegiate Programming Contest with practice problems and live coding sessions.",
+    datetime: "TBD",
+    location: "TBD",
+    branch: BranchType.ICPC,
+  },
+];
+
+export const getEventsData = async () => {
+  // TODO: Replace with actual backend
+  return mockEventsData;
+
+  // TODO: Uncomment when backend issues are fixed
+  // const rawEventsData = await getRawSheetData(SheetName.Events);
+  // if (!rawEventsData || !rawEventsData.length) return [];
+
+  // const [columnHeaders, ...eventsData] = rawEventsData;
+  // return eventsData.map((event) => ({
+  //   name: event[0],
+  //   tagline: event[1],
+  //   description: event[2],
+  //   datetime: event[3],
+  //   location: event[4],
+  // })) as ACMEvent[];
 };
