@@ -1,11 +1,30 @@
-"use client";
+import { Typography } from "@mui/material";
 
 const AboutBlurb = () => {
   return (
     <section id="about">
       <div className="flex flex-col items-center justify-center">
-        <h1>We are ACM @ UCSB!</h1>
-        <p className="text-xl font-thin text-gray-500">
+        <Typography
+          variant="h4"
+          align="center"
+          gutterBottom
+          sx={{
+            fontWeight: "bold",
+            marginBottom: "64px",
+            color: "black",
+          }}
+        >
+          We are ACM @ UCSB
+        </Typography>
+        <Typography
+          variant="h6"
+          sx={{
+            color: "gray",
+            paddingBottom: "10px",
+            maxWidth: "80rem",
+            fontWeight: "100",
+          }}
+        >
           ACM at UCSB is a student-run organization that aims to support
           students interested in Computer Science by fostering a community of
           individuals who seek to learn from each other. Specifically, we create
@@ -14,7 +33,7 @@ const AboutBlurb = () => {
           range of career paths within technology; network with faculty,
           graduate students, and professionals; pursue competitive programming
           opportunities; and ultimately have fun following their passion.
-        </p>
+        </Typography>
         <br />
       </div>
     </section>
