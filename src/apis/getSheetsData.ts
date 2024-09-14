@@ -38,20 +38,22 @@ const mockEventsData: ACMEvent[] = [
   {
     name: "Portfolio Workshop",
     tagline: "Build Your First Website!",
-    description: "Learn how to create a website from scratch using HTML, CSS, JS.",
+    description:
+      "Learn how to create a website from scratch using HTML, CSS, JS.",
     datetime: "TBD",
     location: "TBD",
-    branch: BranchType.Webdev
+    branch: BranchType.Webdev,
   },
   {
     name: "ICPC Practice",
     tagline: "Prepare for the Ultimate Coding Challenge!",
-    description: "Train for the International Collegiate Programming Contest with practice problems and live coding sessions.",
+    description:
+      "Train for the International Collegiate Programming Contest with practice problems and live coding sessions.",
     datetime: "TBD",
     location: "TBD",
-    branch: BranchType.ICPC
+    branch: BranchType.ICPC,
   },
-]
+];
 
 export const getEventsData = async () => {
   // TODO: Replace with actual backend
