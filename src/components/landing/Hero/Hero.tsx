@@ -23,9 +23,9 @@ const Hero = () => {
             variant="body1"
             sx={{ color: "gray", paddingBottom: "10px" }}
           >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy
-            text ever since the 1500s
+            Welcome to the Association for Computing Machinery (ACM) Student
+            Chapter at UCSB! We help students prepare for a career in
+            technology. Read on to learn more!
           </Typography>
 
           <Box sx={{ display: "flex", gap: "1rem", marginTop: "1.5rem" }}>
