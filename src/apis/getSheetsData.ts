@@ -93,6 +93,7 @@ export const getFAQData = async () => {
   //   question: faq[0],
   //   answer: faq[1],
   // })) as FAQ[];
+}
 
 const mockEventsData: ACMEvent[] = [
   {
