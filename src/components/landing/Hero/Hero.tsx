@@ -2,6 +2,7 @@ import { Grid, Typography, Button, Box, CardMedia } from "@mui/material";
 import { ArrowRightAlt } from "@mui/icons-material";
 import TypewriterText from "./TypewriterText";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import HeroStyles from "./Hero.module.css";
 
 const Hero = () => {
   return (
@@ -106,18 +107,8 @@ const Hero = () => {
           paddingTop: "20rem",
         }}
       >
-        <KeyboardArrowDownIcon
-          sx={{
-            color: "gray",
-            fontSize: "5rem", // Adjust the size to make it bigger
-            padding: "0.1rem", // Add some padding to create space around the icon
-            borderRadius: "50%", // Make the background circular
-            transition: "background-color 0.3s ease", // Smooth transition for the background color
-            "&:hover": {
-              backgroundColor: "#e0e0e0", // Light gray background on hover
-            },
-          }}
-        />
+        <div className={`${HeroStyles.arrow} ${HeroStyles.arrowfirst}`}></div>
+        <div className={`${HeroStyles.arrow} ${HeroStyles.arrowsecond}`}></div>
       </Box>
     </Box>
   );
