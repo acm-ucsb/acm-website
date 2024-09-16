@@ -8,12 +8,12 @@ const Hero = () => {
     <Box sx={{ padding: "5rem", position: "relative" }}>
       <Grid container spacing={4} alignItems="center">
         <Grid item xs={12} md={6} sx={{ zIndex: 2 }}>
-          <div className="flex flex-col min-h-60">
+          <div className="flex flex-col min-h-60 pb-2">
             <Typography
               variant="h2"
               sx={{ fontWeight: "bold", color: "#222", paddingBottom: "10px" }}
             >
-              UCSB&apos;s Premier <br /> Community of all things
+              UCSB&apos;s Premier <br /> Community Of All Things
             </Typography>
 
             <TypewriterText />
@@ -25,7 +25,7 @@ const Hero = () => {
           >
             Welcome to the Association for Computing Machinery (ACM) Student
             Chapter at UCSB! We help students prepare for a career in
-            technology. Read on to learn more!
+            technology.
           </Typography>
 
           <Box sx={{ display: "flex", gap: "1rem", marginTop: "1.5rem" }}>
@@ -67,7 +67,7 @@ const Hero = () => {
                 },
               }}
             >
-              Who Are We?
+              Who We Are
             </Button>
           </Box>
         </Grid>
