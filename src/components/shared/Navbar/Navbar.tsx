@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <AppBar
       position="static"
-      sx={{ backgroundColor: "#80CBF630", boxShadow: 2 }}
+      sx={{ backgroundColor: "white", boxShadow: "none" }}
     >
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         <CardMedia
