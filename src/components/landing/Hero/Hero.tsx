@@ -87,7 +87,7 @@ const Hero = () => {
           >
             <CardMedia
               component="img"
-              src="/assets/HeroLogo.png"
+              src="/assets/ACM logo.png"
               alt="Hero Image"
               sx={{
                 width: "120%",
