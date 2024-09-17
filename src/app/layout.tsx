@@ -6,7 +6,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "ACM at UCSB",
-  description: "The official website for the Association for Computing Machinery at UCSB",
+  description:
+    "The official website for the Association for Computing Machinery at UCSB",
 };
 
 export default function RootLayout({
