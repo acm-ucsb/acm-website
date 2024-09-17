@@ -26,7 +26,9 @@ const EventCard = ({ event }: { event: ACMEvent }) => {
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
+        transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
         "&:hover": {
+          transform: "scale(1.05)",
           boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
         },
       }}

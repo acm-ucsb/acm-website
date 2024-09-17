@@ -1,7 +1,7 @@
 import { google, sheets_v4 } from "googleapis";
 import { ACMEvent } from "@public/data/events";
 import { FAQ } from "@public/data/faq";
-import { BranchType } from "@public/data/branch_data";
+import { BranchType } from "@public/data/branchData";
 
 enum SheetName {
   Events = "Events",

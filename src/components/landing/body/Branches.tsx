@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import branch_data from "../../../../public/data/branch_data";
+import branchData from "../../../../public/data/branchData";
 import Image from "next/image";
 
 const Branches = () => {
@@ -18,25 +18,33 @@ const Branches = () => {
         >
           Branches
         </Typography>
-        <div className="flex flex-row flex-wrap gap-[10rem]">
-          {branch_data.map((branch, index) => {
+        <div className="flex flex-row flex-wrap gap-[5rem]">
+          {branchData.map((branch, index) => {
             return (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center m-6 gap-3"
+                className="flex flex-col items-center justify-center m-6 gap-3 transition-transform duration-300 ease-in-out hover:scale-105"
               >
-                <Image src={branch.img} alt={branch.name} width={300} />
-                <Typography
-                  variant="h6"
-                  align="center"
-                  gutterBottom
-                  sx={{
-                    fontWeight: "400",
-                    color: "gray",
-                  }}
-                >
-                  {branch.description}
-                </Typography>
+                
+                <div className="flex items-center gap-2">
+                  <Image src={branch.img} alt={branch.name} width={100} />
+                  <Typography 
+                    variant="h4"
+                    sx={{ fontWeight: "700", color: "black" }}
+                  >
+                    acm.
+                    <span
+                      style={{
+                        backgroundImage: `linear-gradient(to right, ${branch.branchColors.join(', ')})`,
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        display: 'inline-block',
+                      }}
+                    >
+                      {branch.suffix}
+                    </span>
+                  </Typography>
+                </div>
               </div>
             );
           })}

@@ -1,4 +1,4 @@
-import { BranchType } from "./branch_data";
+import { BranchType } from "./branchData";
 
 export type ACMEvent = {
   name: string;
