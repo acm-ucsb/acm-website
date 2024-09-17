@@ -1,8 +1,7 @@
-import { Grid, Typography, Button, Box, CardMedia } from "@mui/material";
 import { ArrowRightAlt } from "@mui/icons-material";
-import TypewriterText from "./TypewriterText";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import { Box, Button, CardMedia, Grid, Typography } from "@mui/material";
 import HeroStyles from "./Hero.module.css";
+import TypewriterText from "./TypewriterText";
 
 const Hero = () => {
   return (
@@ -32,6 +31,7 @@ const Hero = () => {
           <Box sx={{ display: "flex", gap: "1rem", marginTop: "1.5rem" }}>
             <Button
               variant="contained"
+              href="#events"
               sx={{
                 backgroundColor: "#18A2F2",
                 color: "white",
@@ -53,6 +53,7 @@ const Hero = () => {
 
             <Button
               variant="outlined"
+              href="#about"
               sx={{
                 borderColor: "#18A2F2",
                 color: "#18A2F2",

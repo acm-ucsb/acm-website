@@ -8,7 +8,10 @@ const EventsSection = async () => {
   const events = await getEventsData();
 
   return (
-    <div className="flex flex-col items-center justify-center mb-36">
+    <section
+      id="events"
+      className="flex flex-col items-center justify-center mb-36"
+    >
       <h1 className="text-5xl font-bold mb-8 text-black">Upcoming Events</h1>
       <div className="flex flex-row flex-wrap justify-center">
         {events && events.length ? (
@@ -17,7 +20,7 @@ const EventsSection = async () => {
           <Typography>No Upcoming Events!</Typography>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 
