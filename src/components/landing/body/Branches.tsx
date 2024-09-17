@@ -25,20 +25,19 @@ const Branches = () => {
                 key={index}
                 className="flex flex-col items-center justify-center m-6 gap-3 transition-transform duration-300 ease-in-out hover:scale-105"
               >
-                
                 <div className="flex items-center gap-2">
                   <Image src={branch.img} alt={branch.name} width={100} />
-                  <Typography 
+                  <Typography
                     variant="h4"
                     sx={{ fontWeight: "700", color: "black" }}
                   >
                     acm.
                     <span
                       style={{
-                        backgroundImage: `linear-gradient(to right, ${branch.branchColors.join(', ')})`,
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent',
-                        display: 'inline-block',
+                        backgroundImage: `linear-gradient(to right, ${branch.branchColors.join(", ")})`,
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                        display: "inline-block",
                       }}
                     >
                       {branch.suffix}
