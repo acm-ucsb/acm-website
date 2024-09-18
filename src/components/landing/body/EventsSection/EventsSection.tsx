@@ -12,7 +12,18 @@ const EventsSection = async () => {
       id="events"
       className="flex flex-col items-center justify-center mb-36"
     >
-      <h1 className="text-5xl font-bold mb-8 text-black">Upcoming Events</h1>
+      <Typography
+          variant="h4"
+          align="center"
+          gutterBottom
+          sx={{
+            fontWeight: "bold",
+            marginY: "64px",
+            color: "black",
+          }}
+        >
+          Upcoming Events
+        </Typography>
       <div className="flex flex-row flex-wrap justify-center">
         {events && events.length ? (
           events?.map((event, index) => <EventCard key={index} event={event} />)

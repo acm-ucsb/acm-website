@@ -11,16 +11,17 @@ const typewriterStrings: string[] = [
 
 const TypewriterText = () => {
   return (
-    <Typewriter
-      options={{
-        wrapperClassName: "font-mono py-10 text-6xl rounded-md text-[#0868A0]",
-        cursorClassName:
-          "font-mono py-10 text-6xl rounded-md text-black-600 font-thin animate-blink text-[#0868A0]",
-        strings: typewriterStrings,
-        loop: true,
-        autoStart: true,
-      }}
-    />
+    <div className="flex w-full">
+      <Typewriter
+        options={{
+          wrapperClassName: "font-mono text-[#0868A0] text-5xl md:text-[4rem]", // Responsive font sizes
+          cursorClassName: "font-mono text-[#0868A0] text-5xl md:text-[4rem] animate-blink", // Responsive cursor sizes
+          strings: typewriterStrings,
+          loop: true,
+          autoStart: true,
+        }}
+      />
+    </div>
   );
 };
 

@@ -16,13 +16,13 @@ const FAQ = async () => {
   return (
     <section id="faq">
       <Container maxWidth="md" sx={{ marginBottom: "128px" }}>
-        <Typography
-          variant="h3"
+      <Typography
+          variant="h4"
           align="center"
           gutterBottom
           sx={{
             fontWeight: "bold",
-            marginBottom: "64px",
+            marginY: "64px",
             color: "black",
           }}
         >

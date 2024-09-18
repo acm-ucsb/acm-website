@@ -1,20 +1,23 @@
+"use client";
 import {
   AppBar,
   Toolbar,
-  Typography,
-  IconButton,
-  CardMedia,
+  Drawer,
 } from "@mui/material";
-import { DarkMode, LightMode } from "@mui/icons-material";
 import Link from "next/link";
+import { useState } from "react";
+import ACMLogo from "./ACMLogo";
 import StyledNavbarButton from "./StyledNavbarButton";
+import HamburgerIcon from "./HamburgerIcon";
+import { ButtonLabels } from "./ButtonLabels";
 
 const Navbar = () => {
-  const buttonLabels = {
-    about: "About Us",
-    branches: "Branches",
-    events: "Events",
-    faq: "FAQ",
+
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  // Toggle the drawer
+  const handleDrawerToggle = () => {
+    setDrawerOpen(!drawerOpen);
   };
 
   return (
@@ -23,29 +26,33 @@ const Navbar = () => {
       sx={{ backgroundColor: "white", boxShadow: "none" }}
     >
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-        <CardMedia
-          component="img"
-          src="/assets/ACM logo with text 2.png"
-          alt="ACM Logo"
-          sx={{
-            height: "110px",
-            width: "auto",
-            objectFit: "contain",
-          }}
-        />
+        <ACMLogo />
 
-        <div className="flex align-trailing px-10 gap-[5rem]">
-          {Object.entries(buttonLabels).map(([key, value]) => (
-            <Link href={`/#${key}`} key={key}>
-              <StyledNavbarButton label={value} key={key} />
-            </Link>
-          ))}
+        <div className="flex items-center">
+          {/* Desktop Navigation - hidden on screens smaller than 'lg' (1024px) */}
+          <div className="hidden lg:flex gap-20">
+            {Object.entries(ButtonLabels).map(([key, value]) => (
+              <Link href={`/#${key}`} key={key}>
+                <StyledNavbarButton label={value} />
+              </Link>
+            ))}
+          </div>
 
-          {/* TODO: Implement color theme functionality */}
-          {/* <IconButton sx={{ marginLeft: "3rem" }}>
-            <LightMode />
-          </IconButton> */}
+          <HamburgerIcon handleDrawerToggle={handleDrawerToggle}/>
         </div>
+
+        {/* Drawer for Mobile and Tablet Navigation */}
+        <Drawer anchor="right" open={drawerOpen} onClose={handleDrawerToggle}>
+          <div className="w-64 p-4 flex flex-col items-center gap-[1rem]">
+            <ACMLogo />
+            <br />
+            {Object.entries(ButtonLabels).map(([key, value]) => (
+              <Link href={`/#${key}`} key={key} onClick={handleDrawerToggle}>
+                <StyledNavbarButton label={value} />
+              </Link>
+            ))}
+          </div>
+        </Drawer>
       </Toolbar>
     </AppBar>
   );

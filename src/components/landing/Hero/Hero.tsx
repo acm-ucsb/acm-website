@@ -1,17 +1,38 @@
 import { ArrowRightAlt } from "@mui/icons-material";
-import { Box, Button, CardMedia, Grid, Typography } from "@mui/material";
+import { Box, Button, CardMedia, Typography } from "@mui/material";
 import HeroStyles from "./Hero.module.css";
 import TypewriterText from "./TypewriterText";
 
 const Hero = () => {
   return (
-    <Box sx={{ padding: "5rem", position: "relative" }}>
-      <Grid container spacing={4} alignItems="center">
-        <Grid item xs={12} md={6} sx={{ zIndex: 2 }}>
-          <div className="flex flex-col min-h-60 pb-2">
+    <Box sx={{ paddingX: { xs: "2rem", md: "5rem" }, paddingY: { xs: "2rem" }, position: "relative" }}>
+      {/* Content Container */}
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" },
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        {/* Text Section */}
+        <Box
+          sx={{
+            zIndex: 2,
+            flex: 1,
+            textAlign: { xs: "center", md: "left" },
+          }}
+        >
+          <div className="flex flex-col min-h-60 pb-2 sm:px-5">
             <Typography
               variant="h2"
-              sx={{ fontWeight: "bold", color: "#222", paddingBottom: "10px" }}
+              sx={{
+                fontWeight: "bold",
+                color: "#222",
+                paddingBottom: "10px",
+                fontSize: { xs: "3rem", md: "4rem" }, // Responsive font size
+                lineHeight: { xs: "3rem", md: "5rem" }, // Responsive line height
+              }}
             >
               UCSB&apos;s Premier <br /> Community Of All Things
             </Typography>
@@ -21,14 +42,25 @@ const Hero = () => {
 
           <Typography
             variant="body1"
-            sx={{ color: "gray", paddingBottom: "10px" }}
+            sx={{
+              color: "gray",
+              paddingY: "10px",
+              fontSize: { xs: "0.875rem", md: "1rem" }, // Responsive font size
+            }}
           >
             Welcome to the Association for Computing Machinery (ACM) Student
-            Chapter at UCSB! We help students prepare for a career in
-            technology.
+            Chapter at UCSB! We help students prepare for a career in technology.
           </Typography>
 
-          <Box sx={{ display: "flex", gap: "1rem", marginTop: "1.5rem" }}>
+          <Box
+            sx={{
+              display: "flex",
+              gap: "1rem",
+              marginTop: "1.5rem",
+              justifyContent: { xs: "center", md: "flex-start" }, // Center on mobile
+              flexDirection: { xs: "column", sm: "row" },
+            }}
+          >
             <Button
               variant="contained"
               href="#events"
@@ -37,9 +69,9 @@ const Hero = () => {
                 color: "white",
                 fontWeight: "bold",
                 borderRadius: "30px",
-                padding: "0.7rem 2.5rem",
+                padding: { xs: "0.5rem 1.5rem", md: "0.7rem 2.5rem" }, // Responsive padding
                 textTransform: "none",
-                fontSize: "1rem",
+                fontSize: { xs: "0.875rem", md: "1rem" }, // Responsive font size
                 boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
                 "&:hover": {
                   backgroundColor: "#0868A0",
@@ -59,9 +91,9 @@ const Hero = () => {
                 color: "#18A2F2",
                 fontWeight: "bold",
                 borderRadius: "30px",
-                padding: "0.7rem 2.5rem",
+                padding: { xs: "0.5rem 1.5rem", md: "0.7rem 2.5rem" }, // Responsive padding
                 textTransform: "none",
-                fontSize: "1rem",
+                fontSize: { xs: "0.875rem", md: "1rem" }, // Responsive font size
                 "&:hover": {
                   borderColor: "#0868A0",
                   color: "#0868A0",
@@ -72,40 +104,37 @@ const Hero = () => {
               Who We Are
             </Button>
           </Box>
-        </Grid>
+        </Box>
 
-        <Grid item xs={12} md={6} sx={{ position: "relative" }}>
-          {/* Placeholder Image */}
-          <Box
+        {/* Image Section */}
+        <Box
+          sx={{
+            flex: 1,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: { xs: "2rem", md: "0" }, // Add margin on mobile
+            position: "relative",
+          }}
+        >
+          <CardMedia
+            component="img"
+            src="/assets/ACM logo.png"
+            alt="Hero Image"
             sx={{
-              textAlign: "center",
-              position: "absolute",
-              top: "-18rem", // Adjust to control vertical overlap
-              left: "4rem", // Adjust to control horizontal overlap
-              zIndex: 1,
+              width: { xs: "0%", md: "90%" }, // Adjust the size of the image for different screen sizes
+              maxWidth: "40rem",
             }}
-          >
-            <CardMedia
-              component="img"
-              src="/assets/ACM logo.png"
-              alt="Hero Image"
-              sx={{
-                width: "120%",
-                maxWidth: "40rem",
-                margin: "0 auto",
-              }}
-            />
-          </Box>
-        </Grid>
-      </Grid>
+          />
+        </Box>
+      </Box>
 
-      {/* Centered Icon with Space Above */}
       <Box
         sx={{
           display: "flex",
-          justifyContent: "center", // Center horizontally
-          marginTop: "3rem", // Adds space above the icon
-          paddingTop: "20rem",
+          justifyContent: "center",
+          marginTop: { xs: "2rem", md: "3rem" }, // Adds space above the icon
+          paddingTop: { xs: "10rem", md: "20rem" }, // Responsive padding
         }}
       >
         <div className={`${HeroStyles.arrow} ${HeroStyles.arrowfirst}`}></div>
