@@ -5,7 +5,13 @@ import TypewriterText from "./TypewriterText";
 
 const Hero = () => {
   return (
-    <Box sx={{ paddingX: { xs: "2rem", md: "5rem" }, paddingY: { xs: "2rem" }, position: "relative" }}>
+    <Box
+      sx={{
+        paddingX: { xs: "2rem", md: "5rem" },
+        paddingY: { xs: "2rem" },
+        position: "relative",
+      }}
+    >
       {/* Content Container */}
       <Box
         sx={{
@@ -49,7 +55,8 @@ const Hero = () => {
             }}
           >
             Welcome to the Association for Computing Machinery (ACM) Student
-            Chapter at UCSB! We help students prepare for a career in technology.
+            Chapter at UCSB! We help students prepare for a career in
+            technology.
           </Typography>
 
           <Box

@@ -16,7 +16,7 @@ const FAQ = async () => {
   return (
     <section id="faq">
       <Container maxWidth="md" sx={{ marginBottom: "128px" }}>
-      <Typography
+        <Typography
           variant="h4"
           align="center"
           gutterBottom

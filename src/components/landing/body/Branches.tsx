@@ -29,7 +29,16 @@ const Branches = () => {
                   <Image src={branch.img} alt={branch.name} width={100} />
                   <Typography
                     variant="h4"
-                    sx={{ fontWeight: "700", color: "black", fontSize: { xs: "1.75rem", sm: "1.75rem", md: "2rem", lg: "2.25rem" } }}
+                    sx={{
+                      fontWeight: "700",
+                      color: "black",
+                      fontSize: {
+                        xs: "1.75rem",
+                        sm: "1.75rem",
+                        md: "2rem",
+                        lg: "2.25rem",
+                      },
+                    }}
                   >
                     acm.
                     <span

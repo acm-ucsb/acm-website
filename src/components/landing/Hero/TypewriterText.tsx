@@ -15,7 +15,8 @@ const TypewriterText = () => {
       <Typewriter
         options={{
           wrapperClassName: "font-mono text-[#0868A0] text-5xl md:text-[4rem]", // Responsive font sizes
-          cursorClassName: "font-mono text-[#0868A0] text-5xl md:text-[4rem] animate-blink", // Responsive cursor sizes
+          cursorClassName:
+            "font-mono text-[#0868A0] text-5xl md:text-[4rem] animate-blink", // Responsive cursor sizes
           strings: typewriterStrings,
           loop: true,
           autoStart: true,

@@ -1,9 +1,5 @@
 "use client";
-import {
-  AppBar,
-  Toolbar,
-  Drawer,
-} from "@mui/material";
+import { AppBar, Toolbar, Drawer } from "@mui/material";
 import Link from "next/link";
 import { useState } from "react";
 import ACMLogo from "./ACMLogo";
@@ -12,7 +8,6 @@ import HamburgerIcon from "./HamburgerIcon";
 import { ButtonLabels } from "./ButtonLabels";
 
 const Navbar = () => {
-
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   // Toggle the drawer
@@ -38,7 +33,7 @@ const Navbar = () => {
             ))}
           </div>
 
-          <HamburgerIcon handleDrawerToggle={handleDrawerToggle}/>
+          <HamburgerIcon handleDrawerToggle={handleDrawerToggle} />
         </div>
 
         {/* Drawer for Mobile and Tablet Navigation */}
