@@ -11,7 +11,7 @@ export enum BranchType {
   General,
 }
 
-type Branch = {
+export type Branch = {
   id: BranchType;
   name: string;
   img: StaticImageData;
