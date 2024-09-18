@@ -80,7 +80,7 @@ const Hero = () => {
             sx={{
               textAlign: "center",
               position: "absolute",
-              top: "-12rem", // Adjust to control vertical overlap
+              top: "-18rem", // Adjust to control vertical overlap
               left: "4rem", // Adjust to control horizontal overlap
               zIndex: 1,
             }}
