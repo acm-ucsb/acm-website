@@ -18,7 +18,7 @@ const EventCard = ({ event }: { event: ACMEvent }) => {
     <Card
       sx={{
         width: 350,
-        height: 320,
+        height: 400,
         backgroundColor: "#ffffff",
         borderRadius: "12px",
         boxShadow: "0 2px 10px rgba(0, 0, 0, 0.08)",
