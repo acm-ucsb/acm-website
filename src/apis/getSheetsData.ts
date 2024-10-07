@@ -99,7 +99,8 @@ const mockEventsData: ACMEvent[] = [
   {
     name: "Web Dev Portfolio Website Workshop",
     tagline: "Learn how to build a portfolio website!",
-    description: "This three part workshop series will take you from start to finish to develop an industry-quality portfolio website with no prior web dev experience required. We will provide a quickstart guide to build a Full-Stack app using modern developer tools, teach general good code practices, and go over the basics of styling. At the end, we will choose some winners for the best portfolios we see!",
+    description:
+      "This three part workshop series will take you from start to finish to develop an industry-quality portfolio website with no prior web dev experience required. We will provide a quickstart guide to build a Full-Stack app using modern developer tools, teach general good code practices, and go over the basics of styling. At the end, we will choose some winners for the best portfolios we see!",
     datetime: "2024-10-9 19:00:00",
     location: "ESB1001",
     branch: BranchType.Webdev,
@@ -107,12 +108,12 @@ const mockEventsData: ACMEvent[] = [
   {
     name: "ICPC Kickoff",
     tagline: "Learn competitive programming!",
-    description: "Join us for the ICPC Kickoff Meeting! Whether you're a seasoned coder or new to competitive programming, this is the perfect opportunity to meet your teammates, learn about the competition structure, and get tips for success. We'll discuss our training plan, set goals for the season, and inspire each other to push our limits. Don’t miss out on the chance to kickstart an exciting journey into the world of programming contests!",
+    description:
+      "Join us for the ICPC Kickoff Meeting! Whether you're a seasoned coder or new to competitive programming, this is the perfect opportunity to meet your teammates, learn about the competition structure, and get tips for success. We'll discuss our training plan, set goals for the season, and inspire each other to push our limits. Don’t miss out on the chance to kickstart an exciting journey into the world of programming contests!",
     datetime: "2024-10-14 19:00:00",
     location: "HFH 1104",
     branch: BranchType.ICPC,
-  }
-
+  },
 ];
 
 export const getEventsData = async () => {
