@@ -97,14 +97,22 @@ export const getFAQData = async () => {
 
 const mockEventsData: ACMEvent[] = [
   {
-    name: "ACM Fall Kickoff",
-    tagline: "Get to know us!",
-    description:
-      "This hour-long kickoff event will announce ACM as a club, our purpose and mission, our events for Fall quarter, and how students can get involved. The event will also dedicate time to each of the three branches of ACM (ICPC, Web Dev, and Research) to share their individual missions and upcoming events.",
-    datetime: "2024-09-30 19:00:00",
-    location: "HFH 1104",
-    branch: BranchType.General,
+    name: "Web Dev Portfolio Website Workshop",
+    tagline: "Learn how to build a portfolio website!",
+    description: "This three part workshop series will take you from start to finish to develop an industry-quality portfolio website with no prior web dev experience required. We will provide a quickstart guide to build a Full-Stack app using modern developer tools, teach general good code practices, and go over the basics of styling. At the end, we will choose some winners for the best portfolios we see!",
+    datetime: "2024-10-9 19:00:00",
+    location: "ESB1001",
+    branch: BranchType.Webdev,
   },
+  {
+    name: "ICPC Kickoff",
+    tagline: "Learn competitive programming!",
+    description: "Join us for the ICPC Kickoff Meeting! Whether you're a seasoned coder or new to competitive programming, this is the perfect opportunity to meet your teammates, learn about the competition structure, and get tips for success. We'll discuss our training plan, set goals for the season, and inspire each other to push our limits. Don’t miss out on the chance to kickstart an exciting journey into the world of programming contests!",
+    datetime: "2024-10-14 19:00:00",
+    location: "HFH 1104",
+    branch: BranchType.ICPC,
+  }
+
 ];
 
 export const getEventsData = async () => {
