@@ -102,7 +102,7 @@ const mockEventsData: ACMEvent[] = [
     description:
       "This three part workshop series will take you from start to finish to develop an industry-quality portfolio website with no prior web dev experience required. We will provide a quickstart guide to build a Full-Stack app using modern developer tools, teach general good code practices, and go over the basics of styling. At the end, we will choose some winners for the best portfolios we see!",
     datetime: "2024-10-9 19:00:00",
-    location: "ESB1001",
+    location: "HFH 1104",
     branch: BranchType.Webdev,
   },
   {
