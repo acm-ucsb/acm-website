@@ -7,6 +7,8 @@ import { Typography } from "@mui/material";
 const EventsSection = async () => {
   const events = await getEventsData();
 
+  // sam was here
+
   return (
     <section
       id="events"
