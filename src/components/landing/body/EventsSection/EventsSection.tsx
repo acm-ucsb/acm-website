@@ -8,6 +8,8 @@ const EventsSection = async () => {
   const events = await getEventsData();
 
   // sam was here
+  
+  var lol = 1   ;
 
   return (
     <section
@@ -15,6 +17,7 @@ const EventsSection = async () => {
       className="flex flex-col items-center justify-center mb-36"
     >
       <Typography
+
         variant="h4"
         align="center"
         gutterBottom
