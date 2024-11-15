@@ -20,39 +20,45 @@ export default function Home() {
         >
           Meet the Team
         </Typography>
-        <section>
+        <section className="flex flex-col px-14">
           <Typography
             variant="h4"
             align="center"
             gutterBottom
             sx={{
               fontWeight: "bold",
-              marginY: "20px",
+              marginTop: "30px",
+              marginBottom: "10px",
               color: "black",
             }}
           >
             Officers
           </Typography>
-          {OfficerTeam.map((officer) => (
-            <TeamCard key={officer.name} member={officer} />
-          ))}
+          <div className="flex flex-wrap justify-center">
+            {OfficerTeam.map((officer) => (
+              <TeamCard key={officer.name} member={officer} />
+            ))}
+          </div>
         </section>
-        <section>
+        <section className="flex flex-col px-14">
           <Typography
             variant="h4"
             align="center"
             gutterBottom
             sx={{
               fontWeight: "bold",
-              marginY: "20px",
+              marginTop: "30px",
+              marginBottom: "10px",
               color: "black",
             }}
           >
             Professors
           </Typography>
-          {Professors.map((professor) => (
-            <TeamCard key={professor.name} member={professor} />
-          ))}
+          <div className="flex flex-wrap justify-center">
+            {Professors.map((professor) => (
+              <TeamCard key={professor.name} member={professor} />
+            ))}
+          </div>
         </section>
 
         <Footer />
