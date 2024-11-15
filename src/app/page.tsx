@@ -5,12 +5,17 @@ import Branches from "../components/landing/body/BranchSection/Branches";
 import EventsSection from "../components/landing/body/EventsSection/EventsSection";
 import Footer from "../components/shared/Footer/Footer";
 import FAQ from "@/components/landing/body/FAQ";
+import Banner from "../components/shared/Banner";
 
 export default function Home() {
   return (
     <main>
       <div className="flex flex-col align-center">
         <Navbar />
+        <Banner
+          inputText="Intern Applications are now Open!"
+          inputLink="/interns"
+        />
         <Hero />
         <AboutBlurb />
         <Branches />
