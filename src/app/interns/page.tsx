@@ -1,47 +1,34 @@
 "use client";
 import Navbar from "@/components/shared/Navbar/Navbar";
 import Footer from "@/components/shared/Footer/Footer";
-import {Chrono} from "react-chrono";
+import dynamic from "next/dynamic";
+import { Typography } from "@mui/material";
+import { useEffect } from "react";
+
+const InternTimeline = dynamic(() => import("@/components/InternTimeline"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
     <main>
       <div className="flex flex-col align-center items-center">
         <Navbar />
-        <h1>
-          Timeline
-        </h1>
-        <Chrono
-          items={[
-            {
-              cardTitle: "Dunkirk",
-              url: "http://www.history.com",
-              cardDetailedText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel lectus eget ex convallis dictum. Nulla ac magna sed erat porta tincidunt. Sed at nulla auctor, vestibulum magna sed, convallis ex. Nulla facilisi. In hac habitasse platea dictumst. Sed quis nulla auctor, vestibulum magna sed, convallis ex. Nulla facilisi. In hac habitasse platea dictumst.",
-            },
-            {
-              cardTitle: "Dunkirk",
-              url: "http://www.history.com",
-              cardDetailedText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel lectus eget ex convallis dictum. Nulla ac magna sed erat porta tincidunt. Sed at nulla auctor, vestibulum magna sed, convallis ex. Nulla facilisi. In hac habitasse platea dictumst. Sed quis nulla auctor, vestibulum magna sed, convallis ex. Nulla facilisi. In hac habitasse platea dictumst.",
-            },
-            {
-              cardTitle: "Dunkirk",
-              url: "http://www.history.com",
-              cardDetailedText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel lectus eget ex convallis dictum. Nulla ac magna sed erat porta tincidunt. Sed at nulla auctor, vestibulum magna sed, convallis ex. Nulla facilisi. In hac habitasse platea dictumst. Sed quis nulla auctor, vestibulum magna sed, convallis ex. Nulla facilisi. In hac habitasse platea dictumst.",
-            },
-          ]}
-          theme={{
-            primary: 'red',
-            secondary: 'blue',
-            cardBgColor: 'yellow',
-            titleColor: 'black',
-            titleColorActive: 'red',
+        <Typography
+          variant="h4"
+          align="center"
+          gutterBottom
+          sx={{
+            fontWeight: "bold",
+            marginY: "64px",
+            color: "black",
           }}
-          disableToolbar = {true}
-          mode="VERTICAL_ALTERNATING"
-        />
-
+        >
+          Intern Application Timeline
+        </Typography>
+        <InternTimeline />
         <Footer />
-      </div>  
+      </div>
     </main>
   );
 }
