@@ -5,7 +5,7 @@ import { FaLink, FaInstagram, FaDiscord } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1f1f1f] text-white p-6 text-center">
+    <footer className="bg-[#1f1f1f] text-white p-6 text-center w-full">
       <div className="container mx-auto">
         <p className="text-lg font-semibold mb-4">Connect with Us!</p>
         <div className="flex justify-center space-x-4">
