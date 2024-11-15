@@ -1,6 +1,4 @@
-import { Chrono } from "react-chrono";
-
-const timelineItems = [
+export const timelineItems = [
   {
     cardTitle: "Intern Applications Open!",
     cardDetailedText:
@@ -32,22 +30,3 @@ const timelineItems = [
       "Be sure to accept your offer by the deadline to secure your internship position. Congratulations to all selected interns! We look forward to working with you and making a positive impact on the ACM community!",
   },
 ];
-
-const InternTimeline = () => {
-  return (
-    <Chrono
-      items={timelineItems}
-      theme={{
-        primary: "#253985",
-        secondary: "white",
-        cardBgColor: "white",
-        titleColor: "black",
-        titleColorActive: "white",
-      }}
-      disableToolbar={true}
-      mode="VERTICAL_ALTERNATING"
-    />
-  );
-};
-
-export default InternTimeline;

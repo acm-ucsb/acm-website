@@ -5,9 +5,12 @@ import dynamic from "next/dynamic";
 import { Typography } from "@mui/material";
 import { useEffect } from "react";
 
-const InternTimeline = dynamic(() => import("@/components/InternTimeline"), {
-  ssr: false,
-});
+const InternTimeline = dynamic(
+  () => import("@/components/interns/InternTimeline"),
+  {
+    ssr: false,
+  },
+);
 
 export default function Home() {
   return (
@@ -24,7 +27,7 @@ export default function Home() {
             color: "black",
           }}
         >
-          Intern Application Timeline
+          Timeline
         </Typography>
         <InternTimeline />
         <Footer />
