@@ -1,9 +1,12 @@
 "use client";
 import Navbar from "@/components/shared/Navbar/Navbar";
 import Footer from "@/components/shared/Footer/Footer";
+import { InternHeroSection } from "@/components/interns/InternHeroSection";
 import dynamic from "next/dynamic";
 import { Typography } from "@mui/material";
-import { useEffect } from "react";
+import AvailablePositions from "@/components/interns/AvailablePositions";
+import { ApplyNowButtons } from "@/components/interns/ApplyNowButtons";
+import Banner from "@/components/shared/Banner";
 
 const InternTimeline = dynamic(
   () => import("@/components/interns/InternTimeline"),
@@ -15,21 +18,20 @@ const InternTimeline = dynamic(
 export default function Home() {
   return (
     <main>
-      <div className="flex flex-col align-center items-center">
+      <div className="flex flex-col align-center">
         <Navbar />
-        <Typography
-          variant="h4"
-          align="center"
-          gutterBottom
-          sx={{
-            fontWeight: "bold",
-            marginY: "64px",
-            color: "black",
-          }}
-        >
-          Timeline
-        </Typography>
-        <InternTimeline />
+        <Banner inputLink="/apply" inputText="We Are Hiring! Apply Here" />
+
+        <div className="flex flex-col align-center items-center">
+          <InternHeroSection />
+
+          <AvailablePositions />
+
+          <ApplyNowButtons />
+
+          <InternTimeline />
+        </div>
+
         <Footer />
       </div>
     </main>

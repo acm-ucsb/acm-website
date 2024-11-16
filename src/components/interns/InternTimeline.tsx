@@ -1,9 +1,24 @@
 import { Chrono } from "react-chrono";
 import { timelineItems } from "./InternTimelineData";
+import { Typography } from "@mui/material";
 
 const InternTimeline = () => {
   return (
     <div style={{ width: "80%", margin: "0 auto", padding: "20px 0" }}>
+      <section id="timeline" />
+      <Typography
+        variant="h4"
+        align="center"
+        gutterBottom
+        sx={{
+          fontWeight: "bold",
+          marginY: "64px",
+          color: "black",
+        }}
+      >
+        Timeline
+      </Typography>
+
       <Chrono
         items={timelineItems}
         theme={{
