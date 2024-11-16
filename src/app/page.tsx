@@ -13,7 +13,7 @@ export default function Home() {
       <div className="flex flex-col align-center">
         <Navbar />
         <Banner
-          inputText="Intern Applications are now Open!"
+          inputText="Apply to be an ACM Intern here!"
           inputLink="/interns"
         />
         <Hero />
