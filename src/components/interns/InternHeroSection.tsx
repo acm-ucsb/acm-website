@@ -15,7 +15,7 @@ export const InternHeroSection = () => {
         ACM Interns
       </Typography>
 
-      <Typography maxWidth="70%" sx={{ color: "gray" }}>
+      <Typography maxWidth="70%" sx={{ color: "gray", textAlign: "center" }}>
         ACM at UCSB is excited to offer students the opportunity to gain
         hands-on experience in leadership, event planning, technical
         development, and more through our internship program. Whether you’re

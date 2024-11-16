@@ -16,12 +16,10 @@ const AboutBlurb = () => {
         >
           Our Mission
         </Typography>
-        <Typography 
+        <Typography
           variant="h6"
-          maxWidth="70%" 
-          sx={{ color: "gray",
-            fontWeight: "normal"
-          }}
+          maxWidth="70%"
+          sx={{ color: "gray", fontWeight: "normal" }}
           align="center"
         >
           ACM at UCSB is a student-run organization that aims to support

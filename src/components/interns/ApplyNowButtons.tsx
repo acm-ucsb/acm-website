@@ -2,9 +2,13 @@ import { Button, Box } from "@mui/material";
 
 export const ApplyNowButtons = () => {
   return (
-    <Box sx={{ display: "flex", gap: "1rem",
-      marginBottom: { xs: "1rem", md: "2rem" },
-    }}>
+    <Box
+      sx={{
+        display: "flex",
+        gap: "1rem",
+        marginBottom: { xs: "1rem", md: "2rem" },
+      }}
+    >
       <Button
         variant="contained"
         sx={{
