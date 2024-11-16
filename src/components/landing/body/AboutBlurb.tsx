@@ -10,21 +10,19 @@ const AboutBlurb = () => {
           gutterBottom
           sx={{
             fontWeight: "bold",
-            marginBottom: "64px",
+            marginBottom: "48px",
             color: "black",
           }}
         >
           Our Mission
         </Typography>
-        <Typography
+        <Typography 
           variant="h6"
-          sx={{
-            color: "gray",
-            paddingBottom: "10px",
-            maxWidth: "80rem",
-            fontWeight: "100",
-            textAlign: "center",
+          maxWidth="70%" 
+          sx={{ color: "gray",
+            fontWeight: "normal"
           }}
+          align="center"
         >
           ACM at UCSB is a student-run organization that aims to support
           students interested in Computer Science by fostering a community of

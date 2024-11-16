@@ -45,7 +45,7 @@ const InternTimeline = () => {
         classNames={{
           card: "custom-card-style",
         }}
-        highlightCardsOnHover={true}
+        highlightCardsOnHover={false}
       />
       {/* Custom CSS styles */}
       <style>

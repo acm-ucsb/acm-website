@@ -27,9 +27,9 @@ export default function Home() {
 
           <AvailablePositions />
 
-          <ApplyNowButtons />
-
           <InternTimeline />
+
+          <ApplyNowButtons />
         </div>
 
         <Footer />
