@@ -8,6 +8,8 @@ import branchData from "../../../public/data/branchData";
 import { BranchCard } from "@/components/landing/body/BranchSection/BranchCard";
 import { Box } from "@mui/material";
 import PageStyles from "./page.module.css";
+import NameCard from "@/components/shared/NameCard/NameCard";
+import Hero from "@public/assets/HeroLogo.png";
 
 export default function Home() {
 
@@ -179,6 +181,11 @@ export default function Home() {
 
           <Footer />
         </Container>
+        <Navbar />
+            {fake_data.map((people, index) => (
+                <NameCard key={index} people={people} index={index}></NameCard>
+            ))}
+        <Footer />
       </div>
     </main>
   );
