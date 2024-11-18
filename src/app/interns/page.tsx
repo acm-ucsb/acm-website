@@ -20,7 +20,6 @@ export default function Home() {
     <main>
       <div className="flex flex-col align-center">
         <Navbar />
-        <Banner inputLink="/apply" inputText="Link to Application Form Here!" />
 
         <div className="flex flex-col align-center items-center">
           <InternHeroSection />
