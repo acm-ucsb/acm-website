@@ -8,8 +8,6 @@ import branchData from "../../../public/data/branchData";
 import { BranchCard } from "@/components/landing/body/BranchSection/BranchCard";
 import { Box } from "@mui/material";
 import PageStyles from "./page.module.css";
-import NameCard from "@/components/shared/NameCard/NameCard";
-import Hero from "@public/assets/HeroLogo.png";
 
 export default function Home() {
 
