@@ -14,7 +14,7 @@ interface People {
 }
 
 interface NameCardProps {
-    people: People;
+    people: People[];
     index: number;
 }
 
@@ -22,10 +22,13 @@ const NameCard = ({ people, index }: NameCardProps) => {
     return (
         <div
             key={index}
-            className="flex flex-col items-center justify-center m-6 gap-3 transition-transform duration-300 ease-in-out hover:scale-105"
+            className="grid grid-cols-1 md:grid-cols-3"
         >
-            <div className="flex items-center gap-1 md:gap-2">
-                <div>
+            {people.map((people, index) => (
+                <div key={index} className="m-1 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105">
+                <div style={{
+                    marginRight: "0.1rem",
+                }}>
                 <Image 
                 style={
                     {
@@ -71,7 +74,8 @@ const NameCard = ({ people, index }: NameCardProps) => {
                         {people.position}
                     </Typography>
                 </div>
-            </div>
+                </div>
+            ))}
         </div>
     );
 };

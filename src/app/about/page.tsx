@@ -11,7 +11,7 @@ import PageStyles from "./page.module.css";
 
 export default function Home() {
 
-    const fake_data = [
+    const fake_data = [[
         {
             id: "1",
             name: "Foo Bar",
@@ -23,8 +23,21 @@ export default function Home() {
             name: "Sam Shu",
             position: "Board",
             img: "/assets/test1.avif",
+        },
+        {
+            id: "2",
+            name: "Sam Shu",
+            position: "Board",
+            img: "/assets/test1.avif",
         }
-    ];
+    ], [
+        {
+            id: "1",
+            name: "Foo Bar",
+            position: "Board",
+            img: Hero,
+        },
+    ]];
 
     return (
         <main>
@@ -150,6 +163,9 @@ export default function Home() {
                             <BranchCard key={index} index={index} branch={branch} />
                         ))}
                     </div>
+                    <div style={{
+                        height: "3rem"
+                    }}></div>
                     <div>
                         <Typography
                             variant="h2"
