@@ -131,13 +131,16 @@ export default function Home() {
                             <Typography>Discord</Typography>
                         </div>
                     </div>
-
-                    <br></br>
+                    <div style={{
+                        height: "3rem"
+                    }}></div>
                     <Typography
-                        variant="h3"
+                        variant="h2"
+                        align="center"
                         sx={{
+                            fontSize: "1.75rem",
+                            marginBottom: "1rem",
                             fontWeight: "bold",
-                            fontSize: "1.5rem",
                         }}
                     >
                         Branches
