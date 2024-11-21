@@ -8,6 +8,7 @@ import branchData from "../../../public/data/branchData";
 import { BranchCard } from "@/components/landing/body/BranchSection/BranchCard";
 import { Box } from "@mui/material";
 import PageStyles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -107,17 +108,20 @@ export default function Home() {
                     <Typography>
                         Follow us on Instagram and join our Discord!
                     </Typography>
+                    
                     <div
                         style={{
                             display: "flex",
                             gap: "2%",
                         }}
                     >
+                        <Link href={"https://www.instagram.com/acm.ucsb"}>
                         <div
                             style={{
                                 display: "grid",
                                 placeItems: "center",
                             }}
+                            className="duration-300 ease-in-out hover:scale-105"
                         >
                             <img
                                 src="/social-media/Instagram_Glyph_Gradient.svg"
@@ -128,11 +132,14 @@ export default function Home() {
                             ></img>
                             <Typography>Instagram</Typography>
                         </div>
+                        </Link>
+                        <Link href={"https://discord.com/invite/p6rcUUjWaU"}>
                         <div
                             style={{
                                 display: "grid",
                                 placeItems: "center",
                             }}
+                            className="duration-300 ease-in-out hover:scale-105"
                         >
                             <img
                                 src="/social-media/discord-mark-blue.svg"
@@ -143,6 +150,7 @@ export default function Home() {
                             ></img>
                             <Typography>Discord</Typography>
                         </div>
+                        </Link>
                     </div>
                     <div style={{
                         height: "3rem"
