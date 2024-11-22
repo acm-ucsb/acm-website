@@ -17,24 +17,22 @@ export default function Hero() {
         {/*Center content*/}
         <div className="h-[100%] flex flex-wrap justify-center content-center">
           <div className="h-fit">
-            <div className="pb-[16vh]">
-              <Typography
-                variant="h2"
-                align="center"
-                sx={{
-                  fontSize: "1.75rem",
-                  marginBottom: "1rem",
-                  fontWeight: "bold",
-                }}
-              >
-                What is ACM?
-              </Typography>
+            <Typography
+              variant="h2"
+              align="center"
+              sx={{
+                fontSize: "1.75rem",
+                marginBottom: "1rem",
+                fontWeight: "bold",
+              }}
+            >
+              What is ACM?
+            </Typography>
 
-              <Typography>
-                ACM is a student-run Computer Science organization at UCSB. We
-                do web development, research, and competitive programming.
-              </Typography>
-            </div>
+            <Typography>
+              ACM is a student-run Computer Science organization at UCSB. We do
+              web development, research, and competitive programming.
+            </Typography>
           </div>
         </div>
       </Container>

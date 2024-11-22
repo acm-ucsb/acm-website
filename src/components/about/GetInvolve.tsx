@@ -6,7 +6,7 @@ import { BranchCard } from "@/components/landing/body/BranchSection/BranchCard";
 
 export default function GetInvolve() {
   return (
-    <>
+    <div>
       <Typography
         variant="h2"
         align="center"
@@ -25,7 +25,7 @@ export default function GetInvolve() {
       </Typography>
 
       {/* Social Media Section */}
-      <div className="mt-4">
+      <div className="mt-16">
         <Typography
           variant="h3"
           sx={{
@@ -39,13 +39,8 @@ export default function GetInvolve() {
 
         <Typography>Follow us on Instagram and join our Discord!</Typography>
 
-        <div
-          style={{
-            display: "flex",
-            gap: "2%",
-          }}
-        >
-          <Link href={"https://www.instagram.com/acm.ucsb"}>
+        <div className="flex gap-4 mt-4">
+          <Link target="_blank" href={"https://www.instagram.com/acm.ucsb"}>
             <div
               style={{
                 display: "grid",
@@ -60,10 +55,10 @@ export default function GetInvolve() {
                   padding: "10px",
                 }}
               ></img>
-              <Typography>Instagram</Typography>
+              {/* <Typography>Instagram</Typography> */}
             </div>
           </Link>
-          <Link href={"https://discord.com/invite/p6rcUUjWaU"}>
+          <Link target="_blank" href={"https://discord.com/invite/p6rcUUjWaU"}>
             <div
               style={{
                 display: "grid",
@@ -78,32 +73,30 @@ export default function GetInvolve() {
                   padding: "10px",
                 }}
               ></img>
-              <Typography>Discord</Typography>
+              {/* <Typography>Discord</Typography> */}
             </div>
           </Link>
         </div>
       </div>
-      <Typography
-        variant="h2"
-        align="center"
-        sx={{
-          fontSize: "1.75rem",
-          marginBottom: "1rem",
-          fontWeight: "bold",
-        }}
-      >
-        Branches
-      </Typography>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-[2rem] md:gap-[5rem]">
-        {branchData.map((branch, index) => (
-          <BranchCard key={index} index={index} branch={branch} />
-        ))}
+
+      <div className="mt-16">
+        <Typography
+          variant="h3"
+          sx={{
+            fontWeight: "bold",
+            fontSize: "1.5rem",
+            marginBottom: "0.5rem",
+          }}
+        >
+          Branches
+        </Typography>
+        <Typography>Join our branches</Typography>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[2rem] md:gap-[5rem]">
+          {branchData.map((branch, index) => (
+            <BranchCard key={index} index={index} branch={branch} />
+          ))}
+        </div>
       </div>
-      <div
-        style={{
-          height: "3rem",
-        }}
-      ></div>
-    </>
+    </div>
   );
 }

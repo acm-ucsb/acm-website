@@ -36,7 +36,7 @@ export default function MeetTheTeam() {
   ];
 
   return (
-    <>
+    <div>
       <Typography
         variant="h2"
         align="center"
@@ -48,9 +48,11 @@ export default function MeetTheTeam() {
       >
         Meet Our Team
       </Typography>
-      {fake_data.map((people, index) => (
-        <NameCard key={index} people={people} index={index}></NameCard>
-      ))}
-    </>
+      <div className="mt-12 grid gap-12">
+        {fake_data.map((people, index) => (
+          <NameCard key={index} people={people} index={index}></NameCard>
+        ))}
+      </div>
+    </div>
   );
 }

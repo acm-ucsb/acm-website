@@ -16,8 +16,8 @@ export default function Home() {
       </div>
       <Hero />
 
-      <div className="mt-12 flex flex-col align-center">
-        <Container maxWidth="md">
+      <div className="flex flex-col align-center">
+        <Container className="*:mt-24 mb-24" maxWidth="md">
           <GetInvolve />
           <MeetTheTeam />
         </Container>
