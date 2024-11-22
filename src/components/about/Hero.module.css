@@ -25,7 +25,7 @@
 }
 
 .arrow:after {
-  transform: translateX(calc(-50% + 10px)) rotate(-45deg) ;
+  transform: translateX(calc(-50% + 10px)) rotate(-45deg);
 }
 
 @keyframes arrow-movement {
