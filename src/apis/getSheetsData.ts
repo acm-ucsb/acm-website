@@ -1,6 +1,6 @@
 import { google, sheets_v4 } from "googleapis";
 import { ACMEvent } from "@public/data/events";
-import { FAQ } from "@public/data/faq";
+import { BranchFAQ, FAQ } from "@public/data/faq";
 import { BranchType } from "@public/data/branchData";
 
 enum SheetName {
@@ -93,6 +93,29 @@ export const getFAQData = async () => {
   //   question: faq[0],
   //   answer: faq[1],
   // })) as FAQ[];
+};
+
+const mockFAQBranchData: BranchFAQ[] = [
+  {
+    branch: "General",
+    faqs: mockFAQData,
+  },
+  {
+    branch: "ICPC",
+    faqs: mockFAQData.slice(3, 5),
+  },
+  {
+    branch: "Research",
+    faqs: mockFAQData.slice(5, 7),
+  },
+  {
+    branch: "Webdev",
+    faqs: mockFAQData.slice(7, 8),
+  },
+];
+
+export const getFAQBranchData = async () => {
+  return mockFAQBranchData;
 };
 
 const mockEventsData: ACMEvent[] = [
