@@ -1,7 +1,6 @@
 import Navbar from "@/components/shared/Navbar/Navbar";
 import Footer from "@/components/shared/Footer/Footer";
 import ToggleFAQView from "@/components/landing/body/FAQ/ToggleFAQView";
-import BranchFAQ from "@/components/landing/body/FAQ/BranchFAQ";
 import { getFAQBranchData, getFAQData } from "@/apis/getSheetsData";
 
 export default async function Home() {
