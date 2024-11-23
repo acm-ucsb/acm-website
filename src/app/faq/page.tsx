@@ -1,15 +1,18 @@
 import Navbar from "@/components/shared/Navbar/Navbar";
 import Footer from "@/components/shared/Footer/Footer";
-import BranchFAQ from "@/components/landing/body/FAQ/BranchFAQ";
-import FAQ from "@/components/landing/body/FAQ/FAQ";
 import ToggleFAQView from "@/components/landing/body/FAQ/ToggleFAQView";
+import BranchFAQ from "@/components/landing/body/FAQ/BranchFAQ";
+import { getFAQBranchData, getFAQData } from "@/apis/getSheetsData";
 
-export default function Home() {
+export default async function Home() {
+  const branchfaq = await getFAQBranchData();
+  const faq = await getFAQData();
+
   return (
     <main>
       <div className="flex flex-col align-center">
         <Navbar />
-        <BranchFAQ />
+        <ToggleFAQView faq={faq} branchfaq={branchfaq} />
         <Footer />
       </div>
     </main>

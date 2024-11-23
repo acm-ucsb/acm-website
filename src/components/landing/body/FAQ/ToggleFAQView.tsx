@@ -1,9 +1,12 @@
+'use client'
 import React, { useState } from 'react';
+import { Button, Box } from '@mui/material'; // Import MUI components
 
 import FAQ from './FAQ';
 import BranchFAQ from './BranchFAQ';
 
-const ToggleFAQView = () => {
+const ToggleFAQView = (props: {faq: any, branchfaq: any}) => {
+  const { faq, branchfaq } = props;
   const [showBranchFAQ, setShowBranchFAQ] = useState(false); // State to track which FAQ to show
 
   const toggleFAQ = () => {
@@ -12,10 +15,12 @@ const ToggleFAQView = () => {
 
   return (
     <div>
-      <button onClick={toggleFAQ}>
-        {showBranchFAQ ? 'Show FAQ' : 'Show Branch FAQ'}
-      </button>
-      {showBranchFAQ ? <BranchFAQ /> : <FAQ />}
+      <Box display="flex" justifyContent="center" marginBottom={0}>
+        <Button variant="contained" onClick={toggleFAQ} sx={{ backgroundColor: '#18A2F2' }}>
+          Toggle FAQ View
+        </Button>
+      </Box>
+      {showBranchFAQ ? <BranchFAQ branchfaq={branchfaq} /> : <FAQ faq={faq} />}
     </div>
   );
 };
