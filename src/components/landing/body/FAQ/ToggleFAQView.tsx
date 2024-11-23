@@ -4,8 +4,9 @@ import { Button, Box } from '@mui/material'; // Import MUI components
 
 import FAQ from './FAQ';
 import BranchFAQ from './BranchFAQ';
+import { BranchFAQType, FAQType } from '@public/data/faq';
 
-const ToggleFAQView = (props: {faq: any, branchfaq: any}) => {
+const ToggleFAQView = (props: {faq: FAQType[], branchfaq: BranchFAQType[]}) => {
   const { faq, branchfaq } = props;
   const [showBranchFAQ, setShowBranchFAQ] = useState(false); // State to track which FAQ to show
 

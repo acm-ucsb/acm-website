@@ -8,8 +8,9 @@ import {
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { convertTextToLinks } from "@/util/convertTextToLinks";
+import { FAQType } from "@public/data/faq";
 
-const FAQ = (props: {faq: any}) => {
+const FAQ = (props: {faq: FAQType[]}) => {
   const { faq } = props;
 
   return (
@@ -28,7 +29,7 @@ const FAQ = (props: {faq: any}) => {
           Frequently Asked Questions
         </Typography>
 
-        {faq.map((item: any, index: any) => (
+        {faq.map((item: FAQType, index: number) => (
           <Accordion
             key={index}
             sx={{

@@ -1,6 +1,6 @@
 import { google, sheets_v4 } from "googleapis";
 import { ACMEvent } from "@public/data/events";
-import { BranchFAQ, FAQ } from "@public/data/faq";
+import { BranchFAQType, FAQType } from "@public/data/faq";
 import { BranchType } from "@public/data/branchData";
 
 import icpcLogo from "@public/assets/branchImages/icpc.png";
@@ -41,7 +41,7 @@ const getRawSheetData = async (sheetName: SheetName) => {
   }
 };
 
-const mockFAQData: FAQ[] = [
+const mockFAQData: FAQType[] = [
   {
     question: "What is ACM?",
     answer:
@@ -104,7 +104,7 @@ export const getFAQData = async () => {
   NOTE: temporary implementation for branch related stuff (definitely way to make reusable components 
   for branchCard data)
 */
-const mockFAQBranchData: BranchFAQ[] = [
+const mockFAQBranchData: BranchFAQType[] = [
   {
     branch: "general",
     image: acmLogo.src,
