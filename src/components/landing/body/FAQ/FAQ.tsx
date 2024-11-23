@@ -1,5 +1,4 @@
 import React from "react";
-import { getFAQData } from "@/apis/getSheetsData";
 import {
   Accordion,
   AccordionSummary,
@@ -10,8 +9,8 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { convertTextToLinks } from "@/util/convertTextToLinks";
 
-const FAQ = async () => {
-  const faq = await getFAQData();
+const FAQ = (props: {faq: any}) => {
+  const { faq } = props;
 
   return (
     <section id="faq">

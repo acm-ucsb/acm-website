@@ -1,5 +1,4 @@
 import React from "react";
-import { getFAQBranchData } from "@/apis/getSheetsData";
 import {
   Accordion,
   AccordionSummary,
@@ -11,8 +10,8 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { convertTextToLinks } from "@/util/convertTextToLinks";
 
-const BranchFAQ = async () => {
-  const branchfaq = await getFAQBranchData();
+const BranchFAQ = (props: {branchfaq: any}) => {
+  const { branchfaq } = props;
 
   return (
     <section id="faq">
