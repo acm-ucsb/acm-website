@@ -6,6 +6,7 @@ import {
   AccordionDetails,
   Typography,
   Container,
+  Box,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { convertTextToLinks } from "@/util/convertTextToLinks";
@@ -46,7 +47,7 @@ const BranchFAQ = async () => {
             }}
           >
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon sx={{ color: "primary.main" }} />}
+              expandIcon={null}
               aria-controls={`branch-faq-content-${branch_index}`}
               id={`branch-faq-header-${branch_index}`}
               sx={{
@@ -54,20 +55,43 @@ const BranchFAQ = async () => {
                 borderBottom: "1px solid",
                 borderColor: "divider",
                 padding: "12px 24px",
+                display: "flex",
+                justifyContent: "center",
+                textAlign: "center",
                 "&.Mui-expanded": {
                   minHeight: "48px",
                 },
               }}
             >
-              <Typography
-                variant="h6"
-                sx={{
-                  fontWeight: "500",
-                  color: "text.primary",
-                }}
-              >
-                {branch.branch}
-              </Typography>
+                {/* TODO: CLEAN UP THIS; Temporary implementation, probably really scuffed but does the job */}
+                <Box sx={{ display: "flex", alignItems: "center" }}>
+                    <img
+                    src={branch.image}
+                    alt={branch.branch}
+                    style={{ width: "62px", height: "62px", marginRight: "16px" }}
+                    />
+                    <Typography
+                    variant="h6"
+                    sx={{
+                        fontWeight: "700",
+                        color: "text.primary",
+                        textAlign: "center",
+                        fontSize: 27,
+                    }}
+                    >
+                    acm.
+                    <span
+                        style={{
+                        backgroundImage: `linear-gradient(to right, ${branch.color.join(", ")})`,
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                        display: "inline-block",
+                        }}
+                    >
+                    {branch.branch}
+                    </span>
+                    </Typography>
+                </Box>
             </AccordionSummary>
             <AccordionDetails
               sx={{
@@ -100,6 +124,9 @@ const BranchFAQ = async () => {
                       borderBottom: "1px solid",
                       borderColor: "divider",
                       padding: "12px 24px",
+                      display: "flex",
+                      justifyContent: "center",
+                      textAlign: "center",
                       "&.Mui-expanded": {
                         minHeight: "48px",
                       },
@@ -110,6 +137,8 @@ const BranchFAQ = async () => {
                       sx={{
                         fontWeight: "500",
                         color: "text.primary",
+                        textAlign: "center",
+                        width: "100%",
                       }}
                     >
                       {item.question}
@@ -138,4 +167,4 @@ const BranchFAQ = async () => {
   );
 };
 
-export { BranchFAQ };
+export default BranchFAQ;

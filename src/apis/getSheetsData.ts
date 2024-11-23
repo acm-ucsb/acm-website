@@ -3,6 +3,11 @@ import { ACMEvent } from "@public/data/events";
 import { BranchFAQ, FAQ } from "@public/data/faq";
 import { BranchType } from "@public/data/branchData";
 
+import icpcLogo from "@public/assets/branchImages/icpc.png";
+import researchLogo from "@public/assets/branchImages/research.png";
+import webdevLogo from "@public/assets/branchImages/webdev.png";
+import acmLogo from "@public/assets/ACM logo.png";
+
 enum SheetName {
   Events = "Events",
   FAQs = "FAQs",
@@ -95,22 +100,34 @@ export const getFAQData = async () => {
   // })) as FAQ[];
 };
 
+/* 
+  NOTE: temporary implementation for branch related stuff (definitely way to make reusable components 
+  for branchCard data)
+*/
 const mockFAQBranchData: BranchFAQ[] = [
   {
-    branch: "General",
+    branch: "general",
+    image: acmLogo.src,
+    color: ["#18A2F2", "#18A2F2", "#18A2F2"],
     faqs: mockFAQData,
   },
   {
-    branch: "ICPC",
-    faqs: mockFAQData.slice(3, 5),
+    branch: "icpc",
+    image: icpcLogo.src,
+    color: ["#B93016", "#E33C1E", "#B93016"],
+    faqs: mockFAQData.slice(3, 4),
   },
   {
-    branch: "Research",
-    faqs: mockFAQData.slice(5, 7),
+    branch: "research",
+    image: researchLogo.src,
+    color: ["#D3A739", "#ECB941", "#D3A739"],
+    faqs: mockFAQData.slice(4, 5),
   },
   {
-    branch: "Webdev",
-    faqs: mockFAQData.slice(7, 8),
+    branch: "webdev",
+    image: webdevLogo.src,
+    color: ["#1DAA2E", "#2DC439", "#1DAA2E"],
+    faqs: mockFAQData.slice(5, 6),
   },
 ];
 
