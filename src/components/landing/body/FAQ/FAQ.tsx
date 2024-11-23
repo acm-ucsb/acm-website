@@ -10,7 +10,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { convertTextToLinks } from "@/util/convertTextToLinks";
 import { FAQType } from "@public/data/faq";
 
-const FAQ = (props: {faq: FAQType[]}) => {
+const FAQ = (props: { faq: FAQType[] }) => {
   const { faq } = props;
 
   return (

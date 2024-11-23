@@ -11,7 +11,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { convertTextToLinks } from "@/util/convertTextToLinks";
 import { BranchFAQType, FAQType } from "@public/data/faq";
 
-const BranchFAQ = (props: {branchfaq: BranchFAQType[]}) => {
+const BranchFAQ = (props: { branchfaq: BranchFAQType[] }) => {
   const { branchfaq } = props;
 
   const renderFAQAccordion = (item: FAQType, index: number) => (
@@ -75,9 +75,10 @@ const BranchFAQ = (props: {branchfaq: BranchFAQType[]}) => {
     </Accordion>
   );
 
-  
-
-  const renderBranchAccordion = (branch: BranchFAQType, branch_index: number) => (
+  const renderBranchAccordion = (
+    branch: BranchFAQType,
+    branch_index: number,
+  ) => (
     <Accordion
       key={branch_index}
       sx={{

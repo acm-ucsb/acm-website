@@ -4,7 +4,7 @@ import AboutBlurb from "../components/landing/body/AboutBlurb";
 import Branches from "../components/landing/body/BranchSection/Branches";
 import EventsSection from "../components/landing/body/EventsSection/EventsSection";
 import Footer from "../components/shared/Footer/Footer";
-import OriginalFAQ from '../components/landing/body/FAQ/FAQLoadData';
+import OriginalFAQ from "../components/landing/body/FAQ/FAQLoadData";
 
 export default function Home() {
   return (
