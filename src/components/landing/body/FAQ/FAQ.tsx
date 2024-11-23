@@ -28,7 +28,7 @@ const FAQ = (props: {faq: any}) => {
           Frequently Asked Questions
         </Typography>
 
-        {faq.map((item, index) => (
+        {faq.map((item: any, index: any) => (
           <Accordion
             key={index}
             sx={{

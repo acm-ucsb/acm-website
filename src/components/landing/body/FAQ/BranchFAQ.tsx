@@ -13,7 +13,7 @@ import { convertTextToLinks } from "@/util/convertTextToLinks";
 const BranchFAQ = (props: {branchfaq: any}) => {
   const { branchfaq } = props;
 
-  const renderFAQAccordion = (item, index) => (
+  const renderFAQAccordion = (item: any, index: any) => (
     <Accordion
       key={index}
       sx={{
@@ -76,7 +76,7 @@ const BranchFAQ = (props: {branchfaq: any}) => {
 
   
 
-  const renderBranchAccordion = (branch, branch_index) => (
+  const renderBranchAccordion = (branch: any, branch_index: any) => (
     <Accordion
       key={branch_index}
       sx={{
