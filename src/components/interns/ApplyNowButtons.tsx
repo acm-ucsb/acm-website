@@ -25,8 +25,9 @@ export const ApplyNowButtons = () => {
             boxShadow: "0px 6px 15px rgba(0, 0, 0, 0.15)",
           },
         }}
+        href="https://forms.gle/s5SSAPMMkk2oBL9V7"
       >
-        Apply Now
+        Apply Now!
       </Button>
     </Box>
   );

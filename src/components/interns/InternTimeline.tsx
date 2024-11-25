@@ -29,8 +29,8 @@ const InternTimeline = () => {
           titleColor: "#253985",
           titleColorActive: "#ffffff",
         }}
-        cardWidth={400}
-        cardHeight={250}
+        cardWidth={450}
+        cardHeight={200}
         lineWidth={6}
         timelinePointDimension={24}
         fontSizes={{
