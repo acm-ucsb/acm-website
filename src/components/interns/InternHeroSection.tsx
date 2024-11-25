@@ -18,9 +18,9 @@ export const InternHeroSection = () => {
       <Typography maxWidth="70%" sx={{ color: "gray", textAlign: "center" }}>
         ACM at UCSB is excited to offer students the opportunity to gain
         hands-on experience in leadership, event planning, technical
-        development, and more through our internship program. Whether you're
-        looking to grow your technical expertise, network with industry
-        professionals, or make a lasting impact on the computer science
+        development, and more through our internship program. Whether
+        you&apos;re looking to grow your technical expertise, network with
+        industry professionals, or make a lasting impact on the computer science
         community, our program is designed to help you succeed. Join us to
         learn, lead, and collaborate with like-minded peers and mentors who are
         passionate about technology and innovation!
