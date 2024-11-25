@@ -14,6 +14,9 @@ const ACMLogo = () => {
           transform: "scale(1.05)",
           backgroundColor: "#fff",
         },
+        height: "70px",
+        width: "auto",
+        margin: "0.5rem",
       }}
     >
       <CardMedia

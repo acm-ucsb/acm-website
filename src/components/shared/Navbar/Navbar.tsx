@@ -17,8 +17,11 @@ const Navbar = () => {
 
   return (
     <AppBar
-      position="static"
-      sx={{ backgroundColor: "white", boxShadow: "none" }}
+      position="sticky"
+      sx={{
+        backgroundColor: "white",
+        boxShadow: "1px 1px 3px rgba(0, 0, 0, 0.1)",
+      }}
     >
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         <ACMLogo />
