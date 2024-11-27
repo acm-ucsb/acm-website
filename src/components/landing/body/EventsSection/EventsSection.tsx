@@ -1,11 +1,10 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import EventCards from "./EventSectionBody";
 import { getEventsData } from "../../../../apis/getSheetsData";
 import { Typography } from "@mui/material";
 import FilterTags from "./FilterTags";
 
 const EventsSection = async () => {
-
   const events = await getEventsData(); // Fetch data
 
   return (
@@ -13,7 +12,6 @@ const EventsSection = async () => {
       id="events"
       className="flex flex-col items-center justify-start mb-36 h-full"
     >
-      
       <Typography
         variant="h4"
         align="center"
@@ -26,10 +24,7 @@ const EventsSection = async () => {
       >
         Events
       </Typography>
-        <EventCards events = {events}>
-
-        </EventCards>
-     
+      <EventCards events={events}></EventCards>
     </section>
   );
 };

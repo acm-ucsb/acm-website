@@ -1,11 +1,6 @@
-"use client"
+"use client";
 import React, { useState } from "react";
-import {
-  Card,
-  CardContent,
-  Typography,
-  Button,
-} from "@mui/material";
+import { Card, CardContent, Typography, Button } from "@mui/material";
 import type { ACMEvent } from "@public/data/events";
 import formatDateTime from "../../../../util/formatDateTime";
 import branchData from "@public/data/branchData";
@@ -48,15 +43,16 @@ const EventCard = ({ event }: { event: ACMEvent }) => {
             boxShadow: "0 2px 10px rgba(0, 0, 0, 0.08)",
             position: "absolute",
             backfaceVisibility: "hidden",
-            cursor: 'pointer',
-            transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
+            cursor: "pointer",
+            transition:
+              "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
             "&:hover": {
               transform: "scale(1.02)",
               boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
             },
             display: "flex",
             justifyContent: "center",
-            alignItems: "center",    
+            alignItems: "center",
           }}
         >
           <Image
@@ -94,10 +90,7 @@ const EventCard = ({ event }: { event: ACMEvent }) => {
                 {formattedDateTime(event.datetime)}
               </span>
             </Typography>
-            <Typography
-              variant="body2"
-              sx={{ fontWeight: "bold" }}
-            >
+            <Typography variant="body2" sx={{ fontWeight: "bold" }}>
               Where:{" "}
               <span style={{ fontWeight: "normal" }}>
                 {event.location ?? "TBD"}
@@ -112,7 +105,7 @@ const EventCard = ({ event }: { event: ACMEvent }) => {
             width: 320,
             height: 400,
             borderRadius: "4px",
-            backgroundColor: '#ffffff',
+            backgroundColor: "#ffffff",
             boxShadow: "0 2px 10px rgba(0, 0, 0, 0.08)",
             position: "absolute",
             transform: "rotateY(180deg)",
@@ -121,12 +114,12 @@ const EventCard = ({ event }: { event: ACMEvent }) => {
             justifyContent: "center",
             alignItems: "center",
             textAlign: "center",
-            cursor: 'pointer',
-            transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
+            cursor: "pointer",
+            transition:
+              "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
             "&:hover": {
               boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
             },
-
           }}
         >
           <Image
