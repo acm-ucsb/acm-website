@@ -1,33 +1,46 @@
-import { Typography } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import Link from "next/link";
 
 import branchData from "../../../public/data/branchData";
 import { BranchCard } from "@/components/landing/body/BranchSection/BranchCard";
+import React from "react";
 
 export default function GetInvolve() {
+  const Spacer = () => (
+    <div
+      style={{
+        padding: "3rem",
+      }}
+    ></div>
+  );
+
   return (
     <div>
-      <Typography
-        variant="h2"
-        align="center"
-        sx={{
-          fontSize: "1.75rem",
-          marginBottom: "1rem",
-          fontWeight: "bold",
-        }}
-      >
-        How can I get involved?
-      </Typography>
+      <Container maxWidth="md">
+        <Typography
+          variant="h2"
+          align="center"
+          sx={{
+            fontSize: "1.75rem",
+            marginBottom: "1rem",
+            fontWeight: "bold",
+          }}
+        >
+          How can I get involved?
+        </Typography>
 
-      <Typography>
-        The best way to get involved is to join our Discord server, where we
-        post information about events in the announcements channel.
-      </Typography>
+        <Typography>
+          The best way to get involved is to join our Discord server, where we
+          post information about events in the announcements channel.
+        </Typography>
+      </Container>
+      <Spacer />
 
       {/* Social Media Section */}
       <div className="mt-16">
         <Typography
           variant="h3"
+          align="center"
           sx={{
             fontWeight: "bold",
             fontSize: "1.5rem",
@@ -37,9 +50,16 @@ export default function GetInvolve() {
           Social Media
         </Typography>
 
-        <Typography>Follow us on Instagram and join our Discord!</Typography>
+        <Typography align="center">
+          Follow us on Instagram and join our Discord!
+        </Typography>
 
-        <div className="flex gap-4 mt-4">
+        <div
+          className="flex gap-4 mt-4"
+          style={{
+            justifyContent: "center",
+          }}
+        >
           <Link target="_blank" href={"https://www.instagram.com/acm.ucsb"}>
             <div
               style={{
@@ -78,10 +98,12 @@ export default function GetInvolve() {
           </Link>
         </div>
       </div>
+      <Spacer />
 
       <div className="mt-16">
         <Typography
           variant="h3"
+          align="center"
           sx={{
             fontWeight: "bold",
             fontSize: "1.5rem",
@@ -90,13 +112,14 @@ export default function GetInvolve() {
         >
           Branches
         </Typography>
-        <Typography>Join our branches</Typography>
+        <Typography align="center">Join our branches</Typography>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-[2rem] md:gap-[5rem]">
           {branchData.map((branch, index) => (
             <BranchCard key={index} index={index} branch={branch} />
           ))}
         </div>
       </div>
+      <Spacer />
     </div>
   );
 }

@@ -29,9 +29,7 @@ const NameCard = ({ people, index }: NameCardProps) => {
             <div>
               <Image
                 style={{
-                  maskImage: "url(/assets/acmLogoMask.svg)",
-                  maskSize: "100%",
-                  maskPosition: "center",
+                  borderRadius: "50%",
                   objectFit: "cover",
                   height: "100px",
                   width: "100px",
