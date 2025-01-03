@@ -4,6 +4,7 @@ import Link from "next/link";
 import branchData from "../../../public/data/branchData";
 import { BranchCard } from "@/components/landing/body/BranchSection/BranchCard";
 import React from "react";
+import Image from "next/image";
 
 export default function GetInvolve() {
   return (
@@ -59,13 +60,16 @@ export default function GetInvolve() {
               }}
               className="duration-300 ease-in-out hover:scale-105"
             >
-              <img
+              <Image
                 src="/social-media/instagram-icon.svg"
+                width={60}
+                height={60}
                 style={{
                   height: "60px",
                   padding: "10px",
                 }}
-              ></img>
+                alt="Instagram icon"
+              ></Image>
             </div>
           </Link>
           <Link target="_blank" href={"https://discord.com/invite/p6rcUUjWaU"}>
@@ -76,13 +80,16 @@ export default function GetInvolve() {
               }}
               className="duration-300 ease-in-out hover:scale-105"
             >
-              <img
+              <Image
                 src="/social-media/discord-icon.svg"
+                width={60}
+                height={60}
                 style={{
                   height: "60px",
                   padding: "10px",
                 }}
-              ></img>
+                alt="Discord icon"
+              ></Image>
             </div>
           </Link>
         </div>
