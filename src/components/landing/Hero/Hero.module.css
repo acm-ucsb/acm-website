@@ -1,12 +1,12 @@
 .arrow {
-  opacity: 0;
   position: absolute;
-  left: 50vw;
-  top: 80vh;
-  transform-origin: 50% 80%;
-  transform: translate3d(-50%, -50%, 0);
+  opacity: 0;
+  left: 50%;
+  bottom: 40%;
+  transform: translateX(-50%);
   color: black;
 }
+
 .arrow:before,
 .arrow:after {
   background: black;
@@ -14,19 +14,17 @@
   display: block;
   height: 3px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 50%;
   width: 30px;
 }
 
 .arrow:before {
-  transform: rotate(45deg) translateX(-23%);
-  transform-origin: top left;
+  transform: translateX(calc(-50% - 10px)) rotate(45deg);
 }
 
 .arrow:after {
-  transform: rotate(-45deg) translateX(23%);
-  transform-origin: top right;
+  transform: translateX(calc(-50% + 10px)) rotate(-45deg);
 }
 
 .arrowfirst {
@@ -46,6 +44,6 @@
   }
   100% {
     opacity: 0;
-    top: 75%;
+    bottom: 15%;
   }
 }
