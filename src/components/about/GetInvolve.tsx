@@ -6,16 +6,8 @@ import { BranchCard } from "@/components/landing/body/BranchSection/BranchCard";
 import React from "react";
 
 export default function GetInvolve() {
-  const Spacer = () => (
-    <div
-      style={{
-        padding: "3rem",
-      }}
-    ></div>
-  );
-
   return (
-    <div>
+    <div className="space-y-40">
       <Container maxWidth="md">
         <Typography
           variant="h2"
@@ -34,7 +26,6 @@ export default function GetInvolve() {
           post information about events in the announcements channel.
         </Typography>
       </Container>
-      <Spacer />
 
       {/* Social Media Section */}
       <div className="mt-16">
@@ -75,7 +66,7 @@ export default function GetInvolve() {
                   padding: "10px",
                 }}
               ></img>
-                          </div>
+            </div>
           </Link>
           <Link target="_blank" href={"https://discord.com/invite/p6rcUUjWaU"}>
             <div
@@ -92,11 +83,10 @@ export default function GetInvolve() {
                   padding: "10px",
                 }}
               ></img>
-                          </div>
+            </div>
           </Link>
         </div>
       </div>
-      <Spacer />
 
       <div className="mt-16">
         <Typography
@@ -117,7 +107,6 @@ export default function GetInvolve() {
           ))}
         </div>
       </div>
-      <Spacer />
     </div>
   );
 }
