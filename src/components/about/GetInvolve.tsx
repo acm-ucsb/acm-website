@@ -75,8 +75,7 @@ export default function GetInvolve() {
                   padding: "10px",
                 }}
               ></img>
-              {/* <Typography>Instagram</Typography> */}
-            </div>
+                          </div>
           </Link>
           <Link target="_blank" href={"https://discord.com/invite/p6rcUUjWaU"}>
             <div
@@ -93,8 +92,7 @@ export default function GetInvolve() {
                   padding: "10px",
                 }}
               ></img>
-              {/* <Typography>Discord</Typography> */}
-            </div>
+                          </div>
           </Link>
         </div>
       </div>
