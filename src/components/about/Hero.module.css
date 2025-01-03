@@ -4,13 +4,13 @@
   left: 50%;
   bottom: 16%;
   transform: translateX(-50%);
-  color: black;
+  color: white;
   animation: arrow-movement 1.5s ease-in-out infinite;
 }
 
 .arrow:before,
 .arrow:after {
-  background: black;
+  background: white;
   content: "";
   display: block;
   height: 3px;
