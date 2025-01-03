@@ -69,7 +69,7 @@ export default function GetInvolve() {
               className="duration-300 ease-in-out hover:scale-105"
             >
               <img
-                src="/social-media/Instagram_Glyph_Gradient.svg"
+                src="/social-media/instagram-icon.svg"
                 style={{
                   height: "60px",
                   padding: "10px",
@@ -87,7 +87,7 @@ export default function GetInvolve() {
               className="duration-300 ease-in-out hover:scale-105"
             >
               <img
-                src="/social-media/discord-mark-blue.svg"
+                src="/social-media/discord-icon.svg"
                 style={{
                   height: "60px",
                   padding: "10px",
