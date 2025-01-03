@@ -16,7 +16,7 @@ export default function Hero() {
     <div
       className="h-screen flex flex-col"
       style={{
-        backgroundImage: `url('/assets/About Us background.jpeg')`,
+        backgroundImage: `url('/assets/About Us background.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
