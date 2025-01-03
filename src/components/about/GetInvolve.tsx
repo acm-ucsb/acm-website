@@ -21,7 +21,7 @@ export default function GetInvolve() {
           How can I get involved?
         </Typography>
 
-        <Typography>
+        <Typography align="center">
           The best way to get involved is to join our Discord server, where we
           post information about events in the announcements channel.
         </Typography>
@@ -30,12 +30,12 @@ export default function GetInvolve() {
       {/* Social Media Section */}
       <div className="mt-16">
         <Typography
-          variant="h3"
+          variant="h2"
           align="center"
           sx={{
+            fontSize: "1.75rem",
+            marginBottom: "1rem",
             fontWeight: "bold",
-            fontSize: "1.5rem",
-            marginBottom: "0.5rem",
           }}
         >
           Social Media
@@ -90,12 +90,12 @@ export default function GetInvolve() {
 
       <div className="mt-16">
         <Typography
-          variant="h3"
+          variant="h2"
           align="center"
           sx={{
+            fontSize: "1.75rem",
+            marginBottom: "1rem",
             fontWeight: "bold",
-            fontSize: "1.5rem",
-            marginBottom: "0.5rem",
           }}
         >
           Branches
