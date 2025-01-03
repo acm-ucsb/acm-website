@@ -12,10 +12,6 @@ export default function Home() {
     <main>
       <div className="flex flex-col align-center">
         <Navbar />
-        <Banner
-          inputText="Apply to be an ACM Intern Here!"
-          inputLink="/interns"
-        />
         <Hero />
         <AboutBlurb />
         <Branches />
