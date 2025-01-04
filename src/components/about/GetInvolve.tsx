@@ -24,7 +24,7 @@ export default function GetInvolve() {
 
         <Typography align="center">
           The best way to get involved is to join our Discord server, where we
-          post information about events in the announcements channel.
+          post information about events in the announcements channel!
         </Typography>
       </Container>
 
@@ -107,7 +107,6 @@ export default function GetInvolve() {
         >
           Branches
         </Typography>
-        <Typography align="center">Join our branches</Typography>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-[2rem] md:gap-[5rem]">
           {branchData.map((branch, index) => (
             <BranchCard key={index} index={index} branch={branch} />
