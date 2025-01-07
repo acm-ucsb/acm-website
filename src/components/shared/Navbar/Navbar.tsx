@@ -17,8 +17,11 @@ const Navbar = () => {
 
   return (
     <AppBar
-      position="static"
-      sx={{ backgroundColor: "white", boxShadow: "none" }}
+      position="sticky"
+      sx={{
+        backgroundColor: "white",
+        boxShadow: "1px 1px 3px rgba(0, 0, 0, 0.1)",
+      }}
     >
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         <ACMLogo />
@@ -26,9 +29,9 @@ const Navbar = () => {
         <div className="flex items-center">
           {/* Desktop Navigation - hidden on screens smaller than 'lg' (1024px) */}
           <div className="hidden lg:flex gap-20">
-            {Object.entries(ButtonLabels).map(([key, value]) => (
-              <Link href={`/#${key}`} key={key}>
-                <StyledNavbarButton label={value} />
+            {ButtonLabels.map(({ key, buttonLabelString, routingLink }) => (
+              <Link href={routingLink} key={key}>
+                <StyledNavbarButton label={buttonLabelString} />
               </Link>
             ))}
           </div>
@@ -41,9 +44,9 @@ const Navbar = () => {
           <div className="w-64 p-4 flex flex-col items-center gap-[1rem]">
             <ACMLogo />
             <br />
-            {Object.entries(ButtonLabels).map(([key, value]) => (
-              <Link href={`/#${key}`} key={key} onClick={handleDrawerToggle}>
-                <StyledNavbarButton label={value} />
+            {ButtonLabels.map(({ key, buttonLabelString, routingLink }) => (
+              <Link href={routingLink} key={key} onClick={handleDrawerToggle}>
+                <StyledNavbarButton label={buttonLabelString} />
               </Link>
             ))}
           </div>
