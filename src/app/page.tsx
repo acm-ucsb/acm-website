@@ -4,7 +4,7 @@ import AboutBlurb from "../components/landing/body/AboutBlurb";
 import Branches from "../components/landing/body/BranchSection/Branches";
 import EventsSection from "../components/landing/body/EventsSection/EventsSection";
 import Footer from "../components/shared/Footer/Footer";
-import BranchFAQ from "@/components/landing/body/FAQ/BranchFAQ";
+import FAQ from "../components/landing/body/FAQ/FAQ";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         <AboutBlurb />
         <Branches />
         <EventsSection />
-        <BranchFAQ />
+        <FAQ />
         <Footer />
       </div>
     </main>

@@ -12,8 +12,8 @@ import { convertTextToLinks } from "@/util/convertTextToLinks";
 import { BranchFAQType, FAQType } from "@public/data/faq";
 import { getFAQBranchData } from "@/apis/getSheetsData";
 
-const BranchFAQ = async () => {
-  const branchfaq = await getFAQBranchData();
+const FAQ = async () => {
+  const faq = await getFAQBranchData();
 
   const renderFAQAccordion = (item: FAQType, index: number) => (
     <Accordion
@@ -168,10 +168,10 @@ const BranchFAQ = async () => {
           Frequently Asked Questions
         </Typography>
 
-        {branchfaq.map(renderBranchAccordion)}
+        {faq.map(renderBranchAccordion)}
       </Container>
     </section>
   );
 };
 
-export default BranchFAQ;
+export default FAQ;
