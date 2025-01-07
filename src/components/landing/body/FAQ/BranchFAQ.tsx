@@ -10,9 +10,10 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { convertTextToLinks } from "@/util/convertTextToLinks";
 import { BranchFAQType, FAQType } from "@public/data/faq";
+import { getFAQBranchData } from "@/apis/getSheetsData";
 
-const BranchFAQ = (props: { branchfaq: BranchFAQType[] }) => {
-  const { branchfaq } = props;
+const BranchFAQ = async () => {
+  const branchfaq = await getFAQBranchData();
 
   const renderFAQAccordion = (item: FAQType, index: number) => (
     <Accordion
