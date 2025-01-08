@@ -9,48 +9,61 @@ import HeroLogo from "../../public/assets/HeroLogo.png";
 
 export const OfficerTeam: TeamMember[] = [
   {
-    name: "John Doe",
-    position: "Software Engineer",
-    classOf: "2020",
-    picture: HeroLogo.src,
+    name: "Rohan Kumar",
+    position: "Co-Head of Web Development",
+    classOf: "2025",
+    picture: HeroLogo.src, // TODO: add picture from form - currently no access
   },
   {
-    name: "John Doe 1",
-    position: "Software Engineer",
-    classOf: "2020",
-    picture: HeroLogo.src,
+    name: "David Wang",
+    position: "Senior Advisor",
+    classOf: "2025",
+    picture: HeroLogo.src, // TODO: add picture from form - currently no access
   },
   {
-    name: "John Doe 2",
-    position: "Software Engineer",
-    classOf: "2020",
-    picture: HeroLogo.src,
+    name: "Zeel Patel",
+    position: "Secretary",
+    classOf: "2026",
+    picture: HeroLogo.src, // TODO: add picture from form - currently no access
   },
   {
-    name: "John Doe 3",
-    position: "Software Engineer",
-    classOf: "2020",
-    picture: HeroLogo.src,
+    name: "Aarush Narang",
+    position: "ACM Web Dev Website Developer",
+    classOf: "2028",
+    picture: HeroLogo.src, // TODO: add picture from form - currently no access
   },
   {
-    name: "John Doe 4",
-    position: "Software Engineer",
-    classOf: "2020",
-    picture: HeroLogo.src,
+    name: "Jeffrey Keem",
+    position: "ACM Web Dev Website Developer",
+    classOf: "2027",
+    picture: HeroLogo.src, // TODO: add picture from form - currently no access
   },
   {
-    name: "John Doe 5",
-    position: "Software Engineer",
-    classOf: "2020",
-    picture: HeroLogo.src,
+    name: "Bobby Chavez",
+    position: "ACM Web Dev Website Developer",
+    classOf: "2027",
+    picture: HeroLogo.src, // TODO: add picture from form - currently no access
   },
   {
-    name: "John Doe 6",
-    position: "Software Engineer",
-    classOf: "2020",
-    picture: HeroLogo.src,
+    name: "Don Tran",
+    position: "ACM Web Dev Website Developer",
+    classOf: "2028",
+    picture: HeroLogo.src, // TODO: add picture from form - currently no access
+  },
+  {
+    name: "Anit Annadi",
+    position: "ACM Web Dev Website Developer",
+    classOf: "2028",
+    picture: HeroLogo.src, // TODO: add picture from form - currently no access
+  },
+  {
+    name: "John Vu",
+    position: "ACM Web Dev Website Developer",
+    classOf: "2027",
+    picture: HeroLogo.src, // TODO: add picture from form - currently no access
   },
 ];
+
 export const Professors: TeamMember[] = [
   {
     name: "Jane Doe",
