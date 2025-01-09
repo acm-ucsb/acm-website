@@ -16,6 +16,7 @@ import DonTran from "../../public/assets/teamImages/DonTran.jpg";
 import AnitAnnadi from "../../public/assets/teamImages/AnitAnnadi.jpeg";
 import JohnVu from "../../public/assets/teamImages/JohnVu.jpeg";
 import RohilShah from "../../public/assets/teamImages/RohilShah.jpg";
+import KanavArora from "../../public/assets/teamImages/KanavArora.jpg";
 import EugeneWong from "../../public/assets/teamImages/EugeneWong.jpg";
 import SamuelZhu from "../../public/assets/teamImages/SamuelZhu.jpeg";
 import DenizLapsekili from "../../public/assets/teamImages/DenizLapsekili.jpeg";
@@ -25,6 +26,7 @@ import GaborSzita from "../../public/assets/teamImages/GaborSzita.jpg";
 import KenThampiratwong from "../../public/assets/teamImages/KenThampiratwong.jpeg";
 import OmarAboutaleb from "../../public/assets/teamImages/OmarAboutaleb.png";
 import ZiadMatni from "../../public/assets/teamImages/ZiadMatni.jpeg";
+import Hero from "@/components/landing/Hero";
 
 export const OfficerTeam: TeamMember[] = [
   {
@@ -32,6 +34,12 @@ export const OfficerTeam: TeamMember[] = [
     position: "Co-President",
     classOf: "2026",
     picture: RohilShah.src,
+  },
+  {
+    name: "Kanav",
+    position: "Co-President",
+    classOf: "2026",
+    picture: KanavArora.src,
   },
   {
     name: "Zeel Patel",
@@ -64,10 +72,40 @@ export const OfficerTeam: TeamMember[] = [
     picture: SamuelZhu.src,
   },
   {
+    name: "Wesley Hung",
+    position: "ICPC Branch Head",
+    classOf: "2026",
+    picture: HeroLogo.src,
+  },
+  {
+    name: "Ezra Furtado-Tiwari",
+    position: "ICPC Branch Head",
+    classOf: "2026",
+    picture: HeroLogo.src,
+  },
+  {
     name: "Deniz Lapsekili",
     position: "Research Branch Head",
     classOf: "2027",
     picture: DenizLapsekili.src,
+  },
+  {
+    name: "Edison Zhang",
+    position: "Build Branch Head",
+    classOf: "2026",
+    picture: HeroLogo.src,
+  },
+  {
+    name: "Jeremi Nuer",
+    position: "Build Branch Head",
+    classOf: "2026",
+    picture: HeroLogo.src,
+  },
+  {
+    name: "Jennifer Zhu",
+    position: "Marketing Director",
+    classOf: "2026",
+    picture: HeroLogo.src,
   },
   {
     name: "Shivane Dadi",
