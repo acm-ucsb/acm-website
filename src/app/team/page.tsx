@@ -16,6 +16,7 @@ export default function Home() {
           sx={{
             fontWeight: "bold",
             color: "black",
+            marginTop: "30px",
           }}
         >
           Meet the Team

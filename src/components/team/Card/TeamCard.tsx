@@ -28,30 +28,44 @@ const TeamCard = ({ member }: { member: TeamMember }) => {
         },
       }}
     >
-      <CardContent sx={{ padding: "20px", flexGrow: 1 }}>
-        <Typography
-          variant="h5"
-          component="div"
-          sx={{ color: "#1e3a8a", fontWeight: "bold", marginBottom: "8px" }}
-        >
-          {member.name}
-        </Typography>
-        <Typography
-          variant="body1"
-          color="textSecondary"
-          sx={{ marginBottom: "20px", fontWeight: "500" }}
-        >
-          {member.position}
-          {member.classOf ? `, Class of ${member.classOf}` : ""}
-        </Typography>
+      <CardContent
+        sx={{
+          padding: "20px",
+          flexGrow: 1,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+        }}
+      >
+        <section>
+          <Typography
+            variant="h5"
+            component="div"
+            sx={{ color: "#1e3a8a", fontWeight: "bold", marginBottom: "8px" }}
+          >
+            {member.name}
+          </Typography>
+          <Typography
+            variant="body1"
+            color="textSecondary"
+            sx={{ marginBottom: "20px", fontWeight: "500" }}
+          >
+            {member.position}
+            {member.classOf ? `, Class of ${member.classOf}` : ""}
+          </Typography>
+        </section>
 
-        <Image
-          src={member.picture}
-          alt={`${member.name} picture`}
-          width={150}
-          height={150}
-          layout="responsive"
-        />
+        <section className="w-full overflow-hidden max-h-fit">
+          <div style={{ position: "relative", width: "100%", height: "400px" }}>
+            <Image
+              src={member.picture}
+              alt={`${member.name} picture`}
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+            />
+          </div>
+        </section>
       </CardContent>
     </Card>
   );
