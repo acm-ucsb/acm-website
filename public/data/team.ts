@@ -15,13 +15,35 @@ import BobbyChavez from "../../public/assets/teamImages/JuanChavez.png";
 import DonTran from "../../public/assets/teamImages/DonTran.jpg";
 import AnitAnnadi from "../../public/assets/teamImages/AnitAnnadi.jpeg";
 import JohnVu from "../../public/assets/teamImages/JohnVu.jpeg";
+import RohilShah from "../../public/assets/teamImages/RohilShah.jpg";
+import EugeneWong from "../../public/assets/teamImages/EugeneWong.jpg";
+import SamuelZhu from "../../public/assets/teamImages/SamuelZhu.jpeg";
+import DenizLapsekili from "../../public/assets/teamImages/DenizLapsekili.jpeg";
+import ShivaneDadi from "../../public/assets/teamImages/ShivaneDadi.jpg";
+import RitamSaha from "../../public/assets/teamImages/RitamSaha.png";
+import GaborSzita from "../../public/assets/teamImages/GaborSzita.jpg";
+import KenThampiratwong from "../../public/assets/teamImages/KenThampiratwong.jpeg";
+import OmarAboutaleb from "../../public/assets/teamImages/OmarAboutaleb.png";
+import ZiadMatni from "../../public/assets/teamImages/ZiadMatni.jpeg";
 
 export const OfficerTeam: TeamMember[] = [
   {
-    name: "Rohan Kumar",
-    position: "Co-Head of Web Development",
-    classOf: "2025",
-    picture: RohanKumar.src,
+    name: "Rohil Shah",
+    position: "Co-President",
+    classOf: "2026",
+    picture: RohilShah.src,
+  },
+  {
+    name: "Zeel Patel",
+    position: "Secretary",
+    classOf: "2026",
+    picture: ZeelPatel.src,
+  },
+  {
+    name: "Eugene Wong",
+    position: "Treasurer",
+    classOf: "2026",
+    picture: EugeneWong.src,
   },
   {
     name: "David Wang",
@@ -30,10 +52,34 @@ export const OfficerTeam: TeamMember[] = [
     picture: DavidWang.src,
   },
   {
-    name: "Zeel Patel",
-    position: "Secretary",
+    name: "Rohan Kumar",
+    position: "Co-Head of Web Development",
+    classOf: "2025",
+    picture: RohanKumar.src,
+  },
+  {
+    name: "Samuel Zhu",
+    position: "Co-Head of Web Development",
     classOf: "2026",
-    picture: ZeelPatel.src,
+    picture: SamuelZhu.src,
+  },
+  {
+    name: "Deniz Lapsekili",
+    position: "Research Branch Head",
+    classOf: "2027",
+    picture: DenizLapsekili.src,
+  },
+  {
+    name: "Shivane Dadi",
+    position: "Marketing Director",
+    classOf: "2026",
+    picture: ShivaneDadi.src,
+  },
+  {
+    name: "Ritam Saha",
+    position: "Social Chair",
+    classOf: "2027",
+    picture: RitamSaha.src,
   },
   {
     name: "Aarush Narang",
@@ -71,12 +117,30 @@ export const OfficerTeam: TeamMember[] = [
     classOf: "2027",
     picture: JohnVu.src,
   },
+  {
+    name: "Gabor Szita",
+    position: "ACM Web Dev Website Developer",
+    classOf: "2028",
+    picture: GaborSzita.src,
+  },
+  {
+    name: "Ken Thampiratwong",
+    position: "ACM Web Dev Website Developer",
+    classOf: "2027",
+    picture: KenThampiratwong.src,
+  },
+  {
+    name: "Omar Aboutaleb",
+    position: "ACM Web Dev Website Developer",
+    classOf: "2028",
+    picture: OmarAboutaleb.src,
+  },
 ];
 
 export const Professors: TeamMember[] = [
   {
-    name: "Jane Doe",
+    name: "Ziad Matni",
     position: "Professor, Computer Science",
-    picture: HeroLogo.src,
+    picture: ZiadMatni.src,
   },
 ];
