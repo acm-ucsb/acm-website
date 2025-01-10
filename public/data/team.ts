@@ -26,7 +26,6 @@ import GaborSzita from "../../public/assets/teamImages/GaborSzita.jpg";
 import KenThampiratwong from "../../public/assets/teamImages/KenThampiratwong.jpeg";
 import OmarAboutaleb from "../../public/assets/teamImages/OmarAboutaleb.png";
 import ZiadMatni from "../../public/assets/teamImages/ZiadMatni.jpeg";
-import Hero from "@/components/landing/Hero";
 
 export const OfficerTeam: TeamMember[] = [
   {
