@@ -6,6 +6,7 @@ export type TeamMember = {
 };
 
 import HeroLogo from "../../public/assets/HeroLogo.png";
+
 import RohanKumar from "../../public/assets/teamImages/RohanKumar.jpg";
 import DavidWang from "../../public/assets/teamImages/DavidWang.jpg";
 import ZeelPatel from "../../public/assets/teamImages/ZeelPatel.jpeg";
