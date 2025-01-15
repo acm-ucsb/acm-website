@@ -9,7 +9,7 @@ const EventsSection = async () => {
   const events = await getEventsData();
   let validEvents: ACMEvent[] = [];
   events?.forEach((value) => {
-    if (Date.parse(value.datetime) < Date.now()) return;
+    if (Date.parse(value.datetime) + 24 * 60 * 60 * 1000 < Date.now()) return;
     // we are also not interested in events that are more than 2 weeks out
     if (Date.parse(value.datetime) > Date.now() + 14 * 24 * 60 * 60 * 1000)
       return;
