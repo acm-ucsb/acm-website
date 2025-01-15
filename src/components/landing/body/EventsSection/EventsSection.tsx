@@ -15,6 +15,7 @@ const EventsSection = async () => {
       return;
     validEvents.push(value);
   });
+  validEvents.sort((a, b) => Date.parse(a.datetime) - Date.parse(b.datetime));
 
   return (
     <section
