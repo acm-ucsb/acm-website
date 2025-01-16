@@ -26,7 +26,10 @@ import RitamSaha from "../../public/assets/teamImages/RitamSaha.png";
 import GaborSzita from "../../public/assets/teamImages/GaborSzita.jpg";
 import KenThampiratwong from "../../public/assets/teamImages/KenThampiratwong.jpeg";
 import OmarAboutaleb from "../../public/assets/teamImages/OmarAboutaleb.png";
-import ZiadMatni from "../../public/assets/teamImages/ZiadMatni.jpeg";
+
+import ZiadMatni from "../../public/assets/teamImages/ZiadMatni.png";
+import DanielLokshtanov from "../../public/assets/teamImages/DanielLokshtanov.png";
+import LingqiYan from "../../public/assets/teamImages/LingqiYan.png";
 
 export const OfficerTeam: TeamMember[] = [
   {
@@ -36,7 +39,7 @@ export const OfficerTeam: TeamMember[] = [
     picture: RohilShah.src,
   },
   {
-    name: "Kanav",
+    name: "Kanav Arora",
     position: "Co-President",
     classOf: "2026",
     picture: KanavArora.src,
@@ -74,13 +77,13 @@ export const OfficerTeam: TeamMember[] = [
   {
     name: "Wesley Hung",
     position: "ICPC Branch Head",
-    classOf: "2026",
+    classOf: "2025",
     picture: HeroLogo.src,
   },
   {
     name: "Ezra Furtado-Tiwari",
     position: "ICPC Branch Head",
-    classOf: "2026",
+    classOf: "2028",
     picture: HeroLogo.src,
   },
   {
@@ -92,7 +95,7 @@ export const OfficerTeam: TeamMember[] = [
   {
     name: "Edison Zhang",
     position: "Build Branch Head",
-    classOf: "2026",
+    classOf: "2025",
     picture: HeroLogo.src,
   },
   {
@@ -180,5 +183,15 @@ export const Professors: TeamMember[] = [
     name: "Ziad Matni",
     position: "Professor, Computer Science",
     picture: ZiadMatni.src,
+  },
+  {
+    name: "Daniel Lokshtanov",
+    position: "Professor & Vice Chair, Computer Science",
+    picture: DanielLokshtanov.src,
+  },
+  {
+    name: "Daniel Lokshtanov",
+    position: "Associate Professor, Computer Science",
+    picture: LingqiYan.src,
   },
 ];
