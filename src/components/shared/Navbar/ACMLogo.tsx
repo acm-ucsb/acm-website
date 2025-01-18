@@ -10,9 +10,10 @@ const ACMLogo = () => {
       disableRipple
       sx={{
         transition: "transform 0.3s ease-in-out",
+        backgroundColor: "transparent",
         "&:hover": {
           transform: "scale(1.05)",
-          backgroundColor: "#fff",
+          backgroundColor: "transparent",
         },
         height: "70px",
         width: "auto",
