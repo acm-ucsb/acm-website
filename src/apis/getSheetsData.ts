@@ -1,7 +1,12 @@
 import { google, sheets_v4 } from "googleapis";
 import { ACMEvent } from "@public/data/events";
-import { FAQ } from "@public/data/faq";
+import { BranchFAQType, FAQType } from "@public/data/faq";
 import { BranchType } from "@public/data/branchData";
+
+import icpcLogo from "@public/assets/branchImages/icpc.png";
+import researchLogo from "@public/assets/branchImages/research.png";
+import webdevLogo from "@public/assets/branchImages/webdev.png";
+import acmLogo from "@public/assets/ACM logo.png";
 
 enum SheetName {
   Events = "Events",
@@ -36,7 +41,7 @@ const getRawSheetData = async (sheetName: SheetName) => {
   }
 };
 
-const mockFAQData: FAQ[] = [
+const mockFAQData: FAQType[] = [
   {
     question: "What is ACM?",
     answer:
@@ -93,6 +98,41 @@ export const getFAQData = async () => {
   //   question: faq[0],
   //   answer: faq[1],
   // })) as FAQ[];
+};
+
+/* 
+  NOTE: temporary implementation for branch related stuff (definitely way to make reusable components 
+  for branchCard data)
+*/
+const mockFAQBranchData: BranchFAQType[] = [
+  {
+    branch: "general",
+    image: acmLogo.src,
+    color: ["#18A2F2", "#18A2F2", "#18A2F2"],
+    faqs: mockFAQData,
+  },
+  {
+    branch: "icpc",
+    image: icpcLogo.src,
+    color: ["#B93016", "#E33C1E", "#B93016"],
+    faqs: mockFAQData.slice(3, 4),
+  },
+  {
+    branch: "research",
+    image: researchLogo.src,
+    color: ["#D3A739", "#ECB941", "#D3A739"],
+    faqs: mockFAQData.slice(4, 5),
+  },
+  {
+    branch: "webdev",
+    image: webdevLogo.src,
+    color: ["#1DAA2E", "#2DC439", "#1DAA2E"],
+    faqs: mockFAQData.slice(5, 6),
+  },
+];
+
+export const getFAQBranchData = async () => {
+  return mockFAQBranchData;
 };
 
 const mockEventsData: ACMEvent[] = [
