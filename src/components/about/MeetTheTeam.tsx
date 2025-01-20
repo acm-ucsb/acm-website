@@ -1,39 +1,35 @@
 import { Typography } from "@mui/material";
 
-import HeroLogo from "@public/assets/HeroLogo.png";
 import NameCard from "@/components/shared/NameCard/NameCard";
+import { OfficerTeam } from "@public/data/team";
+import { useEffect, useState } from "react";
+import React from "react";
 
 export default function MeetTheTeam() {
-  const fake_data = [
-    [
-      {
-        id: "1",
-        name: "Foo Bar",
-        position: "Board",
-        img: HeroLogo,
-      },
-      {
-        id: "2",
-        name: "Sam Shu",
-        position: "Board",
-        img: "/assets/test1.avif",
-      },
-      {
-        id: "2",
-        name: "Sam Shu",
-        position: "Board",
-        img: "/assets/test1.avif",
-      },
-    ],
-    [
-      {
-        id: "1",
-        name: "Foo Bar",
-        position: "Board",
-        img: HeroLogo,
-      },
-    ],
-  ];
+  const [data, setData] = useState<object[]>([]);
+  useEffect(() => {
+    let idxCounter = 0;
+    const dat: object[] = [];
+    let arr: object[] = [];
+    OfficerTeam.forEach((elem) => {
+      arr.push({
+        name: elem.name,
+        position: elem.position,
+        img: elem.picture,
+      });
+      if (idxCounter == 2) {
+        dat.push(arr);
+        arr = [];
+        idxCounter = 0;
+      } else {
+        idxCounter++;
+      }
+    });
+    if (arr.length > 0) {
+      dat.push(arr);
+    }
+    setData(dat);
+  }, []);
 
   return (
     <div>
@@ -49,7 +45,7 @@ export default function MeetTheTeam() {
         Meet Our Team
       </Typography>
       <div className="mt-12 grid gap-12">
-        {fake_data.map((people, index) => (
+        {data.map((people, index) => (
           <NameCard key={index} people={people} index={index}></NameCard>
         ))}
       </div>

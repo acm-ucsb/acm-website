@@ -25,7 +25,7 @@ const NameCard = ({ people, index }: NameCardProps) => {
           key={index}
           className="m-1 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105"
         >
-          <div className="flex items-center gap-1 md:gap-2">
+          <div className="flex items-center gap-1 md:gap-2 w-full">
             <div>
               <Image
                 style={{
