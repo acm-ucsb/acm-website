@@ -5,8 +5,7 @@ import Image from "next/image";
 import { Typography } from "@mui/material";
 import { StaticImageData } from "next/image";
 
-interface People {
-  id: string;
+export interface People {
   name: string;
   position: string;
   img: string | StaticImageData;

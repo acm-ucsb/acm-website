@@ -4,13 +4,14 @@ import NameCard from "@/components/shared/NameCard/NameCard";
 import { OfficerTeam } from "@public/data/team";
 import { useEffect, useState } from "react";
 import React from "react";
+import { People } from "@/components/shared/NameCard/NameCard";
 
 export default function MeetTheTeam() {
-  const [data, setData] = useState<object[]>([]);
+  const [data, setData] = useState<[People[]]>([[]]);
   useEffect(() => {
     let idxCounter = 0;
-    const dat: object[] = [];
-    let arr: object[] = [];
+    const dat: [People[]] = [[]];
+    let arr: People[] = [];
     OfficerTeam.forEach((elem) => {
       arr.push({
         name: elem.name,
