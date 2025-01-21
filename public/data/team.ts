@@ -190,7 +190,7 @@ export const Professors: TeamMember[] = [
     picture: DanielLokshtanov.src,
   },
   {
-    name: "Daniel Lokshtanov",
+    name: "Lingqi Yan",
     position: "Associate Professor, Computer Science",
     picture: LingqiYan.src,
   },
