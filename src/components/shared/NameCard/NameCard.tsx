@@ -24,7 +24,7 @@ const NameCard = ({ people, index }: NameCardProps) => {
           key={index}
           className="m-1 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105"
         >
-          <div className="flex items-center gap-1 md:gap-2 w-full">
+          <div className="flex items-center gap-1 md:gap-2 w-full gap-4">
             <div>
               <Image
                 style={{
@@ -32,6 +32,7 @@ const NameCard = ({ people, index }: NameCardProps) => {
                   objectFit: "cover",
                   height: "100px",
                   width: "100px",
+                  minWidth: "100px",
                 }}
                 src={people.img}
                 alt={people.name}

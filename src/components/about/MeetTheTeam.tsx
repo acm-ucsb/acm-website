@@ -45,7 +45,7 @@ export default function MeetTheTeam() {
       >
         Meet Our Team
       </Typography>
-      <div className="mt-12 grid gap-12">
+      <div className="mt-12 grid md:gap-12">
         {data.map((people, index) => (
           <NameCard key={index} people={people} index={index}></NameCard>
         ))}
