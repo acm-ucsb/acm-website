@@ -4,7 +4,7 @@ import EventsSection from "@/components/landing/body/EventsSection/EventsSection
 export default function Home() {
   return (
     <main>
-      <div className="flex flex-col align-center h-screen">
+      <div className="flex flex-col align-center">
         <Navbar />
 
         <EventsSection></EventsSection>
