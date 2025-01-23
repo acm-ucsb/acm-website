@@ -19,7 +19,6 @@ const EventsSection = async () => {
   });
   validEvents.sort((a, b) => Date.parse(a.datetime) - Date.parse(b.datetime));
 
-
   return (
     <section
       id="events"
@@ -39,7 +38,6 @@ const EventsSection = async () => {
       </Typography>
 
       <EventCards events={events}></EventCards>
-
     </section>
   );
 };
