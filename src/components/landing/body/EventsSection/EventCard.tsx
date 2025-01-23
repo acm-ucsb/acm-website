@@ -17,7 +17,8 @@ const EventCard = ({ event }: { event: ACMEvent }) => {
 
   return (
     <div
-      onClick={handleFlip}
+      onMouseEnter={handleFlip}
+      onMouseLeave={handleFlip}
       style={{
         perspective: "1000px", // Enable 3D perspective
         display: "inline-block",

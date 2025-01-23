@@ -37,7 +37,7 @@ const EventsSection = async () => {
         Events
       </Typography>
 
-      <EventCards events={events}></EventCards>
+      <EventCards events={validEvents}></EventCards>
     </section>
   );
 };
