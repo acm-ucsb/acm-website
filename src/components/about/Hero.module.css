@@ -1,0 +1,42 @@
+.arrow {
+  position: absolute;
+  opacity: 0;
+  left: 50%;
+  bottom: 16%;
+  transform: translateX(-50%);
+  color: white;
+  animation: arrow-movement 1.5s ease-in-out infinite;
+}
+
+.arrow:before,
+.arrow:after {
+  background: white;
+  content: "";
+  display: block;
+  height: 3px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 30px;
+}
+
+.arrow:before {
+  transform: translateX(calc(-50% - 10px)) rotate(45deg);
+}
+
+.arrow:after {
+  transform: translateX(calc(-50% + 10px)) rotate(-45deg);
+}
+
+@keyframes arrow-movement {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    bottom: 14%;
+  }
+}

@@ -1,7 +1,12 @@
 import { google, sheets_v4 } from "googleapis";
 import { ACMEvent } from "@public/data/events";
-import { FAQ } from "@public/data/faq";
+import { BranchFAQType, FAQType } from "@public/data/faq";
 import { BranchType } from "@public/data/branchData";
+
+import icpcLogo from "@public/assets/branchImages/icpc.png";
+import researchLogo from "@public/assets/branchImages/research.png";
+import webdevLogo from "@public/assets/branchImages/webdev.png";
+import acmLogo from "@public/assets/ACM logo.png";
 
 enum SheetName {
   Events = "Events",
@@ -36,7 +41,7 @@ const getRawSheetData = async (sheetName: SheetName) => {
   }
 };
 
-const mockFAQData: FAQ[] = [
+const mockFAQData: FAQType[] = [
   {
     question: "What is ACM?",
     answer:
@@ -95,23 +100,177 @@ export const getFAQData = async () => {
   // })) as FAQ[];
 };
 
+/* 
+  NOTE: temporary implementation for branch related stuff (definitely way to make reusable components 
+  for branchCard data)
+*/
+const mockFAQBranchData: BranchFAQType[] = [
+  {
+    branch: "general",
+    image: acmLogo.src,
+    color: ["#18A2F2", "#18A2F2", "#18A2F2"],
+    faqs: mockFAQData,
+  },
+  {
+    branch: "icpc",
+    image: icpcLogo.src,
+    color: ["#B93016", "#E33C1E", "#B93016"],
+    faqs: mockFAQData.slice(3, 4),
+  },
+  {
+    branch: "research",
+    image: researchLogo.src,
+    color: ["#D3A739", "#ECB941", "#D3A739"],
+    faqs: mockFAQData.slice(4, 5),
+  },
+  {
+    branch: "webdev",
+    image: webdevLogo.src,
+    color: ["#1DAA2E", "#2DC439", "#1DAA2E"],
+    faqs: mockFAQData.slice(5, 6),
+  },
+];
+
+export const getFAQBranchData = async () => {
+  return mockFAQBranchData;
+};
+
 const mockEventsData: ACMEvent[] = [
   {
-    name: "Web Dev Portfolio Website Workshop",
-    tagline: "Learn how to build a portfolio website!",
+    name: "Winter Project Series Week 2: Team Formation and Project Scoping",
+    tagline: "Get started with your project ideas!",
     description:
-      "This three part workshop series will take you from start to finish to develop an industry-quality portfolio website with no prior web dev experience required. We will provide a quickstart guide to build a Full-Stack app using modern developer tools, teach general good code practices, and go over the basics of styling. At the end, we will choose some winners for the best portfolios we see!",
-    datetime: "2024-10-9 19:00:00",
-    location: "HFH 1104",
+      "In this session, we'll focus on team formation and refining your project idea. Based on interest form results, teams of 3-5 members will be formed. Teams will then discuss their goals and start defining their Minimum Viable Product (MVP). You'll also work on drafting user stories and wireframes for your project. This is the perfect time to refine your project proposal!",
+    datetime: "2025-1-15 19:00:00",
+    location: "ESB 1001",
     branch: BranchType.Webdev,
   },
   {
-    name: "ICPC Kickoff",
-    tagline: "Learn competitive programming!",
+    name: "Winter Project Series Week 3: Technical Foundations",
+    tagline: "Set up your tech stack and start coding!",
     description:
-      "Join us for the ICPC Kickoff Meeting! Whether you're a seasoned coder or new to competitive programming, this is the perfect opportunity to meet your teammates, learn about the competition structure, and get tips for success. We'll discuss our training plan, set goals for the season, and inspire each other to push our limits. Don’t miss out on the chance to kickstart an exciting journey into the world of programming contests!",
-    datetime: "2024-10-14 19:00:00",
-    location: "HFH 1104",
+      "This session will help you lay the technical foundation for your project. We’ll cover choosing the right tech stack, an introduction to Git/GitHub, and how to use these tools for collaborative coding. Teams will also begin building their project backlogs and setting up their GitHub repositories. Get ready to start working on your MVP!",
+    datetime: "2025-1-22 19:00:00",
+    location: "ESB 1001",
+    branch: BranchType.Webdev,
+  },
+  {
+    name: "Winter Project Series Week 4: Office Hours (Zoom)",
+    tagline: "Get feedback and advice on your project!",
+    description:
+      "Join us for an office hours session where you'll show off how your MVP prototype is coming along. Get feedback on your project proposal and feature backlog, and ask officers for general advice and tips on improving your project. This is a great chance to get targeted help on the areas you're struggling with!",
+    datetime: "2025-1-29 19:00:00",
+    location: "Online (Zoom)",
+    branch: BranchType.Webdev,
+  },
+  {
+    name: "Winter Project Series Week 5: Functional Prototype",
+    tagline: "Showcase your first working feature!",
+    description:
+      "This week, you’ll present your functional prototype, showcasing at least one working feature of your MVP. In mini groups, you’ll receive feedback on your prototype's functionality and user experience. You’ll also meet with officers to discuss how to further establish your MVP and focus your development efforts.",
+    datetime: "2025-2-5 19:00:00",
+    location: "TBD",
+    branch: BranchType.Webdev,
+  },
+  {
+    name: "Winter Project Series Week 6: Midpoint Showcase",
+    tagline: "Present your progress and get feedback!",
+    description:
+      "It's time to showcase your progress! Each team will present their MVP prototype in a live demo (timeboxed to 3 minutes). This is your opportunity to show what you've built, get feedback, and share your lessons learned. Make sure your project is ready for a beta release!",
+    datetime: "2025-2-12 19:00:00",
+    location: "TBD",
+    branch: BranchType.Webdev,
+  },
+  {
+    name: "Winter Project Series Week 7: Office Hours (Zoom)",
+    tagline: "Final feedback before beta release!",
+    description:
+      "Join us for another office hours session to get last-minute feedback on your MVP prototype. Ask for advice on refining your product and preparing for the beta release. Officers will be available to offer guidance and answer your project-related questions!",
+    datetime: "2025-2-19 19:00:00",
+    location: "Online (Zoom)",
+    branch: BranchType.Webdev,
+  },
+  {
+    name: "Winter Project Series Week 8: Final Development and Testing",
+    tagline: "Polish your project and prepare for the final showcase!",
+    description:
+      "In this session, teams will focus on finalizing their project, fixing bugs, and preparing for the final showcase. Officers will be available for 1:1 guidance as you finish up your MVP and get your presentation ready. By the end of the week, you'll be ready to release your project and demo it to the community!",
+    datetime: "2025-2-26 19:00:00",
+    location: "TBD",
+    branch: BranchType.Webdev,
+  },
+  {
+    name: "Winter Project Series Week 9: Project Showcase and Wrap-Up",
+    tagline: "Present your project and celebrate your hard work!",
+    description:
+      "The final event of the Winter Project Series! Teams will present their completed projects, including a live demo, lessons learned, and future improvements. This is a time to showcase your hard work and celebrate your success. We’ll also reflect on the experience and provide feedback for future workshops. Certificates and prizes will be awarded!",
+    datetime: "2025-3-5 19:00:00",
+    location: "TBD",
+    branch: BranchType.Webdev,
+  },
+
+  {
+    name: "Undergraduate Research Panel",
+    tagline: "Learn how to secure an undergraduate research position!",
+    description:
+      "You are invited to participate in UCSB ACM’s Undergraduate research panel, where you will get the chance to speak with undergraduate students working in labs and actively publishing for international journals. You will learn the tips and tricks for applications to independent professors and to the ERSP (Early Research Scholars Program). This is the best opportunity to learn about the application process and to edit your resume to boost your chances.",
+    datetime: "2025-1-23 19:00:00",
+    location: "TBD",
+    branch: BranchType.Research,
+  },
+
+  {
+    name: "LeetCode Workshop #1",
+    tagline: "Start your journey with LeetCode!",
+    description:
+      "Welcome to the first workshop of the LeetCode series! In this session, we'll introduce the platform, discuss strategies for approaching problems, and get you started with your first coding challenges. You'll have the opportunity to collaborate with peers, ask questions, and start building your problem-solving skills.",
+    datetime: "2025-1-27 19:00:00",
+    location: "TBD",
+    branch: BranchType.ICPC,
+  },
+  {
+    name: "LeetCode Workshop #2",
+    tagline: "Build your coding fundamentals!",
+    description:
+      "In this session, we’ll focus on reinforcing your coding fundamentals. We will discuss common patterns and techniques used to solve a wide variety of problems on LeetCode. Work on problems that help solidify your understanding of essential data structures and algorithms.",
+    datetime: "2025-2-3 19:00:00",
+    location: "TBD",
+    branch: BranchType.ICPC,
+  },
+  {
+    name: "LeetCode Workshop #3",
+    tagline: "Level up your problem-solving skills!",
+    description:
+      "Join us for the third workshop in the LeetCode series! This session will challenge you to tackle problems that require critical thinking and creative solutions. You’ll practice a mix of difficulty levels and focus on optimizing your approach to improve efficiency in both time and space.",
+    datetime: "2025-2-10 19:00:00",
+    location: "TBD",
+    branch: BranchType.ICPC,
+  },
+  {
+    name: "LeetCode Workshop #4",
+    tagline: "Sharpen your algorithmic thinking!",
+    description:
+      "In this session, we will continue to strengthen your algorithmic thinking. We’ll explore a variety of problem types that require advanced techniques to solve. Expect to challenge yourself with problems that test your understanding of both common and complex algorithms.",
+    datetime: "2025-2-17 19:00:00",
+    location: "TBD",
+    branch: BranchType.ICPC,
+  },
+  {
+    name: "LeetCode Workshop #5",
+    tagline: "Master advanced problem-solving techniques!",
+    description:
+      "This workshop will dive into more advanced problem-solving techniques and strategies. You’ll learn how to identify the most efficient ways to approach and solve complex LeetCode problems. This session will push your skills to the next level and prepare you for tougher coding challenges.",
+    datetime: "2025-2-24 19:00:00",
+    location: "TBD",
+    branch: BranchType.ICPC,
+  },
+  {
+    name: "LeetCode Workshop #6",
+    tagline: "Prepare for coding interviews!",
+    description:
+      "In this session, we'll simulate coding interview conditions to help you prepare for real-life technical interviews. You'll solve problems under timed conditions, followed by peer and mentor feedback. This is a great opportunity to practice your interview skills and refine your problem-solving techniques.",
+    datetime: "2025-3-3 19:00:00",
+    location: "TBD",
     branch: BranchType.ICPC,
   },
 ];
