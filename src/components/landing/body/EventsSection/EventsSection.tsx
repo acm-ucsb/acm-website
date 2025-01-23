@@ -1,8 +1,10 @@
-import React from "react";
-import EventCard from "./EventCard";
-
+import React, { useState, useEffect } from "react";
+import EventCards from "./EventSectionBody";
 import { getEventsData } from "../../../../apis/getSheetsData";
 import { Typography } from "@mui/material";
+
+import FilterTags from "./FilterTags";
+
 import { ACMEvent } from "@public/data/events";
 
 const EventsSection = async () => {
@@ -20,7 +22,7 @@ const EventsSection = async () => {
   return (
     <section
       id="events"
-      className="flex flex-col items-center justify-center mb-36"
+      className="flex flex-col items-center justify-start mb-36 h-full"
     >
       <Typography
         variant="h4"
@@ -32,17 +34,10 @@ const EventsSection = async () => {
           color: "black",
         }}
       >
-        Upcoming Events
+        Events
       </Typography>
-      <div className="flex flex-row flex-wrap justify-center">
-        {validEvents.length ? (
-          validEvents.map((event, index) => (
-            <EventCard key={index} event={event} />
-          ))
-        ) : (
-          <Typography>No Upcoming Events!</Typography>
-        )}
-      </div>
+
+      <EventCards events={events}></EventCards>
     </section>
   );
 };

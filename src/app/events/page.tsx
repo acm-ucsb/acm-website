@@ -1,15 +1,13 @@
 import Navbar from "@/components/shared/Navbar/Navbar";
 import Footer from "@/components/shared/Footer/Footer";
-
+import EventsSection from "@/components/landing/body/EventsSection/EventsSection";
 export default function Home() {
   return (
     <main>
-      <div className="flex flex-col align-center">
+      <div className="flex flex-col align-center h-screen">
         <Navbar />
 
-        {/* STUB PAGE */}
-        <h1 className="justify-self-center">STUB PAGE</h1>
-        {/* replace this ^ with an actual page */}
+        <EventsSection></EventsSection>
 
         <Footer />
       </div>
