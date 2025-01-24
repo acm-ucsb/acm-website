@@ -60,12 +60,12 @@ const FAQ = async () => {
           {item.question}
         </Typography>
       </AccordionSummary>
-      <AccordionDetails
-        sx={{
-          backgroundColor: "background.paper",
-          padding: "16px 24px",
-        }}
-      >
+              <AccordionDetails
+                sx={{
+                  backgroundColor: "background.paper",
+                  padding: "16px 24px",
+                }}
+              >
         <Typography
           variant="body1"
           sx={{ color: "text.secondary", lineHeight: 1.6 }}
