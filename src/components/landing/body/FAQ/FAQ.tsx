@@ -56,9 +56,9 @@ const FAQ = async () => {
             textAlign: "center",
             width: "100%",
           }}
-                >
-                  {item.question}
-                </Typography>
+        >
+          {item.question}
+        </Typography>
       </AccordionSummary>
       <AccordionDetails
         sx={{
