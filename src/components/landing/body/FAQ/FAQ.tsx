@@ -66,10 +66,10 @@ const FAQ = async () => {
           padding: "16px 24px",
         }}
       >
-            <Typography
-              variant="body1"
-              sx={{ color: "text.secondary", lineHeight: 1.6 }}
-            >
+                            <Typography
+                              variant="body1"
+                              sx={{ color: "text.secondary", lineHeight: 1.6 }}
+                            >
           {convertTextToLinks(item.answer)}
         </Typography>
       </AccordionDetails>
