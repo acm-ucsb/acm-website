@@ -37,8 +37,8 @@ const getRawSheetData = async (sheetName: SheetName) => {
 };
 
 export const getFAQData = async () => {
-  const faqData = await getRawSheetData(SheetName.FAQs);
-  if (!faqData || !faqData.length) return [];
+  const rawFaqData = await getRawSheetData(SheetName.FAQs);
+  if (!rawFaqData || !rawFaqData.length) return [];
 
   return faqData.map((faq) => ({
     question: faq[0],
@@ -60,8 +60,8 @@ const getBranchType = (str: string): BranchType => {
 }
 
 export const getEventsData = async () => {
-  const eventsData = await getRawSheetData(SheetName.Events);
-  if (!eventsData || !eventsData.length) return [];
+  const rawEventsData = await getRawSheetData(SheetName.Events);
+  if (!rawEventsData || !rawEventsData.length) return [];
 
   return eventsData.map((event) => ({
     name: event[0],
