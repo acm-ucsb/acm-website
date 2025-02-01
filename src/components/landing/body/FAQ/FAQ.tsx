@@ -48,15 +48,15 @@ const FAQ = async () => {
           },
         }}
       >
-        <Typography
-          variant="h6"
-          sx={{
-            fontWeight: "500",
-            color: "text.primary",
-            textAlign: "center",
-            width: "100%",
-          }}
-        >
+          <Typography
+            variant="h6"
+            sx={{
+              fontWeight: "500",
+              color: "text.primary",
+              textAlign: "center",
+              width: "100%",
+            }}
+          >
           {item.question}
         </Typography>
       </AccordionSummary>
