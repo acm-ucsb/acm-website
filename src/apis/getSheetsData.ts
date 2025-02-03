@@ -167,27 +167,27 @@ const mockEventsData: ACMEvent[] = [
     name: "Winter Project Series Week 5: Functional Prototype",
     tagline: "Showcase your first working feature!",
     description:
-      "This week, you’ll present your functional prototype, showcasing at least one working feature of your MVP. In mini groups, you’ll receive feedback on your prototype's functionality and user experience. You’ll also meet with officers to discuss how to further establish your MVP and focus your development efforts.",
+      "This week, you'll present your functional prototype, showcasing at least one working feature of your MVP. In mini groups, you’ll receive feedback on your prototype's functionality and user experience. You’ll also meet with officers to discuss how to further establish your MVP and focus your development efforts.",
     datetime: "2025-2-5 19:00:00",
-    location: "TBD",
+    location: "ESB1001",
     branch: BranchType.Webdev,
   },
   {
-    name: "Winter Project Series Week 6: Midpoint Showcase",
+    name: "Winter Project Series Week 6: Office Hours (Zoom)",
+    tagline: "Get feedback and advice on your project!",
+    description:
+      "Join us for an office hours session where you'll show off how your MVP prototype is coming along. Get feedback on your project proposal and feature backlog, and ask officers for general advice and tips on improving your project. This is a great chance to get targeted help on the areas you're struggling with!",
+    datetime: "2025-2-12 19:00:00",
+    location: "Online (Zoom)",
+    branch: BranchType.Webdev,
+  },
+  {
+    name: "Winter Project Series Week 7: Midpoint Showcase",
     tagline: "Present your progress and get feedback!",
     description:
       "It's time to showcase your progress! Each team will present their MVP prototype in a live demo (timeboxed to 3 minutes). This is your opportunity to show what you've built, get feedback, and share your lessons learned. Make sure your project is ready for a beta release!",
-    datetime: "2025-2-12 19:00:00",
-    location: "TBD",
-    branch: BranchType.Webdev,
-  },
-  {
-    name: "Winter Project Series Week 7: Office Hours (Zoom)",
-    tagline: "Final feedback before beta release!",
-    description:
-      "Join us for another office hours session to get last-minute feedback on your MVP prototype. Ask for advice on refining your product and preparing for the beta release. Officers will be available to offer guidance and answer your project-related questions!",
     datetime: "2025-2-19 19:00:00",
-    location: "Online (Zoom)",
+    location: "ESB1001",
     branch: BranchType.Webdev,
   },
   {
@@ -196,7 +196,7 @@ const mockEventsData: ACMEvent[] = [
     description:
       "In this session, teams will focus on finalizing their project, fixing bugs, and preparing for the final showcase. Officers will be available for 1:1 guidance as you finish up your MVP and get your presentation ready. By the end of the week, you'll be ready to release your project and demo it to the community!",
     datetime: "2025-2-26 19:00:00",
-    location: "TBD",
+    location: "ESB1001",
     branch: BranchType.Webdev,
   },
   {
@@ -205,7 +205,7 @@ const mockEventsData: ACMEvent[] = [
     description:
       "The final event of the Winter Project Series! Teams will present their completed projects, including a live demo, lessons learned, and future improvements. This is a time to showcase your hard work and celebrate your success. We’ll also reflect on the experience and provide feedback for future workshops. Certificates and prizes will be awarded!",
     datetime: "2025-3-5 19:00:00",
-    location: "TBD",
+    location: "ESB1001",
     branch: BranchType.Webdev,
   },
 
