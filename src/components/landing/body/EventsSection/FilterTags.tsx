@@ -22,7 +22,7 @@ const FilterTags = ({ setFilter }: EventHandlerProps) => {
   };
 
   return (
-    <section className="flex flex-row items-center justify-center mb-8">
+    <section className="flex flex-row flex-wrap items-center justify-center mb-8">
       <Card
         sx={{
           borderRadius: "4px",
