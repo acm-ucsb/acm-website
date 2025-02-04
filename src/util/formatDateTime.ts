@@ -8,7 +8,7 @@ const formatDateTime = (
   if (!datetime) return fallbackString;
 
   try {
-    const date = parse(datetime, "yyyy-MM-dd HH:mm:ss", new Date());
+    const date = parse(datetime, "yyyy/MM/dd HH:mm:ss", new Date());
     return format(date, targetFormat);
   } catch (error) {
     return fallbackString;
