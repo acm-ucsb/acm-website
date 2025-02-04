@@ -37,8 +37,8 @@ const getRawSheetData = async (sheetName: SheetName) => {
 };
 
 export const getFAQData = async () => {
-  const rawFaqData = await getRawSheetData(SheetName.FAQs);
-  if (!rawFaqData || !rawFaqData.length) return [];
+  const faqData = await getRawSheetData(SheetName.FAQs);
+  if (!faqData || !faqData.length) return [];
 
   return faqData.map((faq) => ({
     question: faq[0],
