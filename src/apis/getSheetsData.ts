@@ -29,7 +29,7 @@ const getRawSheetData = async (sheetName: SheetName) => {
       spreadsheetId: process.env.GOOGLE_SHEET_ID,
       range: range,
     });
-    return response.data.values;
+    return (response.data.values ?? []).filter((e) => e.length);
   } catch (error) {
     console.error("Error fetching sheets data: ", error);
     return [];
@@ -37,10 +37,9 @@ const getRawSheetData = async (sheetName: SheetName) => {
 };
 
 export const getFAQData = async () => {
-  const faqData = await getRawSheetData(SheetName.FAQs);
-  if (!faqData || !faqData.length) return [];
-
-  return faqData.map((faq) => ({
+  const rawData = await getRawSheetData(SheetName.FAQs);
+  
+  return rawData.map((faq) => ({
     question: faq[0],
     answer: faq[1],
   })) as FAQType[];
@@ -56,19 +55,18 @@ const getBranchType = (str: string): BranchType => {
     "general": BranchType.General,
   }
 
-  return branches[str.toLowerCase() as keyof typeof branches] ?? BranchType.General;
+  return branches[(str ?? "general").toLowerCase() as keyof typeof branches] ?? BranchType.General;
 }
 
 export const getEventsData = async () => {
-  const rawEventsData = await getRawSheetData(SheetName.Events);
-  if (!rawEventsData || !rawEventsData.length) return [];
+  const rawData = await getRawSheetData(SheetName.Events);
 
-  return eventsData.map((event) => ({
+  return rawData.map((event) => ({
     name: event[0],
     tagline: event[1],
     description: event[2],
     datetime: event[3],
     location: event[4],
-    branch: getBranchType(event[5])
+    branch: getBranchType(event[5]),
   })) as ACMEvent[];
 };
