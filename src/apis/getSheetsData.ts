@@ -38,7 +38,7 @@ const getRawSheetData = async (sheetName: SheetName) => {
 
 export const getFAQData = async () => {
   const rawData = await getRawSheetData(SheetName.FAQs);
-  
+
   return rawData.map((faq) => ({
     question: faq[0],
     answer: faq[1],
@@ -47,16 +47,19 @@ export const getFAQData = async () => {
 
 const getBranchType = (str: string): BranchType => {
   const branches = {
-    "webdev": BranchType.Webdev,
-    "research": BranchType.Research,
-    "icpc": BranchType.ICPC,
-    "build": BranchType.Build,
-    "social": BranchType.Social,
-    "general": BranchType.General,
-  }
+    webdev: BranchType.Webdev,
+    research: BranchType.Research,
+    icpc: BranchType.ICPC,
+    build: BranchType.Build,
+    social: BranchType.Social,
+    general: BranchType.General,
+  };
 
-  return branches[(str ?? "general").toLowerCase() as keyof typeof branches] ?? BranchType.General;
-}
+  return (
+    branches[(str ?? "general").toLowerCase() as keyof typeof branches] ??
+    BranchType.General
+  );
+};
 
 export const getEventsData = async () => {
   const rawData = await getRawSheetData(SheetName.Events);
