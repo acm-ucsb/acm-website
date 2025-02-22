@@ -8,22 +8,27 @@ export const ButtonLabels: ButtonLabelType[] = [
   {
     key: "about",
     buttonLabelString: "About Us",
-    routingLink: "/#about",
+    routingLink: "/about",
+  },
+  {
+    key: "team",
+    buttonLabelString: "Team",
+    routingLink: "/team",
   },
   {
     key: "branches",
     buttonLabelString: "Branches",
-    routingLink: "/#branches",
+    routingLink: "/branches",
   },
   {
     key: "events",
     buttonLabelString: "Events",
-    routingLink: "/#events",
+    routingLink: "/events",
   },
   {
     key: "faq",
     buttonLabelString: "FAQ",
-    routingLink: "/#faq",
+    routingLink: "/faq",
   },
   {
     key: "interns",
