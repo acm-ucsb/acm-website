@@ -2,7 +2,7 @@ import { google, sheets_v4 } from "googleapis";
 import { ACMEvent } from "@public/data/events";
 import { BranchFAQType, FAQType } from "@public/data/faq";
 import { BranchType } from "@public/data/branchData";
-import branchData from "@public/data/branchData"
+import branchData from "@public/data/branchData";
 import acmLogo from "@public/assets/ACM logo.png";
 
 enum SheetName {
@@ -63,50 +63,48 @@ const getBranchType = (str: string): BranchType => {
   );
 };
 
-
-export const getFAQBranchData = async() => {
+export const getFAQBranchData = async () => {
   const rawData = await getRawSheetData(SheetName.FAQs);
 
-  const questions = rawData.map(faq => {
+  const questions = rawData.map((faq) => {
     return {
       question: faq[0],
       answer: faq[1],
-      branch: getBranchType(faq[2])
-    }
-  })
+      branch: getBranchType(faq[2]),
+    };
+  });
 
   const filterFAQData = (bt: BranchType): FAQType[] => {
-    return questions.filter(item => item.branch == bt).map(item => {
-      return {
-        question: item.question,
-        answer: item.answer
-      }
-    })
+    return questions
+      .filter((item) => item.branch == bt)
+      .map((item) => {
+        return {
+          question: item.question,
+          answer: item.answer,
+        };
+      });
+  };
 
-  }
+  var branches = branchData;
+  branches.unshift({
+    id: BranchType.General,
+    name: "General",
+    img: acmLogo,
+    suffix: "general",
+    description: "",
+    branchColors: ["#18A2F2", "#18A2F2", "#18A2F2"],
+    branchBannerColor: "",
+  });
 
-  var branches = branchData
-  branches.unshift(
-    {
-      id: BranchType.General,
-      name: "General",
-      img: acmLogo,
-      suffix: "general",
-      description: "",
-      branchColors: ["#18A2F2", "#18A2F2", "#18A2F2"],
-      branchBannerColor: ""
-    }
-  )
-
-  return branches.map(br => {
+  return branches.map((br) => {
     return {
       branch: br.suffix,
       image: br.img.src,
       color: br.branchColors,
-      faqs: filterFAQData(br.id)
-    }
-  })
-}
+      faqs: filterFAQData(br.id),
+    };
+  });
+};
 
 export const getEventsData = async () => {
   const rawData = await getRawSheetData(SheetName.Events);
