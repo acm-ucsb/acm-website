@@ -26,12 +26,13 @@ import RitamSaha from "../../public/assets/teamImages/RitamSaha.png";
 import GaborSzita from "../../public/assets/teamImages/GaborSzita.jpg";
 import KenThampiratwong from "../../public/assets/teamImages/KenThampiratwong.jpeg";
 import OmarAboutaleb from "../../public/assets/teamImages/OmarAboutaleb.png";
+import KarenaLai from "../../public/assets/teamImages/KarenaLai.png";
 
 import ZiadMatni from "../../public/assets/teamImages/ZiadMatni.png";
 import DanielLokshtanov from "../../public/assets/teamImages/DanielLokshtanov.png";
 import LingqiYan from "../../public/assets/teamImages/LingqiYan.png";
 
-export const OfficerTeam: TeamMember[] = [
+export const OfficerTeam: TeamMember[] = [ 
   {
     name: "Rohil Shah",
     position: "Co-President",
@@ -175,6 +176,12 @@ export const OfficerTeam: TeamMember[] = [
     position: "ACM Web Dev Website Developer",
     classOf: "2028",
     picture: OmarAboutaleb.src,
+  },
+  {
+    name: "Karena Lai",
+    position: "ACM Web Dev Website Developer",
+    classOf: "2027", 
+    picture: KarenaLai.src
   },
 ];
 
