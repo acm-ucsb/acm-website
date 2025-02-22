@@ -15,7 +15,7 @@ echo "Prettier..." >&2
 
 yarn run prettier
 if [ $? -ne 0 ]; then
-    echo "[ACM DEV NOTE] Prettier failed. Fix Linting Issues by running 'yarn run lint:fix'" >&2
+    echo "[ACM DEV NOTE] Prettier failed. Fix Linting Issues by running 'yarn run prettier:fix'" >&2
     echo "[ACM DEV NOTE] Push aborted!" >&2
     exit 1
 fi
