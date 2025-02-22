@@ -1,23 +1,24 @@
 #!/usr/bin/env sh
 
-echo "Running pre-push checks..."
+echo "Running pre-push checks..." >&2
 
-echo "Linting..."
+echo "Linting..." >&2
 
-yarn run lint
+yarn run lint >&2
 if [ $? -ne 0 ]; then
-    echo "[DEV NOTE] Lint failed. Fix Linting Issues by running 'yarn run lint:fix'"
-    echo "[DEV NOTE] Push aborted!"
+    echo "[DEV NOTE] Lint failed. Fix Linting Issues by running 'yarn run lint:fix'" >&2
+    echo "[DEV NOTE] Push aborted!" >&2
     exit 1
 fi
 
-echo "Prettier..."
+echo "Prettier..." >&2
 
 yarn run prettier
 if [ $? -ne 0 ]; then
-    echo "[DEV NOTE] Prettier failed. Fix Linting Issues by running 'yarn run lint:fix'"
-    echo "[DEV NOTE] Push aborted!"
+    echo "[DEV NOTE] Prettier failed. Fix Linting Issues by running 'yarn run lint:fix'" >&2
+    echo "[DEV NOTE] Push aborted!" >&2
     exit 1
 fi
 
-echo "Pre-push checks passed. Proceeding with push."
+echo "Pre-push checks passed. Proceeding with push." >&2
+exit 0
