@@ -32,7 +32,7 @@ import ZiadMatni from "../../public/assets/teamImages/ZiadMatni.png";
 import DanielLokshtanov from "../../public/assets/teamImages/DanielLokshtanov.png";
 import LingqiYan from "../../public/assets/teamImages/LingqiYan.png";
 
-export const OfficerTeam: TeamMember[] = [ 
+export const OfficerTeam: TeamMember[] = [
   {
     name: "Rohil Shah",
     position: "Co-President",
@@ -180,8 +180,8 @@ export const OfficerTeam: TeamMember[] = [
   {
     name: "Karena Lai",
     position: "ACM Web Dev Website Developer",
-    classOf: "2027", 
-    picture: KarenaLai.src
+    classOf: "2027",
+    picture: KarenaLai.src,
   },
 ];
 
