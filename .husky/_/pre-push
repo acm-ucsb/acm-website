@@ -6,8 +6,8 @@ echo "Linting..." >&2
 
 yarn run lint >&2
 if [ $? -ne 0 ]; then
-    echo "[DEV NOTE] Lint failed. Fix Linting Issues by running 'yarn run lint:fix'" >&2
-    echo "[DEV NOTE] Push aborted!" >&2
+    echo "[ACM DEV NOTE] Lint failed. Fix Linting Issues by running 'yarn run lint:fix'" >&2
+    echo "[ACM DEV NOTE] Push aborted!" >&2
     exit 1
 fi
 
@@ -15,8 +15,8 @@ echo "Prettier..." >&2
 
 yarn run prettier
 if [ $? -ne 0 ]; then
-    echo "[DEV NOTE] Prettier failed. Fix Linting Issues by running 'yarn run lint:fix'" >&2
-    echo "[DEV NOTE] Push aborted!" >&2
+    echo "[ACM DEV NOTE] Prettier failed. Fix Linting Issues by running 'yarn run lint:fix'" >&2
+    echo "[ACM DEV NOTE] Push aborted!" >&2
     exit 1
 fi
 
