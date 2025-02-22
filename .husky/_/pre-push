@@ -1,0 +1,23 @@
+#!/usr/bin/env sh
+
+echo "Running pre-push checks..."
+
+echo "Linting..."
+
+yarn run lint
+if [ $? -ne 0 ]; then
+    echo "[DEV NOTE] Lint failed. Fix Linting Issues by running 'yarn run lint:fix'"
+    echo "[DEV NOTE] Push aborted!"
+    exit 1
+fi
+
+echo "Prettier..."
+
+yarn run prettier
+if [ $? -ne 0 ]; then
+    echo "[DEV NOTE] Prettier failed. Fix Linting Issues by running 'yarn run lint:fix'"
+    echo "[DEV NOTE] Push aborted!"
+    exit 1
+fi
+
+echo "Pre-push checks passed. Proceeding with push."
