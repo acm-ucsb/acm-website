@@ -16,11 +16,11 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <Script 
+      <script
         data-goatcounter="https://ucsbacm.goatcounter.com/count"
-        async 
+        async
         src="//gc.zgo.at/count.js"
-      />
+      ></script>
       <body>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>{children}</ThemeProvider>
