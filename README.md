@@ -20,6 +20,37 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Pre-Push Checks
+
+When you push code, the following checks are triggered:
+
+- **ESLint** – lints your code to catch common errors
+- **Prettier** – checks for consistent code formatting
+
+If issues are found, your push will be blocked with an error message.
+
+Fixing Issues Before Pushing:
+
+You can auto-fix most issues with:
+
+```bash
+# Using Yarn
+yarn run lint:fix
+yarn run prettier:fix
+
+# Using npm
+npm run lint:fix
+npm run prettier:fix
+```
+
+If you absolutely need to bypass the checks (only do if necessary), you can skip the pre-push hook like this:
+
+```bash
+git push --no-verify
+```
+
+This project uses [Husky](https://typicode.github.io/husky) to automatically run code quality checks before any `git push`.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
