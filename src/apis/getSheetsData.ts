@@ -1,7 +1,7 @@
 import { google, sheets_v4 } from "googleapis";
 import { ACMEvent } from "@public/data/events";
 import { BranchFAQType, FAQType } from "@public/data/faq";
-import { BranchType } from "@public/data/branchData";
+import { Branch, BranchType } from "@public/data/branchData";
 import branchData from "@public/data/branchData";
 import acmLogo from "@public/assets/ACM logo.png";
 
@@ -85,16 +85,18 @@ export const getFAQBranchData = async () => {
       });
   };
 
-  var branches = branchData;
-  branches.unshift({
-    id: BranchType.General,
-    name: "General",
-    img: acmLogo,
-    suffix: "general",
-    description: "",
-    branchColors: ["#18A2F2", "#18A2F2", "#18A2F2"],
-    branchBannerColor: "",
-  });
+  const branches = [
+    {
+      id: BranchType.General,
+      name: "General",
+      img: acmLogo,
+      suffix: "general",
+      description: "",
+      branchColors: ["#18A2F2", "#18A2F2", "#18A2F2"],
+      branchBannerColor: "",
+    } as Branch,
+    ...branchData,
+  ];
 
   return branches.map((br) => {
     return {
