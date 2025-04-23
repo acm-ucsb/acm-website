@@ -10,7 +10,7 @@
     "lint": "next lint",
     "prettier:fix": "prettier --write .",
     "prettier": "prettier --check .",
-    "prepare": "git config core.hooksPath .husky/_",
+    "prepare": "git config core.hooksPath .husky/",
     "test": "jest"
   },
   "dependencies": {
