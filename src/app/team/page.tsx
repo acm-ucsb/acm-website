@@ -1,8 +1,9 @@
+import React from "react";
 import Navbar from "@/components/shared/Navbar/Navbar";
 import Footer from "@/components/shared/Footer/Footer";
 import TeamCard from "@/components/team/Card/TeamCard";
 import { Typography } from "@mui/material";
-import { OfficerTeam, Professors } from "@public/data/team";
+import { OfficerTeam, OtherTeamMembers, Professors } from "@public/data/team";
 
 export default function Home() {
   return (
@@ -36,7 +37,7 @@ export default function Home() {
             Officers
           </Typography>
           <div className="flex flex-wrap justify-center">
-            {OfficerTeam.map((officer) => (
+            {[...OfficerTeam, ...OtherTeamMembers].map((officer) => (
               <TeamCard key={officer.name} member={officer} />
             ))}
           </div>

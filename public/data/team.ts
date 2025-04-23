@@ -123,6 +123,9 @@ export const OfficerTeam: TeamMember[] = [
     classOf: "2027",
     picture: RitamSaha.src,
   },
+];
+
+export const OtherTeamMembers: TeamMember[] = [
   {
     name: "Aarush Narang",
     position: "ACM Web Dev Website Developer",
