@@ -49,13 +49,13 @@ const FAQ = async () => {
         }}
       >
         <Typography
-                    variant="h6"
-                    sx={{
-                      fontWeight: "500",
-                      color: "text.primary",
-                      textAlign: "center",
-                      width: "100%",
-                    }}
+          variant="h6"
+          sx={{
+            fontWeight: "500",
+            color: "text.primary",
+            textAlign: "center",
+            width: "100%",
+          }}
         >
           {item.question}
         </Typography>
