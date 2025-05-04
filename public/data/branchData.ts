@@ -1,13 +1,14 @@
 import icpcLogo from "@public/assets/branchImages/icpc.png";
 import researchLogo from "@public/assets/branchImages/research.png";
 import webdevLogo from "@public/assets/branchImages/webdev.png";
+import industryLogo from "@public/assets/branchImages/industry.png";
 import { StaticImageData } from "next/image";
 
 export enum BranchType {
   Webdev,
   Research,
   ICPC,
-  Build,
+  Industry,
   Social,
   General,
 }
@@ -53,15 +54,16 @@ const branchData: Branch[] = [
     branchColors: ["#B93016", "#E33C1E", "#B93016"],
     branchBannerColor: "#EF8A79",
   },
-  // {
-  //   id: BranchType.Build,
-  //   name: "Build Branch",
-  //   img: buildLogo,
-  //   suffix: "Build",
-  //   description: "Build Branch description.",
-  //   branchColors: ["#", "#", "#"],
-  //   branchBannerColor: "#",
-  // },
+  {
+    id: BranchType.Industry,
+    name: "Industry Branch",
+    img: industryLogo,
+    suffix: "industry",
+    description:
+      "The Industry branch of ACM at UCSB bridges the gap between students and the tech world by offering real-world project experience with local startups, established companies, and nonprofits. Through ACM.Industry, students collaborate in teams to build full-stack products, gain mentorship from industry professionals, and develop skills in project management, design, and deployment. Stay tuned for recruitment cycles, new client partnerships, and opportunities to lead your own technical team.",
+    branchColors: ["#087B90", "#F9B801", "#087B90"],
+    branchBannerColor: "#B9E2DC",
+  },  
 ];
 
 export default branchData;
