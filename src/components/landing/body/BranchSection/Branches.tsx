@@ -18,7 +18,7 @@ const Branches = () => {
         >
           Branches
         </Typography>
-        <div className="grid grid-cols-1 md:grid-cols-3 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 ">
           {branchData.map((branch, index) => (
             <BranchCard key={index} index={index} branch={branch} />
           ))}
