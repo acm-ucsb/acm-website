@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { FaLink, FaInstagram, FaDiscord } from "react-icons/fa";
+import { FaLink, FaInstagram, FaDiscord, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -32,6 +32,14 @@ const Footer = () => {
             className="text-white hover:text-gray-300 transition duration-300"
           >
             <FaDiscord className="w-8 h-8" />
+          </a>
+          <a
+            href="https://github.com/acm-ucsb"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-gray-300 transition duration-300"
+          >
+            <FaGithub className="w-8 h-8" />
           </a>
         </div>
         <p className="text-gray-400 mt-4">
