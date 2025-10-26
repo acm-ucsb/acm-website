@@ -49,17 +49,17 @@ export const getFAQData = async () => {
 
 const getBranchType = (str: string): BranchType => {
   const branches = {
-    webdev: BranchType.Webdev,
+    dev: BranchType.Development,
     research: BranchType.Research,
     icpc: BranchType.ICPC,
     industry: BranchType.Industry,
     social: BranchType.Social,
-    general: BranchType.General,
+    Board: BranchType.Board,
   };
 
   return (
-    branches[(str ?? "general").toLowerCase() as keyof typeof branches] ??
-    BranchType.General
+    branches[(str ?? "board").toLowerCase() as keyof typeof branches] ??
+    BranchType.Board
   );
 };
 
@@ -87,10 +87,10 @@ export const getFAQBranchData = async () => {
 
   const branches = [
     {
-      id: BranchType.General,
-      name: "General",
+      id: BranchType.Board,
+      name: "Board",
       img: acmLogo,
-      suffix: "general",
+      suffix: "board",
       description: "",
       branchColors: ["#18A2F2", "#18A2F2", "#18A2F2"],
       branchBannerColor: "",

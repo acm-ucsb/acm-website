@@ -1,22 +1,43 @@
 import { Typography } from "@mui/material";
 
 import NameCard from "@/components/shared/NameCard/NameCard";
-import { OfficerTeam } from "@public/data/team";
+import { CurrentTeam } from "@public/data/team";
 import { useEffect, useState } from "react";
 import React from "react";
 import { People } from "@/components/shared/NameCard/NameCard";
 
 export default function MeetTheTeam() {
   const [data, setData] = useState<[People[]]>([[]]);
+  
+  const featuredTeamMembers = [
+    "Eugene Wong",
+    "Deniz Lapsekili", 
+    "Jiaming Liu",
+    "Aarush Narang",
+    "John Vu",
+    "Don Tran",
+    "Ken Thampiratwong",
+    "Aman Desai",
+    "Ezra Furtado-Tiwari",
+    "Adit Suman",
+    "Hubert Guan",
+  ];
+  
   useEffect(() => {
     let idxCounter = 0;
     const dat: [People[]] = [[]];
     let arr: People[] = [];
-    OfficerTeam.forEach((elem) => {
+    
+    const filteredTeam = CurrentTeam.officers.filter(member => 
+      featuredTeamMembers.includes(member.name)
+    );
+    
+    filteredTeam.forEach((elem) => {
       arr.push({
         name: elem.name,
         position: elem.position,
         img: elem.picture,
+        branch: elem.branch,
       });
       if (idxCounter == 2) {
         dat.push(arr);

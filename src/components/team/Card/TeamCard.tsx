@@ -60,11 +60,11 @@ const TeamCard = ({ member }: { member: TeamMember }) => {
             <Image
               src={member.picture}
               alt={`${member.name} picture`}
+              fill
               style={{
                 objectFit: "cover",
                 objectPosition: "center",
               }}
-              layout="fill"
             />
           </div>
         </section>

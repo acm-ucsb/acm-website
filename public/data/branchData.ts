@@ -1,16 +1,16 @@
 import icpcLogo from "@public/assets/branchImages/icpc.png";
 import researchLogo from "@public/assets/branchImages/research.png";
-import webdevLogo from "@public/assets/branchImages/webdev.png";
+import developmentLogo from "@public/assets/branchImages/dev.png";
 import industryLogo from "@public/assets/branchImages/industry.png";
 import { StaticImageData } from "next/image";
 
 export enum BranchType {
-  Webdev,
+  Development,
   Research,
   ICPC,
   Industry,
   Social,
-  General,
+  Board,
 }
 
 export type Branch = {
@@ -25,12 +25,12 @@ export type Branch = {
 
 const branchData: Branch[] = [
   {
-    id: BranchType.Webdev,
-    name: "Web Dev Branch",
-    img: webdevLogo,
-    suffix: "webdev",
+    id: BranchType.Development,
+    name: "Development Branch",
+    img: developmentLogo,
+    suffix: "development",
     description:
-      "The Web Development branch is a specialized division within our ACM chapter dedicated to web development. Our goal is to share expertise in full-stack development, including frameworks like React and Flask, with undergraduate students pursuing computer science. Watch for our upcoming website portfolio workshop and an exciting update to the former Coders SB project series!",
+      "The Development branch is a specialized division within our ACM chapter dedicated to Development. Our goal is to share expertise in full-stack development, including frameworks like React and Flask, with undergraduate students pursuing computer science. Watch for our upcoming website portfolio workshop and an exciting update to the former Coders SB project series!",
     branchColors: ["#1DAA2E", "#2DC439", "#1DAA2E"],
     branchBannerColor: "#81DC89",
   },

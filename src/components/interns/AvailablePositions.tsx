@@ -8,7 +8,7 @@ const positionData = [
     title: "Social Intern",
     description:
       "As an ACM social intern, you will be responsible for hosting 1-2 social events per quarter! You will have the opportunity to work with other interns/board members on planning activities and logistics for these socials!",
-    img: "/images/webdev.png",
+    img: "/images/dev.png",
   },
   {
     title: "ICPC Co-Branch Head",
