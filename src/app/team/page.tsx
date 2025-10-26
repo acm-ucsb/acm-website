@@ -6,7 +6,11 @@ import BranchNavigation from "@/components/team/BranchNavigation/BranchNavigatio
 import BranchSection from "@/components/team/BranchSection/BranchSection";
 import TeamCard from "@/components/team/Card/TeamCard";
 import { Typography, Box } from "@mui/material";
-import { CurrentTeam, Branches, getTeamMembersByBranch } from "@public/data/team";
+import {
+  CurrentTeam,
+  Branches,
+  getTeamMembersByBranch,
+} from "@public/data/team";
 
 export default function TeamPage() {
   const teamByBranch = getTeamMembersByBranch(CurrentTeam);
@@ -21,7 +25,6 @@ export default function TeamPage() {
     }
   };
 
-
   return (
     <main>
       <Navbar />
@@ -30,24 +33,24 @@ export default function TeamPage() {
           display: "flex",
         }}
       >
-        <BranchNavigation
-          onBranchClick={scrollToSection}
-        />
+        <BranchNavigation onBranchClick={scrollToSection} />
 
         <Box
           sx={{
             flex: 1,
             padding: "40px 20px",
-            marginLeft: { xs: 0, lg: "280px" }, 
+            marginLeft: { xs: 0, lg: "280px" },
             maxWidth: { xs: "100%", lg: "calc(100vw - 280px)" },
           }}
         >
-          <Box sx={{ 
-            marginBottom: "40px", 
-            textAlign: "center",
-            marginLeft: { xs: 0, lg: "-280px" }, 
-            width: { xs: "100%", lg: "calc(100vw - 280px)" }, 
-          }}>
+          <Box
+            sx={{
+              marginBottom: "40px",
+              textAlign: "center",
+              marginLeft: { xs: 0, lg: "-280px" },
+              width: { xs: "100%", lg: "calc(100vw - 280px)" },
+            }}
+          >
             <Typography
               variant="h3"
               sx={{
@@ -93,7 +96,7 @@ export default function TeamPage() {
                   alignItems: "center",
                   marginBottom: "30px",
                   padding: "20px 0",
-                  marginLeft: { xs: "auto", lg: "calc(50% - 600px - 140px)" }, 
+                  marginLeft: { xs: "auto", lg: "calc(50% - 600px - 140px)" },
                 }}
               >
                 <Typography
@@ -114,10 +117,10 @@ export default function TeamPage() {
                   gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
                   gap: "24px",
                   padding: "0 20px",
-                  justifyContent: "center", 
-                  maxWidth: "1200px", 
-                  margin: "0 auto", 
-                  marginLeft: { xs: "auto", lg: "calc(50% - 600px - 140px)" }, 
+                  justifyContent: "center",
+                  maxWidth: "1200px",
+                  margin: "0 auto",
+                  marginLeft: { xs: "auto", lg: "calc(50% - 600px - 140px)" },
                 }}
               >
                 {CurrentTeam.professors.map((professor) => (

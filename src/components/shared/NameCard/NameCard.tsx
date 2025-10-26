@@ -54,9 +54,9 @@ const NameCard = ({ people, index }: NameCardProps) => {
               </Typography>
               <Typography>{people.position}</Typography>
               {people.branch && (
-                <Typography 
-                  sx={{ 
-                    fontSize: "0.875rem", 
+                <Typography
+                  sx={{
+                    fontSize: "0.875rem",
                     color: "text.secondary",
                   }}
                 >

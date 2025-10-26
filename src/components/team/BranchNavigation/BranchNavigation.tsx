@@ -14,18 +14,18 @@ const BranchNavigation: React.FC<BranchNavigationProps> = ({
   return (
     <Box
       sx={{
-        width: "280px", 
+        width: "280px",
         minHeight: "100vh",
         backgroundColor: "#f8f9fa",
         borderRight: "1px solid #e0e0e0",
         padding: "32px 0 20px 0",
-        position: "sticky", 
-        top: 64, 
-        left: 0, 
+        position: "sticky",
+        top: 64,
+        left: 0,
         height: "calc(100vh - 64px)",
         overflowY: "auto",
-        display: { xs: "none", lg: "block" }, 
-        zIndex: 1, 
+        display: { xs: "none", lg: "block" },
+        zIndex: 1,
       }}
     >
       <Box sx={{ padding: "0 20px" }}>
@@ -40,7 +40,7 @@ const BranchNavigation: React.FC<BranchNavigationProps> = ({
         >
           ACM Branches
         </Typography>
-        
+
         {Branches.map((branch) => (
           <Box
             key={branch.name}
@@ -76,7 +76,7 @@ const BranchNavigation: React.FC<BranchNavigationProps> = ({
               className="branch-icon"
               style={{
                 marginRight: "12px",
-                filter: "none", 
+                filter: "none",
                 transition: "transform 0.2s ease-in-out",
               }}
             />

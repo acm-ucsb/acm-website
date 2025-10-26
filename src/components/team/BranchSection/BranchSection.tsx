@@ -20,17 +20,17 @@ const BranchSection: React.FC<BranchSectionProps> = ({ branch, members }) => {
       id={branch.name.toLowerCase()}
       sx={{
         marginBottom: "60px",
-        scrollMarginTop: "80px", 
+        scrollMarginTop: "80px",
       }}
     >
       <Box
         sx={{
           display: "flex",
           alignItems: "center",
-          justifyContent: "flex-start", 
+          justifyContent: "flex-start",
           marginBottom: "30px",
           padding: "20px 0",
-          marginLeft: { xs: "auto", lg: "calc(50% - 600px - 140px)" }, 
+          marginLeft: { xs: "auto", lg: "calc(50% - 600px - 140px)" },
         }}
       >
         <Image
@@ -60,10 +60,10 @@ const BranchSection: React.FC<BranchSectionProps> = ({ branch, members }) => {
           gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
           gap: "24px",
           padding: "0 20px",
-          justifyContent: "center", 
-          maxWidth: "1200px", 
-          margin: "0 auto", 
-          marginLeft: { xs: "auto", lg: "calc(50% - 600px - 140px)" }, 
+          justifyContent: "center",
+          maxWidth: "1200px",
+          margin: "0 auto",
+          marginLeft: { xs: "auto", lg: "calc(50% - 600px - 140px)" },
         }}
       >
         {members.map((member) => (

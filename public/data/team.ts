@@ -22,14 +22,14 @@ export type TeamYear = {
 import HeroLogo from "../../public/assets/HeroLogo.png";
 
 // Branch Images
-import BoardIcon from "../../public/assets/ACM logo.png"; 
+import BoardIcon from "../../public/assets/ACM logo.png";
 import ICPCIcon from "../../public/assets/branchImages/icpc.png";
 import ResearchIcon from "../../public/assets/branchImages/research.png";
-import WebDevIcon from "../../public/assets/branchImages/dev.png"; 
+import WebDevIcon from "../../public/assets/branchImages/dev.png";
 import IndustryIcon from "../../public/assets/branchImages/industry.png";
-// import MarketingIcon from "../../public/assets/ACM logo.png"; 
+// import MarketingIcon from "../../public/assets/ACM logo.png";
 
-// Professor Images 
+// Professor Images
 import ZiadMatni from "../../public/assets/teamImages/ZiadMatni.png";
 import DanielLokshtanov from "../../public/assets/teamImages/DanielLokshtanov.png";
 import LingqiYan from "../../public/assets/teamImages/LingqiYan.png";
@@ -88,7 +88,6 @@ import SanjanaBhupathi from "../../public/assets/teamImages/2025-2026/SanjanaBhu
 import MaitriAllani from "../../public/assets/teamImages/2025-2026/MaitriAllani.jpg";
 import KenThampiratwong from "../../public/assets/teamImages/2025-2026/KenThampiratwong.jpg";
 import AryanGautam from "../../public/assets/teamImages/2025-2026/AryanGautam.jpeg";
-
 
 export const Branches: BranchInfo[] = [
   {
@@ -545,20 +544,22 @@ export const Team2024_2025: TeamYear = {
 };
 
 // Group team members by branch
-export const getTeamMembersByBranch = (team: TeamYear): Record<string, TeamMember[]> => {
+export const getTeamMembersByBranch = (
+  team: TeamYear,
+): Record<string, TeamMember[]> => {
   const grouped: Record<string, TeamMember[]> = {};
-  
+
   // Initialize empty arrays for each branch
-  Branches.forEach(branch => {
+  Branches.forEach((branch) => {
     grouped[branch.name] = [];
   });
-  
+
   // Group team members by their branch
-  team.officers.forEach(member => {
+  team.officers.forEach((member) => {
     if (member.branch && grouped[member.branch]) {
       grouped[member.branch].push(member);
     }
   });
-  
+
   return grouped;
 };

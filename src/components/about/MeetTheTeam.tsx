@@ -8,10 +8,10 @@ import { People } from "@/components/shared/NameCard/NameCard";
 
 export default function MeetTheTeam() {
   const [data, setData] = useState<[People[]]>([[]]);
-  
+
   const featuredTeamMembers = [
     "Eugene Wong",
-    "Deniz Lapsekili", 
+    "Deniz Lapsekili",
     "Jiaming Liu",
     "Aarush Narang",
     "John Vu",
@@ -22,16 +22,16 @@ export default function MeetTheTeam() {
     "Adit Suman",
     "Hubert Guan",
   ];
-  
+
   useEffect(() => {
     let idxCounter = 0;
     const dat: [People[]] = [[]];
     let arr: People[] = [];
-    
-    const filteredTeam = CurrentTeam.officers.filter(member => 
-      featuredTeamMembers.includes(member.name)
+
+    const filteredTeam = CurrentTeam.officers.filter((member) =>
+      featuredTeamMembers.includes(member.name),
     );
-    
+
     filteredTeam.forEach((elem) => {
       arr.push({
         name: elem.name,
