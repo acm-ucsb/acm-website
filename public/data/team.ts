@@ -19,7 +19,7 @@ export type TeamYear = {
   professors: TeamMember[];
 };
 
-import HeroLogo from "../../public/assets/HeroLogo.png";
+// import HeroLogo from "../../public/assets/HeroLogo.png";
 
 // Branch Images
 import BoardIcon from "../../public/assets/ACM logo.png";
@@ -370,178 +370,178 @@ export const CurrentTeam: TeamYear = {
 };
 
 // Archive: 2024-2025 Academic Year
-export const Team2024_2025: TeamYear = {
-  academicYear: "2024-2025",
-  officers: [
-    {
-      name: "Rohil Shah",
-      position: "Co-President",
-      classOf: "2026",
-      picture: RohilShah.src,
-    },
-    {
-      name: "Kanav Arora",
-      position: "Co-President",
-      classOf: "2026",
-      picture: KanavArora.src,
-    },
-    {
-      name: "Zeel Patel",
-      position: "Secretary",
-      classOf: "2026",
-      picture: ZeelPatel.src,
-    },
-    {
-      name: "Eugene Wong",
-      position: "Treasurer",
-      classOf: "2026",
-      picture: EugeneWong.src,
-    },
-    {
-      name: "David Wang",
-      position: "Senior Advisor",
-      classOf: "2025",
-      picture: DavidWang.src,
-    },
-    {
-      name: "Rohan Kumar",
-      position: "Co-Head of Web Development",
-      classOf: "2025",
-      picture: RohanKumar.src,
-    },
-    {
-      name: "Samuel Zhu",
-      position: "Co-Head of Web Development",
-      classOf: "2026",
-      picture: SamuelZhu.src,
-    },
-    {
-      name: "Wesley Hung",
-      position: "ICPC Branch Head",
-      classOf: "2025",
-      picture: HeroLogo.src,
-    },
-    {
-      name: "Ezra Furtado-Tiwari",
-      position: "ICPC Branch Head",
-      classOf: "2028",
-      picture: HeroLogo.src,
-    },
-    {
-      name: "Deniz Lapsekili",
-      position: "Research Branch Head",
-      classOf: "2027",
-      picture: DenizLapsekili.src,
-    },
-    {
-      name: "Edison Zhang",
-      position: "Build Branch Head",
-      classOf: "2025",
-      picture: HeroLogo.src,
-    },
-    {
-      name: "Jeremi Nuer",
-      position: "Build Branch Head",
-      classOf: "2026",
-      picture: HeroLogo.src,
-    },
-    {
-      name: "Jennifer Zhu",
-      position: "Marketing Director",
-      classOf: "2026",
-      picture: HeroLogo.src,
-    },
-    {
-      name: "Shivane Dadi",
-      position: "Marketing Director",
-      classOf: "2026",
-      picture: ShivaneDadi.src,
-    },
-    {
-      name: "Ritam Saha",
-      position: "Social Chair",
-      classOf: "2027",
-      picture: RitamSaha.src,
-    },
-    {
-      name: "Aarush Narang",
-      position: "ACM Web Dev Website Developer",
-      classOf: "2028",
-      picture: AarushNarang.src,
-    },
-    {
-      name: "Jeffrey Keem",
-      position: "ACM Web Dev Website Developer",
-      classOf: "2027",
-      picture: JeffreyKeem.src,
-    },
-    {
-      name: "Bobby Chavez",
-      position: "ACM Web Dev Website Developer",
-      classOf: "2027",
-      picture: BobbyChavez.src,
-    },
-    {
-      name: "Don Tran",
-      position: "ACM Web Dev Website Developer",
-      classOf: "2028",
-      picture: DonTran.src,
-    },
-    {
-      name: "Anit Annadi",
-      position: "ACM Web Dev Website Developer",
-      classOf: "2028",
-      picture: AnitAnnadi.src,
-    },
-    {
-      name: "John Vu",
-      position: "ACM Web Dev Website Developer",
-      classOf: "2027",
-      picture: JohnVu.src,
-    },
-    {
-      name: "Gabor Szita",
-      position: "ACM Web Dev Website Developer",
-      classOf: "2028",
-      picture: GaborSzita.src,
-    },
-    {
-      name: "Ken Thampiratwong",
-      position: "ACM Web Dev Website Developer",
-      classOf: "2027",
-      picture: KenThampiratwong.src,
-    },
-    {
-      name: "Omar Aboutaleb",
-      position: "ACM Web Dev Website Developer",
-      classOf: "2028",
-      picture: OmarAboutaleb.src,
-    },
-    {
-      name: "Karena Lai",
-      position: "ACM Web Dev Website Developer",
-      classOf: "2027",
-      picture: KarenaLai.src,
-    },
-  ],
-  professors: [
-    {
-      name: "Ziad Matni",
-      position: "Professor, Computer Science",
-      picture: ZiadMatni.src,
-    },
-    {
-      name: "Daniel Lokshtanov",
-      position: "Professor & Vice Chair, Computer Science",
-      picture: DanielLokshtanov.src,
-    },
-    {
-      name: "Lingqi Yan",
-      position: "Associate Professor, Computer Science",
-      picture: LingqiYan.src,
-    },
-  ],
-};
+// export const Team2024_2025: TeamYear = {
+//   academicYear: "2024-2025",
+//   officers: [
+//     {
+//       name: "Rohil Shah",
+//       position: "Co-President",
+//       classOf: "2026",
+//       picture: RohilShah.src,
+//     },
+//     {
+//       name: "Kanav Arora",
+//       position: "Co-President",
+//       classOf: "2026",
+//       picture: KanavArora.src,
+//     },
+//     {
+//       name: "Zeel Patel",
+//       position: "Secretary",
+//       classOf: "2026",
+//       picture: ZeelPatel.src,
+//     },
+//     {
+//       name: "Eugene Wong",
+//       position: "Treasurer",
+//       classOf: "2026",
+//       picture: EugeneWong.src,
+//     },
+//     {
+//       name: "David Wang",
+//       position: "Senior Advisor",
+//       classOf: "2025",
+//       picture: DavidWang.src,
+//     },
+//     {
+//       name: "Rohan Kumar",
+//       position: "Co-Head of Web Development",
+//       classOf: "2025",
+//       picture: RohanKumar.src,
+//     },
+//     {
+//       name: "Samuel Zhu",
+//       position: "Co-Head of Web Development",
+//       classOf: "2026",
+//       picture: SamuelZhu.src,
+//     },
+//     {
+//       name: "Wesley Hung",
+//       position: "ICPC Branch Head",
+//       classOf: "2025",
+//       picture: HeroLogo.src,
+//     },
+//     {
+//       name: "Ezra Furtado-Tiwari",
+//       position: "ICPC Branch Head",
+//       classOf: "2028",
+//       picture: HeroLogo.src,
+//     },
+//     {
+//       name: "Deniz Lapsekili",
+//       position: "Research Branch Head",
+//       classOf: "2027",
+//       picture: DenizLapsekili.src,
+//     },
+//     {
+//       name: "Edison Zhang",
+//       position: "Build Branch Head",
+//       classOf: "2025",
+//       picture: HeroLogo.src,
+//     },
+//     {
+//       name: "Jeremi Nuer",
+//       position: "Build Branch Head",
+//       classOf: "2026",
+//       picture: HeroLogo.src,
+//     },
+//     {
+//       name: "Jennifer Zhu",
+//       position: "Marketing Director",
+//       classOf: "2026",
+//       picture: HeroLogo.src,
+//     },
+//     {
+//       name: "Shivane Dadi",
+//       position: "Marketing Director",
+//       classOf: "2026",
+//       picture: ShivaneDadi.src,
+//     },
+//     {
+//       name: "Ritam Saha",
+//       position: "Social Chair",
+//       classOf: "2027",
+//       picture: RitamSaha.src,
+//     },
+//     {
+//       name: "Aarush Narang",
+//       position: "ACM Web Dev Website Developer",
+//       classOf: "2028",
+//       picture: AarushNarang.src,
+//     },
+//     {
+//       name: "Jeffrey Keem",
+//       position: "ACM Web Dev Website Developer",
+//       classOf: "2027",
+//       picture: JeffreyKeem.src,
+//     },
+//     {
+//       name: "Bobby Chavez",
+//       position: "ACM Web Dev Website Developer",
+//       classOf: "2027",
+//       picture: BobbyChavez.src,
+//     },
+//     {
+//       name: "Don Tran",
+//       position: "ACM Web Dev Website Developer",
+//       classOf: "2028",
+//       picture: DonTran.src,
+//     },
+//     {
+//       name: "Anit Annadi",
+//       position: "ACM Web Dev Website Developer",
+//       classOf: "2028",
+//       picture: AnitAnnadi.src,
+//     },
+//     {
+//       name: "John Vu",
+//       position: "ACM Web Dev Website Developer",
+//       classOf: "2027",
+//       picture: JohnVu.src,
+//     },
+//     {
+//       name: "Gabor Szita",
+//       position: "ACM Web Dev Website Developer",
+//       classOf: "2028",
+//       picture: GaborSzita.src,
+//     },
+//     {
+//       name: "Ken Thampiratwong",
+//       position: "ACM Web Dev Website Developer",
+//       classOf: "2027",
+//       picture: KenThampiratwong.src,
+//     },
+//     {
+//       name: "Omar Aboutaleb",
+//       position: "ACM Web Dev Website Developer",
+//       classOf: "2028",
+//       picture: OmarAboutaleb.src,
+//     },
+//     {
+//       name: "Karena Lai",
+//       position: "ACM Web Dev Website Developer",
+//       classOf: "2027",
+//       picture: KarenaLai.src,
+//     },
+//   ],
+//   professors: [
+//     {
+//       name: "Ziad Matni",
+//       position: "Professor, Computer Science",
+//       picture: ZiadMatni.src,
+//     },
+//     {
+//       name: "Daniel Lokshtanov",
+//       position: "Professor & Vice Chair, Computer Science",
+//       picture: DanielLokshtanov.src,
+//     },
+//     {
+//       name: "Lingqi Yan",
+//       position: "Associate Professor, Computer Science",
+//       picture: LingqiYan.src,
+//     },
+//   ],
+// };
 
 // Group team members by branch
 export const getTeamMembersByBranch = (
@@ -549,12 +549,10 @@ export const getTeamMembersByBranch = (
 ): Record<string, TeamMember[]> => {
   const grouped: Record<string, TeamMember[]> = {};
 
-  // Initialize empty arrays for each branch
   Branches.forEach((branch) => {
     grouped[branch.name] = [];
   });
 
-  // Group team members by their branch
   team.officers.forEach((member) => {
     if (member.branch && grouped[member.branch]) {
       grouped[member.branch].push(member);
