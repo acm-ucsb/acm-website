@@ -19,75 +19,75 @@ export type TeamYear = {
   professors: TeamMember[];
 };
 
-// import HeroLogo from "../../public/assets/HeroLogo.png";
+// import HeroLogo from "@public/assets/HeroLogo.png";
 
 // Branch Images
-import BoardIcon from "../../public/assets/ACM logo.png";
-import ICPCIcon from "../../public/assets/branchImages/icpc.png";
-import ResearchIcon from "../../public/assets/branchImages/research.png";
-import WebDevIcon from "../../public/assets/branchImages/dev.png";
-import IndustryIcon from "../../public/assets/branchImages/industry.png";
-// import MarketingIcon from "../../public/assets/ACM logo.png";
+import BoardIcon from "@public/assets/ACM logo.png";
+import ICPCIcon from "@public/assets/branchImages/icpc.png";
+import ResearchIcon from "@public/assets/branchImages/research.png";
+import WebDevIcon from "@public/assets/branchImages/dev.png";
+import IndustryIcon from "@public/assets/branchImages/industry.png";
+// import MarketingIcon from "@public/assets/ACM logo.png";
 
 // Professor Images
-import ZiadMatni from "../../public/assets/teamImages/ZiadMatni.png";
-import DanielLokshtanov from "../../public/assets/teamImages/DanielLokshtanov.png";
-import LingqiYan from "../../public/assets/teamImages/LingqiYan.png";
+import ZiadMatni from "@public/assets/teamImages/ZiadMatni.png";
+import DanielLokshtanov from "@public/assets/teamImages/DanielLokshtanov.png";
+import LingqiYan from "@public/assets/teamImages/LingqiYan.png";
 
 // Team Images - 2024-2025
-// import RohanKumar from "../../public/assets/teamImages/2024-2025/RohanKumar.jpg";
-// import DavidWang from "../../public/assets/teamImages/2024-2025/DavidWang.jpg";
-// import ZeelPatel from "../../public/assets/teamImages/2024-2025/ZeelPatel.jpeg";
-// // import AarushNarang from "../../public/assets/teamImages/2024-2025/AarushNarang.jpeg";
-// import JeffreyKeem from "../../public/assets/teamImages/2024-2025/JeffreyKeem.jpg";
-// import BobbyChavez from "../../public/assets/teamImages/2024-2025/JuanChavez.png";
-// // import DonTran from "../../public/assets/teamImages/2024-2025/DonTran.jpg";
-// import AnitAnnadi from "../../public/assets/teamImages/2024-2025/AnitAnnadi.jpeg";
-// // import JohnVu from "../../public/assets/teamImages/2024-2025/JohnVu.jpeg";
-// import RohilShah from "../../public/assets/teamImages/2024-2025/RohilShah.jpg";
-// import KanavArora from "../../public/assets/teamImages/2024-2025/KanavArora.jpg";
-// // import EugeneWong from "../../public/assets/teamImages/2024-2025/EugeneWong.jpg";
-// import SamuelZhu from "../../public/assets/teamImages/2024-2025/SamuelZhu.jpeg";
-// // import DenizLapsekili from "../../public/assets/teamImages/2024-2025/DenizLapsekili.jpeg";
-// // import ShivaneDadi from "../../public/assets/teamImages/2024-2025/ShivaneDadi.jpg";
-// import RitamSaha from "../../public/assets/teamImages/2024-2025/RitamSaha.png";
-// import GaborSzita from "../../public/assets/teamImages/2024-2025/GaborSzita.jpg";
-// // import KenThampiratwong from "../../public/assets/teamImages/2024-2025/KenThampiratwong.jpeg";
-// import OmarAboutaleb from "../../public/assets/teamImages/2024-2025/OmarAboutaleb.png";
-// import KarenaLai from "../../public/assets/teamImages/2024-2025/KarenaLai.png";
+// import RohanKumar from "@public/assets/teamImages/2024-2025/RohanKumar.jpg";
+// import DavidWang from "@public/assets/teamImages/2024-2025/DavidWang.jpg";
+// import ZeelPatel from "@public/assets/teamImages/2024-2025/ZeelPatel.jpeg";
+// // import AarushNarang from "@public/assets/teamImages/2024-2025/AarushNarang.jpeg";
+// import JeffreyKeem from "@public/assets/teamImages/2024-2025/JeffreyKeem.jpg";
+// import BobbyChavez from "@public/assets/teamImages/2024-2025/JuanChavez.png";
+// // import DonTran from "@public/assets/teamImages/2024-2025/DonTran.jpg";
+// import AnitAnnadi from "@public/assets/teamImages/2024-2025/AnitAnnadi.jpeg";
+// // import JohnVu from "@public/assets/teamImages/2024-2025/JohnVu.jpeg";
+// import RohilShah from "@public/assets/teamImages/2024-2025/RohilShah.jpg";
+// import KanavArora from "@public/assets/teamImages/2024-2025/KanavArora.jpg";
+// // import EugeneWong from "@public/assets/teamImages/2024-2025/EugeneWong.jpg";
+// import SamuelZhu from "@public/assets/teamImages/2024-2025/SamuelZhu.jpeg";
+// // import DenizLapsekili from "@public/assets/teamImages/2024-2025/DenizLapsekili.jpeg";
+// // import ShivaneDadi from "@public/assets/teamImages/2024-2025/ShivaneDadi.jpg";
+// import RitamSaha from "@public/assets/teamImages/2024-2025/RitamSaha.png";
+// import GaborSzita from "@public/assets/teamImages/2024-2025/GaborSzita.jpg";
+// // import KenThampiratwong from "@public/assets/teamImages/2024-2025/KenThampiratwong.jpeg";
+// import OmarAboutaleb from "@public/assets/teamImages/2024-2025/OmarAboutaleb.png";
+// import KarenaLai from "@public/assets/teamImages/2024-2025/KarenaLai.png";
 
 // Team Images - 2025-2026
-import ShivaneDadi from "../../public/assets/teamImages/2025-2026/ShivaneDadi.jpg";
-import JiamingLiu from "../../public/assets/teamImages/2025-2026/JiamingLiu.jpg";
-import HenryZhao from "../../public/assets/teamImages/2025-2026/HenryZhao.jpg";
-import DonTran from "../../public/assets/teamImages/2025-2026/DonTran.jpg";
-import HubertGuan from "../../public/assets/teamImages/2025-2026/HubertGuan.jpeg";
-import AmanDesai from "../../public/assets/teamImages/2025-2026/AmanDesai.jpg";
-import DanielCui from "../../public/assets/teamImages/2025-2026/DanielCui.jpg";
-import GurneetBains from "../../public/assets/teamImages/2025-2026/GurneetBains.jpeg";
-import AbielaSarrieddine from "../../public/assets/teamImages/2025-2026/AbielaSarrieddine.jpeg";
-import SachitMadaan from "../../public/assets/teamImages/2025-2026/SachitMadaan.jpeg";
-import AnikaChoudhary from "../../public/assets/teamImages/2025-2026/AnikaChoudhary.jpeg";
-import DivyaSubramonian from "../../public/assets/teamImages/2025-2026/DivyaSubramonian.jpg";
-import AditSuman from "../../public/assets/teamImages/2025-2026/AditSuman.jpeg";
-import KelvinJou from "../../public/assets/teamImages/2025-2026/KelvinJou.png";
-import ShreyaChati from "../../public/assets/teamImages/2025-2026/ShreyaChati.jpg";
-import DenizLapsekili from "../../public/assets/teamImages/2025-2026/DenizLapsekili.jpeg";
-import EzraDurtadoTiwari from "../../public/assets/teamImages/2025-2026/EzraFurtado-Tiwari.jpg";
-import JohnVu from "../../public/assets/teamImages/2025-2026/JohnVu.jpeg";
-import AarushNarang from "../../public/assets/teamImages/2025-2026/AarushNarang.jpeg";
-import JuliannaFlores from "../../public/assets/teamImages/2025-2026/JuliannaFlores.jpg";
-import LukeHerbelin from "../../public/assets/teamImages/2025-2026/LukeHerbelin.jpeg";
-import MitulMarimuthu from "../../public/assets/teamImages/2025-2026/MitulMarimuthu.jpeg";
-import DhruvPatel from "../../public/assets/teamImages/2025-2026/DhruvPatel.jpeg";
-import AryanVashishta from "../../public/assets/teamImages/2025-2026/AryanVashishta.jpeg";
-import DemiraThaker from "../../public/assets/teamImages/2025-2026/DemiraThaker.jpg";
-import EugeneWong from "../../public/assets/teamImages/2025-2026/EugeneWong.jpg";
-import TylerLe from "../../public/assets/teamImages/2025-2026/TylerLe.png";
-import SanjanaBhupathi from "../../public/assets/teamImages/2025-2026/SanjanaBhupathi.png";
-import MaitriAllani from "../../public/assets/teamImages/2025-2026/MaitriAllani.jpg";
-import KenThampiratwong from "../../public/assets/teamImages/2025-2026/KenThampiratwong.jpg";
-import AryanGautam from "../../public/assets/teamImages/2025-2026/AryanGautam.jpeg";
+import ShivaneDadi from "@public/assets/teamImages/2025-2026/ShivaneDadi.jpg";
+import JiamingLiu from "@public/assets/teamImages/2025-2026/JiamingLiu.jpg";
+import HenryZhao from "@public/assets/teamImages/2025-2026/HenryZhao.jpg";
+import DonTran from "@public/assets/teamImages/2025-2026/DonTran.jpg";
+import HubertGuan from "@public/assets/teamImages/2025-2026/HubertGuan.jpeg";
+import AmanDesai from "@public/assets/teamImages/2025-2026/AmanDesai.jpg";
+import DanielCui from "@public/assets/teamImages/2025-2026/DanielCui.jpg";
+import GurneetBains from "@public/assets/teamImages/2025-2026/GurneetBains.jpeg";
+import AbielaSarrieddine from "@public/assets/teamImages/2025-2026/AbielaSarrieddine.jpeg";
+import SachitMadaan from "@public/assets/teamImages/2025-2026/SachitMadaan.jpeg";
+import AnikaChoudhary from "@public/assets/teamImages/2025-2026/AnikaChoudhary.jpeg";
+import DivyaSubramonian from "@public/assets/teamImages/2025-2026/DivyaSubramonian.jpg";
+import AditSuman from "@public/assets/teamImages/2025-2026/AditSuman.jpeg";
+import KelvinJou from "@public/assets/teamImages/2025-2026/KelvinJou.png";
+import ShreyaChati from "@public/assets/teamImages/2025-2026/ShreyaChati.jpg";
+import DenizLapsekili from "@public/assets/teamImages/2025-2026/DenizLapsekili.jpeg";
+import EzraDurtadoTiwari from "@public/assets/teamImages/2025-2026/EzraFurtado-Tiwari.jpg";
+import JohnVu from "@public/assets/teamImages/2025-2026/JohnVu.jpeg";
+import AarushNarang from "@public/assets/teamImages/2025-2026/AarushNarang.jpeg";
+import JuliannaFlores from "@public/assets/teamImages/2025-2026/JuliannaFlores.jpg";
+import LukeHerbelin from "@public/assets/teamImages/2025-2026/LukeHerbelin.jpeg";
+import MitulMarimuthu from "@public/assets/teamImages/2025-2026/MitulMarimuthu.jpeg";
+import DhruvPatel from "@public/assets/teamImages/2025-2026/DhruvPatel.jpeg";
+import AryanVashishta from "@public/assets/teamImages/2025-2026/AryanVashishta.jpeg";
+import DemiraThaker from "@public/assets/teamImages/2025-2026/DemiraThaker.jpg";
+import EugeneWong from "@public/assets/teamImages/2025-2026/EugeneWong.jpg";
+import TylerLe from "@public/assets/teamImages/2025-2026/TylerLe.png";
+import SanjanaBhupathi from "@public/assets/teamImages/2025-2026/SanjanaBhupathi.png";
+import MaitriAllani from "@public/assets/teamImages/2025-2026/MaitriAllani.jpg";
+import KenThampiratwong from "@public/assets/teamImages/2025-2026/KenThampiratwong.jpg";
+import AryanGautam from "@public/assets/teamImages/2025-2026/AryanGautam.jpeg";
 
 export const Branches: BranchInfo[] = [
   {
