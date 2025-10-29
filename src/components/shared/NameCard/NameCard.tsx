@@ -9,6 +9,7 @@ export interface People {
   name: string;
   position: string;
   img: string | StaticImageData;
+  branch?: string;
 }
 
 interface NameCardProps {
@@ -24,8 +25,8 @@ const NameCard = ({ people, index }: NameCardProps) => {
           key={index}
           className="m-1 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105"
         >
-          <div className="flex items-center gap-1 md:gap-2 w-full gap-4">
-            <div>
+          <div className="flex items-start gap-4 w-full">
+            <div className="flex-shrink-0">
               <Image
                 style={{
                   borderRadius: "50%",
@@ -40,7 +41,7 @@ const NameCard = ({ people, index }: NameCardProps) => {
                 height={100}
               />
             </div>
-            <div>
+            <div className="flex-1 min-w-0">
               <Typography
                 variant="h3"
                 sx={{
@@ -52,6 +53,16 @@ const NameCard = ({ people, index }: NameCardProps) => {
                 {people.name}
               </Typography>
               <Typography>{people.position}</Typography>
+              {people.branch && (
+                <Typography
+                  sx={{
+                    fontSize: "0.875rem",
+                    color: "text.secondary",
+                  }}
+                >
+                  {people.branch}
+                </Typography>
+              )}
             </div>
           </div>
         </div>
