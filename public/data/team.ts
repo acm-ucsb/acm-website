@@ -72,7 +72,6 @@ import DivyaSubramonian from "@public/assets/teamImages/2025-2026/DivyaSubramoni
 import AditSuman from "@public/assets/teamImages/2025-2026/AditSuman.jpeg";
 import KelvinJou from "@public/assets/teamImages/2025-2026/KelvinJou.png";
 import ShreyaChati from "@public/assets/teamImages/2025-2026/ShreyaChati.jpg";
-import DenizLapsekili from "@public/assets/teamImages/2025-2026/DenizLapsekili.jpeg";
 import EzraDurtadoTiwari from "@public/assets/teamImages/2025-2026/EzraFurtado-Tiwari.jpg";
 import JohnVu from "@public/assets/teamImages/2025-2026/JohnVu.jpeg";
 import AarushNarang from "@public/assets/teamImages/2025-2026/AarushNarang.jpeg";
@@ -138,13 +137,6 @@ export const CurrentTeam: TeamYear = {
       classOf: "2026",
       branch: "Board",
       picture: EugeneWong.src,
-    },
-    {
-      name: "Deniz Lapsekili",
-      position: "Co-President",
-      classOf: "2027",
-      branch: "Board",
-      picture: DenizLapsekili.src,
     },
     {
       name: "Jiaming Liu",

@@ -11,7 +11,6 @@ export default function MeetTheTeam() {
 
   const featuredTeamMembers = [
     "Eugene Wong",
-    "Deniz Lapsekili",
     "Jiaming Liu",
     "Aarush Narang",
     "John Vu",
