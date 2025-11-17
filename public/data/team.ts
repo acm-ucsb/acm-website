@@ -72,7 +72,7 @@ import DivyaSubramonian from "@public/assets/teamImages/2025-2026/DivyaSubramoni
 import AditSuman from "@public/assets/teamImages/2025-2026/AditSuman.jpeg";
 import KelvinJou from "@public/assets/teamImages/2025-2026/KelvinJou.png";
 import ShreyaChati from "@public/assets/teamImages/2025-2026/ShreyaChati.jpg";
-import EzraDurtadoTiwari from "@public/assets/teamImages/2025-2026/EzraFurtado-Tiwari.jpg";
+import EzraFurtadoTiwari from "@public/assets/teamImages/2025-2026/EzraFurtado-Tiwari.jpg";
 import JohnVu from "@public/assets/teamImages/2025-2026/JohnVu.jpeg";
 import AarushNarang from "@public/assets/teamImages/2025-2026/AarushNarang.jpeg";
 import JuliannaFlores from "@public/assets/teamImages/2025-2026/JuliannaFlores.jpg";
@@ -335,11 +335,11 @@ export const CurrentTeam: TeamYear = {
       picture: SanjanaBhupathi.src,
     },
     {
-      name: "Ezra Durtado-Tiwari",
+      name: "Ezra Furtado-Tiwari",
       position: "President",
       classOf: "2028",
       branch: "ICPC",
-      picture: EzraDurtadoTiwari.src,
+      picture: EzraFurtadoTiwari.src,
     },
   ],
   professors: [

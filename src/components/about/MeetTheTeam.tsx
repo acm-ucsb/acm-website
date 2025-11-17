@@ -50,7 +50,7 @@ export default function MeetTheTeam() {
       dat.push(arr);
     }
     setData(dat);
-  }, []);
+  }, [featuredTeamMembers]);
 
   return (
     <div>
