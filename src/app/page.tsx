@@ -1,4 +1,5 @@
 import Navbar from "../components/shared/Navbar/Navbar";
+import { InternsBannerSitewide } from "../components/shared/InternsBanner";
 import Hero from "../components/landing/Hero";
 import AboutBlurb from "../components/landing/body/AboutBlurb";
 import Branches from "../components/landing/body/BranchSection/Branches";
@@ -11,6 +12,7 @@ export default function Home() {
     <main>
       <div className="flex flex-col align-center">
         <Navbar />
+        <InternsBannerSitewide />
         <Hero />
         <AboutBlurb />
         <Branches />

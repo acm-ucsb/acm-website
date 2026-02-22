@@ -6,7 +6,7 @@ export const ApplyNowButtons = () => {
       sx={{
         display: "flex",
         gap: "1rem",
-        marginBottom: { xs: "1rem", md: "2rem" },
+        marginBottom: { xs: "4rem", md: "8rem" },
       }}
     >
       <Button
@@ -25,7 +25,7 @@ export const ApplyNowButtons = () => {
             boxShadow: "0px 6px 15px rgba(0, 0, 0, 0.15)",
           },
         }}
-        href="https://forms.gle/s5SSAPMMkk2oBL9V7"
+        href="https://forms.gle/54Rsnuj3iPmmzZL66"
       >
         Apply Now!
       </Button>

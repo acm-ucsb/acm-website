@@ -1,38 +1,32 @@
 export const timelineItems = [
   {
-    cardTitle: "Intern Applications Open!",
-    cardSubtitle: "November 25, 2024",
+    cardTitle: "Applications Open",
+    cardSubtitle: "February 21, 2026",
     cardDetailedText:
-      "Applications for the ACM internship program are now open and will remain available for the next two weeks. Be sure to submit your application before the deadline to be considered for this exciting opportunity!",
+      "Applications are now open! Submit your application to join ACM as a general intern. Tell us who you are and what you'd want to contribute.",
   },
   {
-    cardTitle: "Intern Applications Close!",
-    cardSubtitle: "December 6, 2024",
+    cardTitle: "Applications Close",
+    cardSubtitle: "March 3, 2026",
     cardDetailedText:
-      "The application deadline is Friday before finals, so be sure to get your submissions in before then. After this, we will begin the selection process, so don’t wait until the last minute!",
+      "The application window closes. Make sure your submission is in — we review every application and reach out to selected candidates for an interview.",
   },
   {
-    cardTitle: "Interview offers go out!",
-    cardSubtitle: "Winter Break",
+    cardTitle: "Interviews",
+    cardSubtitle: "W26 Week 9 – Week 10",
     cardDetailedText:
-      "Interview offers will be sent out soon, so keep an eye on your inbox. If selected, you'll have the opportunity to take the next step in the ACM internship application process!",
+      "Interviews are conducted by ACM officers. This is a conversation — we want to hear about your interests, your ideas, and where you'd want to make an impact.",
   },
   {
-    cardTitle: "Interviews take place!",
-    cardSubtitle: "Early Winter Quarter",
+    cardTitle: "Decisions Announced",
+    cardSubtitle: "Spring Break",
     cardDetailedText:
-      "Interviews will take place throughout the week, with candidates being scheduled at various times. Be prepared to discuss your skills and experiences as part of the ACM internship selection process!",
+      "Decisions will be sent out during spring break. Check your inbox — congratulations to everyone who makes it through!",
   },
   {
-    cardTitle: "Decisions sent out!",
-    cardSubtitle: "Winter Quarter",
+    cardTitle: "Onboarding Begins",
+    cardSubtitle: "S26 Week 1",
     cardDetailedText:
-      "Decisions will be sent out shortly after interviews, so check your inbox for updates on your application status. Best of luck to all applicants!",
-  },
-  {
-    cardTitle: "Acceptance deadline!",
-    cardSubtitle: "Winter Quarter",
-    cardDetailedText:
-      "Be sure to accept your offer by the deadline to secure your internship position. Congratulations to all selected interns! We look forward to working with you and making a positive impact on the ACM community!",
+      "Spring quarter kicks off. Interns meet the officer team, get matched with a Big through our mentorship program, and start plugging into the club.",
   },
 ];
