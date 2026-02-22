@@ -24,6 +24,7 @@ const Banner = ({ inputLink, inputColor, inputText }: BannerProps) => {
               boxShadow: "0px 6px 15px rgba(0, 0, 0, 0.15)",
             },
             height: "10vh",
+            width: "100%",
           }}
           href={inputLink}
         >
