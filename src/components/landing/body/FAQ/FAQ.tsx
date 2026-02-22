@@ -4,7 +4,6 @@ import {
   AccordionSummary,
   AccordionDetails,
   Typography,
-  Container,
   Box,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -154,10 +153,9 @@ const FAQ = async () => {
 
   return (
     <section id="faq">
-      <Container maxWidth="md" sx={{ marginBottom: "128px" }}>
+      <div className="w-full max-w-5xl mx-auto px-6 mb-32">
         <Typography
           variant="h4"
-          align="center"
           gutterBottom
           sx={{
             fontWeight: "bold",
@@ -169,7 +167,7 @@ const FAQ = async () => {
         </Typography>
 
         {faq.map(renderBranchAccordion)}
-      </Container>
+      </div>
     </section>
   );
 };

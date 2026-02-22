@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { ArrowRightAlt } from "@mui/icons-material";
-import HeroStyles from "./Hero.module.css";
 import { Box, Button, CardMedia, Typography } from "@mui/material";
 import TypewriterText from "./TypewriterText";
 
