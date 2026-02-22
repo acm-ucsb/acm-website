@@ -17,9 +17,6 @@ export const InternsBannerSitewide = () => {
 export const InternsBannerInternPage = () => {
   if (INTERNS_LIVE) return null;
   return (
-    <Banner
-      inputText="Applications have now closed."
-      inputColor="#94a3b8"
-    />
+    <Banner inputText="Applications have now closed." inputColor="#94a3b8" />
   );
 };

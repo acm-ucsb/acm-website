@@ -12,7 +12,13 @@ interface AreaTileProps {
   expandedDetail?: string;
 }
 
-const AreaTile = ({ title, tagline, accentColor, icon, expandedDetail }: AreaTileProps) => {
+const AreaTile = ({
+  title,
+  tagline,
+  accentColor,
+  icon,
+  expandedDetail,
+}: AreaTileProps) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -26,7 +32,10 @@ const AreaTile = ({ title, tagline, accentColor, icon, expandedDetail }: AreaTil
     >
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-1.5">
-          <Typography variant="subtitle1" sx={{ fontWeight: "bold", color: "#1a1a1a" }}>
+          <Typography
+            variant="subtitle1"
+            sx={{ fontWeight: "bold", color: "#1a1a1a" }}
+          >
             {title}
           </Typography>
           {icon && <span className="flex items-center">{icon}</span>}
@@ -69,29 +78,57 @@ const branches: AreaTileProps[] = [
     title: "Dev",
     tagline: "A community for builders working on software projects together.",
     accentColor: "#1DAA2E",
-    icon: <img src="/assets/branchImages/dev.png" alt="" style={{ width: 20, height: 20, objectFit: "contain" }} />,
-    expandedDetail: "Help build and maintain the ACM website, contribute to open-source club projects, and join code reviews and standups with the dev team.",
+    icon: (
+      <img
+        src="/assets/branchImages/dev.png"
+        alt=""
+        style={{ width: 20, height: 20, objectFit: "contain" }}
+      />
+    ),
+    expandedDetail:
+      "Help build and maintain the ACM website, contribute to open-source club projects, and join code reviews and standups with the dev team.",
   },
   {
     title: "ICPC",
     tagline: "Competitive programming, algorithms, and community outreach.",
     accentColor: "#B93016",
-    icon: <img src="/assets/branchImages/icpc.png" alt="" style={{ width: 20, height: 20, objectFit: "contain" }} />,
-    expandedDetail: "Help organize practice contests, assist with problem set creation, and support outreach to grow competitive programming at UCSB.",
+    icon: (
+      <img
+        src="/assets/branchImages/icpc.png"
+        alt=""
+        style={{ width: 20, height: 20, objectFit: "contain" }}
+      />
+    ),
+    expandedDetail:
+      "Help organize practice contests, assist with problem set creation, and support outreach to grow competitive programming at UCSB.",
   },
   {
     title: "Industry",
     tagline: "Industry connections, mentorship, and real-world projects.",
     accentColor: "#087B90",
-    icon: <img src="/assets/branchImages/industry.png" alt="" style={{ width: 20, height: 20, objectFit: "contain" }} />,
-    expandedDetail: "Support client project coordination, help manage timelines, and contribute to teams working on real company partnerships and real world solutions.",
+    icon: (
+      <img
+        src="/assets/branchImages/industry.png"
+        alt=""
+        style={{ width: 20, height: 20, objectFit: "contain" }}
+      />
+    ),
+    expandedDetail:
+      "Support client project coordination, help manage timelines, and contribute to teams working on real company partnerships and real world solutions.",
   },
   {
     title: "Research",
     tagline: "Connecting students with CS research opportunities at UCSB.",
     accentColor: "#D3A739",
-    icon: <img src="/assets/branchImages/research.png" alt="" style={{ width: 20, height: 20, objectFit: "contain" }} />,
-    expandedDetail: "Help match students with lab openings through Research Connect, support research panels, and bridge undergrads with research opportunities.",
+    icon: (
+      <img
+        src="/assets/branchImages/research.png"
+        alt=""
+        style={{ width: 20, height: 20, objectFit: "contain" }}
+      />
+    ),
+    expandedDetail:
+      "Help match students with lab openings through Research Connect, support research panels, and bridge undergrads with research opportunities.",
   },
 ];
 
@@ -101,28 +138,32 @@ const operations: AreaTileProps[] = [
     tagline: "Brand, social media, and design for ACM's campus presence.",
     accentColor: "#EB459E",
     icon: <span style={{ fontSize: "1.1rem" }}>📢</span>,
-    expandedDetail: "Create social media content, design graphics for events, and help shape ACM's visual identity and campus presence.",
+    expandedDetail:
+      "Create social media content, design graphics for events, and help shape ACM's visual identity and campus presence.",
   },
   {
     title: "Social",
     tagline: "Events and community moments that bring ACM together.",
     accentColor: "#9B59B6",
     icon: <span style={{ fontSize: "1.1rem" }}>🎉</span>,
-    expandedDetail: "Plan and run community events, handle logistics, and help foster the culture and community that drives ACM to touch grass.",
+    expandedDetail:
+      "Plan and run community events, handle logistics, and help foster the culture and community that drives ACM to touch grass.",
   },
   {
     title: "Sponsorships",
     tagline: "Building industry relationships and securing club funding.",
     accentColor: "#0BBBCC",
     icon: <span style={{ fontSize: "1.1rem" }}>💼</span>,
-    expandedDetail: "Reach out to companies, help draft partnership decks, and maintain relationships with our industry sponsors.",
+    expandedDetail:
+      "Reach out to companies, help draft partnership decks, and maintain relationships with our industry sponsors.",
   },
   {
     title: "Treasury",
     tagline: "Manage our budgets, reimbursements, and financial operations.",
     accentColor: "#1ABC9C",
     icon: <span style={{ fontSize: "1.1rem" }}>📊</span>,
-    expandedDetail: "Track club expenses, help process reimbursements, and assist with budget management across all branches and teams.",
+    expandedDetail:
+      "Track club expenses, help process reimbursements, and assist with budget management across all branches and teams.",
   },
 ];
 
@@ -154,8 +195,8 @@ const AvailablePositions = () => {
             }}
           >
             You&apos;ll have the chance to work across different parts of ACM —
-            exploring branches and teams — before finding where you have the most
-            impact.
+            exploring branches and teams — before finding where you have the
+            most impact.
           </Typography>
         </FadeInOnScroll>
 
@@ -231,9 +272,10 @@ const AvailablePositions = () => {
                   maxWidth: "620px",
                 }}
               >
-                Not every good idea fits an existing box. As an intern, you&apos;ll
-                have the chance to propose new initiatives — and the opportunity to
-                grow them into branches or ongoing programs within ACM.
+                Not every good idea fits an existing box. As an intern,
+                you&apos;ll have the chance to propose new initiatives — and the
+                opportunity to grow them into branches or ongoing programs
+                within ACM.
               </Typography>
             </Box>
           </FadeInOnScroll>

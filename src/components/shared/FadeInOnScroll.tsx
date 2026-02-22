@@ -7,14 +7,20 @@ interface FadeInOnScrollProps {
   className?: string;
 }
 
-const FadeInOnScroll = ({ children, delay = 0, className }: FadeInOnScrollProps) => {
+const FadeInOnScroll = ({
+  children,
+  delay = 0,
+  className,
+}: FadeInOnScrollProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) setVisible(true); },
-      { threshold: 0.1 }
+      ([entry]) => {
+        if (entry.isIntersecting) setVisible(true);
+      },
+      { threshold: 0.1 },
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();

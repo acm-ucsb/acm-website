@@ -235,13 +235,18 @@ export const InternHeroSection = () => {
       {/* Scroll arrow */}
       <Box
         component="button"
-        onClick={() => document.getElementById("positions")?.scrollIntoView({ behavior: "smooth" })}
+        onClick={() =>
+          document
+            .getElementById("positions")
+            ?.scrollIntoView({ behavior: "smooth" })
+        }
         sx={{
           display: "flex",
           justifyContent: "center",
           pb: 3,
           color: "rgba(255,255,255,0.75)",
-          animation: "bounce 2s infinite 0.6s, heroFadeIn 0.6s ease forwards 0.55s",
+          animation:
+            "bounce 2s infinite 0.6s, heroFadeIn 0.6s ease forwards 0.55s",
           opacity: 0,
           background: "none",
           border: "none",

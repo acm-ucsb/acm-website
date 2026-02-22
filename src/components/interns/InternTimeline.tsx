@@ -48,7 +48,8 @@ const InternTimeline = () => {
                   width: 40,
                   height: 40,
                   borderRadius: "50%",
-                  background: "linear-gradient(135deg, #18A2F2 0%, #253985 100%)",
+                  background:
+                    "linear-gradient(135deg, #18A2F2 0%, #253985 100%)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
