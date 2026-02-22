@@ -1,16 +1,27 @@
 "use client";
+import React from "react";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 interface BannerProps {
   inputLink?: string;
   inputColor?: string;
   inputText?: string;
+  inputMobileText?: string;
 }
 
-const Banner = ({ inputLink, inputColor, inputText }: BannerProps) => {
+const Banner = ({ inputLink, inputColor, inputText, inputMobileText }: BannerProps) => {
   const text = inputText ?? "CHANGE MEEEEEE";
   const color = inputColor ?? "#91C9F2";
   const darkerColor = color + "120";
+
+  const content = (
+    <>
+      {inputMobileText && (
+        <h1 className="block min-[1080px]:hidden text-4xl font-bold text-white">{inputMobileText}</h1>
+      )}
+      <h1 className={`${inputMobileText ? "hidden min-[1080px]:block" : ""} text-4xl font-bold text-white`}>{text}</h1>
+    </>
+  );
 
   return (
     <>
@@ -28,7 +39,7 @@ const Banner = ({ inputLink, inputColor, inputText }: BannerProps) => {
           }}
           href={inputLink}
         >
-          <h1 className="text-4xl font-bold text-white">{text}</h1>
+          {content}
         </Button>
       )}
       {!inputLink && (
@@ -40,7 +51,7 @@ const Banner = ({ inputLink, inputColor, inputText }: BannerProps) => {
           }}
           className="flex flex-col items-center justify-center"
         >
-          <h1 className="text-4xl font-bold text-white">{text}</h1>
+          {content}
         </Box>
       )}
     </>
