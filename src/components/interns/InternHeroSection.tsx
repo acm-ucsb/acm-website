@@ -173,7 +173,7 @@ export const InternHeroSection = () => {
         {/* Right: glassmorphism highlights card */}
         <Box
           sx={{
-            width: { xs: "100%", sm: "360px", lg: "320px" },
+            width: { xs: "90%", sm: "480px", lg: "360px" },
             background: "rgba(255,255,255,0.07)",
             backdropFilter: "blur(12px)",
             WebkitBackdropFilter: "blur(12px)",

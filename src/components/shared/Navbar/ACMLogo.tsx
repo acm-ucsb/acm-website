@@ -2,7 +2,7 @@
 import { Button, CardMedia, useMediaQuery } from "@mui/material";
 
 const ACMLogo = () => {
-  const isMobile = useMediaQuery("(max-width:600px)");
+  const isMobile = useMediaQuery("(max-width:1024px)");
 
   return (
     <Button

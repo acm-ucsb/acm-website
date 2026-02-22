@@ -7,7 +7,7 @@ export const InternsBannerSitewide = () => {
   return (
     <Banner
       inputLink="/interns"
-      inputText="Intern Applications Are Now Open · Apply by Feb 28"
+      inputText="Intern Applications Are Now Open · Apply by Mar 3"
       inputMobileText="Intern Applications Open!"
       inputColor="#91C9F2"
     />

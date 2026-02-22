@@ -1,8 +1,9 @@
+import React from "react";
 import { Typography } from "@mui/material";
 
 const AboutBlurb = () => {
   return (
-    <section id="about">
+    <section id="about" className="scroll-mt-36">
       <div className="flex flex-col items-center justify-center">
         <Typography
           variant="h4"

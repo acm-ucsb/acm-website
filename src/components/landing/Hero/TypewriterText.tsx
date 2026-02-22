@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import Typewriter from "typewriter-effect";
 
 const typewriterStrings: string[] = [
@@ -14,9 +15,9 @@ const TypewriterText = () => {
     <div className="flex w-full">
       <Typewriter
         options={{
-          wrapperClassName: "font-mono text-[#0868A0] text-5xl md:text-[4rem]", // Responsive font sizes
+          wrapperClassName: "font-mono text-[#0868A0] text-5xl min-[900px]:text-[3.6rem]",
           cursorClassName:
-            "font-mono text-[#0868A0] text-5xl md:text-[4rem] animate-blink", // Responsive cursor sizes
+            "font-mono text-[#0868A0] text-5xl min-[900px]:text-[3.6rem] animate-blink",
           strings: typewriterStrings,
           loop: true,
           autoStart: true,
