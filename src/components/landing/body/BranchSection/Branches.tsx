@@ -19,7 +19,8 @@ const Branches = () => {
           Branches
         </Typography>
         <Typography variant="h6" sx={{ color: "gray", mb: "48px" }}>
-          ACM at UCSB consists of 4 communities that each focus on a specific area of tech.
+          ACM at UCSB consists of 4 communities that each focus on a specific
+          area of tech.
         </Typography>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {branchData.map((branch, index) => (

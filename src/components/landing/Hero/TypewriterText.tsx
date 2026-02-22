@@ -15,7 +15,8 @@ const TypewriterText = () => {
     <div className="flex w-full">
       <Typewriter
         options={{
-          wrapperClassName: "font-mono text-[#0868A0] text-5xl min-[900px]:text-[3.6rem]",
+          wrapperClassName:
+            "font-mono text-[#0868A0] text-5xl min-[900px]:text-[3.6rem]",
           cursorClassName:
             "font-mono text-[#0868A0] text-5xl min-[900px]:text-[3.6rem] animate-blink",
           strings: typewriterStrings,

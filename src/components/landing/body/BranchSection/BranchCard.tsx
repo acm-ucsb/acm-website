@@ -17,9 +17,18 @@ export function BranchCard({ branch, index }: BranchCardProps) {
     >
       {/* Logo + right column (name + tagline) */}
       <div className="flex items-center gap-5">
-        <Image src={branch.img} alt={branch.name} width={80} height={80} style={{ objectFit: "contain" }} />
+        <Image
+          src={branch.img}
+          alt={branch.name}
+          width={80}
+          height={80}
+          style={{ objectFit: "contain" }}
+        />
         <div className="flex flex-col gap-1">
-          <Typography variant="h4" sx={{ fontWeight: "700", color: "black", lineHeight: 1.2 }}>
+          <Typography
+            variant="h4"
+            sx={{ fontWeight: "700", color: "black", lineHeight: 1.2 }}
+          >
             acm.
             <span
               style={{

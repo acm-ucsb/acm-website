@@ -33,12 +33,10 @@ const pillars = [
   },
 ];
 
-
 const AboutBlurb = () => {
   return (
     <section id="about" className="scroll-mt-36">
       <div className="w-full max-w-5xl mx-auto px-6 pb-16">
-
         {/* Heading + intro */}
         <FadeInOnScroll>
           <Typography
@@ -99,17 +97,20 @@ const AboutBlurb = () => {
                 >
                   {icon}
                 </Box>
-                <Typography sx={{ fontWeight: "700", fontSize: "1.1rem", color: "black" }}>
+                <Typography
+                  sx={{ fontWeight: "700", fontSize: "1.1rem", color: "black" }}
+                >
                   {title}
                 </Typography>
-                <Typography sx={{ color: "gray", fontSize: "0.95rem", lineHeight: 1.6 }}>
+                <Typography
+                  sx={{ color: "gray", fontSize: "0.95rem", lineHeight: 1.6 }}
+                >
                   {description}
                 </Typography>
               </Box>
             </FadeInOnScroll>
           ))}
         </Box>
-
       </div>
     </section>
   );

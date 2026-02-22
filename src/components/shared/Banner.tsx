@@ -9,7 +9,12 @@ interface BannerProps {
   inputMobileText?: string;
 }
 
-const Banner = ({ inputLink, inputColor, inputText, inputMobileText }: BannerProps) => {
+const Banner = ({
+  inputLink,
+  inputColor,
+  inputText,
+  inputMobileText,
+}: BannerProps) => {
   const text = inputText ?? "CHANGE MEEEEEE";
   const color = inputColor ?? "#91C9F2";
   const darkerColor = color + "120";
@@ -17,9 +22,15 @@ const Banner = ({ inputLink, inputColor, inputText, inputMobileText }: BannerPro
   const content = (
     <>
       {inputMobileText && (
-        <h1 className="block min-[1080px]:hidden text-4xl font-bold text-white">{inputMobileText}</h1>
+        <h1 className="block min-[1080px]:hidden text-4xl font-bold text-white">
+          {inputMobileText}
+        </h1>
       )}
-      <h1 className={`${inputMobileText ? "hidden min-[1080px]:block" : ""} text-4xl font-bold text-white`}>{text}</h1>
+      <h1
+        className={`${inputMobileText ? "hidden min-[1080px]:block" : ""} text-4xl font-bold text-white`}
+      >
+        {text}
+      </h1>
     </>
   );
 
