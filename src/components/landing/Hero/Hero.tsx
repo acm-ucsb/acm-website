@@ -3,6 +3,7 @@ import React from "react";
 import { ArrowRightAlt } from "@mui/icons-material";
 import { Box, Button, CardMedia, Typography } from "@mui/material";
 import TypewriterText from "./TypewriterText";
+import FadeInOnScroll from "@/components/shared/FadeInOnScroll";
 
 const Hero = () => {
   return (
@@ -36,13 +37,7 @@ const Hero = () => {
           }}
         >
           {/* Text Section */}
-          <Box
-            sx={{
-              zIndex: 2,
-              flex: 1,
-              textAlign: "left",
-            }}
-          >
+          <FadeInOnScroll className="flex-1 text-left z-[2]">
             <div className="flex flex-col lg:min-h-60 pb-2">
               <Typography
                 variant="h2"
@@ -126,19 +121,10 @@ const Hero = () => {
                 Who We Are
               </Button>
             </Box>
-          </Box>
+          </FadeInOnScroll>
 
           {/* Image Section */}
-          <Box
-            sx={{
-              flex: 1,
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              marginTop: { xs: "2rem", md: "0" },
-              position: "relative",
-            }}
-          >
+          <FadeInOnScroll delay={200} className="flex-1 flex justify-center items-center relative mt-8 md:mt-0">
             <CardMedia
               component="img"
               src="/assets/ACM logo.png"
@@ -148,7 +134,7 @@ const Hero = () => {
                 maxWidth: "40rem",
               }}
             />
-          </Box>
+          </FadeInOnScroll>
         </Box>
       </Box>
     </Box>

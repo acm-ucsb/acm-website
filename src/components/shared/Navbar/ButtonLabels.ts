@@ -8,7 +8,7 @@ export const ButtonLabels: ButtonLabelType[] = [
   {
     key: "about",
     buttonLabelString: "About Us",
-    routingLink: "/about",
+    routingLink: "/#about", // was "/about" — kept that page, just scrolls to section now
   },
   {
     key: "team",

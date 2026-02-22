@@ -90,7 +90,7 @@ export const getFAQBranchData = async () => {
       id: BranchType.Board,
       name: "Board",
       img: acmLogo,
-      suffix: "board",
+      suffix: "general",
       description: "",
       branchColors: ["#18A2F2", "#18A2F2", "#18A2F2"],
       branchBannerColor: "",
