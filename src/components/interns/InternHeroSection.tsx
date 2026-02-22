@@ -36,7 +36,7 @@ export const InternHeroSection = () => {
     <Box
       sx={{
         width: "100%",
-        minHeight: "calc(100vh - 10vh)",
+        minHeight: "calc(100vh - 5vh)",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -243,7 +243,7 @@ export const InternHeroSection = () => {
         sx={{
           display: "flex",
           justifyContent: "center",
-          pb: 3,
+          pb: 6,
           color: "rgba(255,255,255,0.75)",
           animation:
             "bounce 2s infinite 0.6s, heroFadeIn 0.6s ease forwards 0.55s",
@@ -257,12 +257,12 @@ export const InternHeroSection = () => {
             to: { opacity: 1, transform: "translateY(0)" },
           },
           "@keyframes bounce": {
-            "0%, 100%": { transform: "translateY(0)" },
-            "50%": { transform: "translateY(8px)" },
+            "0%, 100%": { transform: "translateY(0)", animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)" },
+            "50%": { transform: "translateY(-14px)", animationTimingFunction: "cubic-bezier(0, 0, 0.2, 1)" },
           },
         }}
       >
-        <KeyboardArrowDownIcon sx={{ fontSize: "2.5rem" }} />
+        <KeyboardArrowDownIcon sx={{ fontSize: "3.5rem" }} />
       </Box>
     </Box>
   );
