@@ -15,7 +15,7 @@ const ACMLogo = () => {
           transform: "scale(1.05)",
           backgroundColor: "transparent",
         },
-        height: "70px",
+        height: { xs: "70px", sm: "70px" },
         width: "auto",
         margin: "0.5rem",
       }}
@@ -27,7 +27,7 @@ const ACMLogo = () => {
         }
         alt="ACM Logo"
         sx={{
-          height: "110px",
+          height: "100%",
           width: "auto",
           objectFit: "contain",
         }}
