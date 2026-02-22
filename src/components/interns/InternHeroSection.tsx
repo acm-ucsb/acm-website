@@ -21,6 +21,16 @@ const taglines = [
   "Build your path to leadership.",
 ];
 
+const fadeIn = (delay: string) => ({
+  animation: "heroFadeIn 0.6s ease forwards",
+  animationDelay: delay,
+  opacity: 0,
+  "@keyframes heroFadeIn": {
+    from: { opacity: 0, transform: "translateY(18px)" },
+    to: { opacity: 1, transform: "translateY(0)" },
+  },
+});
+
 export const InternHeroSection = () => {
   return (
     <Box
@@ -66,6 +76,7 @@ export const InternHeroSection = () => {
               fontWeight: "600",
               fontSize: "0.8rem",
               border: "1px solid rgba(24,162,242,0.35)",
+              ...fadeIn("0s"),
             }}
           />
           <Typography
@@ -76,6 +87,7 @@ export const InternHeroSection = () => {
               lineHeight: 1.15,
               textAlign: { xs: "center", lg: "left" },
               fontSize: { xs: "2.5rem", md: "3.5rem" },
+              ...fadeIn("0.15s"),
             }}
           >
             Join ACM
@@ -90,6 +102,7 @@ export const InternHeroSection = () => {
               flexDirection: "column",
               gap: 1.5,
               alignItems: { xs: "center", lg: "flex-start" },
+              ...fadeIn("0.3s"),
             }}
           >
             {taglines.map((line) => (
@@ -137,6 +150,7 @@ export const InternHeroSection = () => {
                 backgroundColor: "rgba(255,255,255,0.88)",
                 boxShadow: "0px 6px 15px rgba(0, 0, 0, 0.2)",
               },
+              ...fadeIn("0.4s"),
             }}
           >
             Apply Now
@@ -147,6 +161,7 @@ export const InternHeroSection = () => {
               color: "rgba(255,255,255,0.35)",
               fontSize: "0.85rem",
               textAlign: { xs: "center", lg: "left" },
+              ...fadeIn("0.45s"),
             }}
           >
             Applications close March 3rd · Decisions announced Spring Break
@@ -167,6 +182,7 @@ export const InternHeroSection = () => {
             flexDirection: "column",
             gap: 2.5,
             flexShrink: 0,
+            ...fadeIn("0.2s"),
           }}
         >
           <Typography
@@ -223,11 +239,16 @@ export const InternHeroSection = () => {
           justifyContent: "center",
           pb: 3,
           color: "rgba(255,255,255,0.75)",
-          animation: "bounce 2s infinite",
+          animation: "bounce 2s infinite 0.6s, heroFadeIn 0.6s ease forwards 0.55s",
+          opacity: 0,
           background: "none",
           border: "none",
           cursor: "pointer",
           "&:hover": { color: "white" },
+          "@keyframes heroFadeIn": {
+            from: { opacity: 0, transform: "translateY(18px)" },
+            to: { opacity: 1, transform: "translateY(0)" },
+          },
           "@keyframes bounce": {
             "0%, 100%": { transform: "translateY(0)" },
             "50%": { transform: "translateY(8px)" },
