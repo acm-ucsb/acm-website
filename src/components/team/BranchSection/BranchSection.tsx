@@ -29,28 +29,34 @@ const BranchSection: React.FC<BranchSectionProps> = ({ branch, members }) => {
           alignItems: "center",
           justifyContent: "flex-start",
           marginBottom: "30px",
-          padding: "20px 0",
+          padding: "20px 20px 20px 36px",
           marginLeft: { xs: "auto", lg: "calc(50% - 600px - 140px)" },
         }}
       >
-        <Image
-          src={branch.icon}
-          alt={`${branch.name} icon`}
-          width={112}
-          height={112}
-          style={{
-            marginRight: "16px",
-          }}
-        />
+        {branch.icon && (
+          <Image
+            src={branch.icon}
+            alt={`${branch.name} icon`}
+            width={64}
+            height={64}
+            style={{ marginRight: "16px", objectFit: "contain" }}
+          />
+        )}
         <Typography
           variant="h4"
-          sx={{
-            fontWeight: "bold",
-            color: branch.color,
-            margin: 0,
-          }}
+          sx={{ fontWeight: "700", color: "black", lineHeight: 1.2, margin: 0 }}
         >
-          ACM {branch.name}
+          acm.
+          <span
+            style={{
+              backgroundImage: `linear-gradient(to right, ${branch.color}, ${branch.color})`,
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              display: "inline-block",
+            }}
+          >
+            {branch.suffix}
+          </span>
         </Typography>
       </Box>
 

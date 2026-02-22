@@ -18,7 +18,7 @@ const BranchNavigation: React.FC<BranchNavigationProps> = ({
         minHeight: "100vh",
         backgroundColor: "#f8f9fa",
         borderRight: "1px solid #e0e0e0",
-        padding: "32px 0 20px 0",
+        padding: "160px 0 20px 0",
         position: "sticky",
         top: 64,
         left: 0,
@@ -54,42 +54,42 @@ const BranchNavigation: React.FC<BranchNavigationProps> = ({
               cursor: "pointer",
               transition: "all 0.2s ease-in-out",
               backgroundColor: "transparent",
-              color: "#333",
               "&:hover": {
                 backgroundColor: "#e3f2fd",
                 transform: "translateX(4px)",
-                "& .branch-icon": {
-                  transform: "scale(1.2)",
-                },
-                "& .branch-text": {
-                  transform: "scale(1.1)",
-                  fontWeight: "600",
-                },
+                "& .branch-icon": { transform: "scale(1.1)" },
               },
             }}
           >
-            <Image
-              src={branch.icon}
-              alt={`${branch.name} icon`}
-              width={48}
-              height={48}
-              className="branch-icon"
-              style={{
-                marginRight: "12px",
-                filter: "none",
-                transition: "transform 0.2s ease-in-out",
-              }}
-            />
+            {branch.icon && (
+              <Image
+                src={branch.icon}
+                alt={`${branch.name} icon`}
+                width={40}
+                height={40}
+                className="branch-icon"
+                style={{
+                  marginRight: "10px",
+                  objectFit: "contain",
+                  transition: "transform 0.2s ease-in-out",
+                }}
+              />
+            )}
             <Typography
               variant="body1"
-              className="branch-text"
-              sx={{
-                fontWeight: "500",
-                fontSize: "14px",
-                transition: "all 0.2s ease-in-out",
-              }}
+              sx={{ fontWeight: "700", fontSize: "15px", color: "black" }}
             >
-              {branch.name}
+              acm.
+              <span
+                style={{
+                  backgroundImage: `linear-gradient(to right, ${branch.color}, ${branch.color})`,
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  display: "inline-block",
+                }}
+              >
+                {branch.suffix}
+              </span>
             </Typography>
           </Box>
         ))}

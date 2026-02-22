@@ -20,24 +20,22 @@ const EventsSection = async () => {
   validEvents.sort((a, b) => Date.parse(a.datetime) - Date.parse(b.datetime));
 
   return (
-    <section
-      id="events"
-      className="flex flex-col items-center justify-start mb-36 h-full"
-    >
-      <Typography
-        variant="h4"
-        align="center"
-        gutterBottom
-        sx={{
-          fontWeight: "bold",
-          marginY: "64px",
-          color: "black",
-        }}
-      >
-        Events
-      </Typography>
+    <section id="events" className="mb-36">
+      <div className="w-full max-w-5xl mx-auto px-6">
+        <Typography
+          variant="h4"
+          gutterBottom
+          sx={{
+            fontWeight: "bold",
+            marginY: "64px",
+            color: "black",
+          }}
+        >
+          Events
+        </Typography>
 
-      <EventCards events={validEvents}></EventCards>
+        <EventCards events={validEvents}></EventCards>
+      </div>
     </section>
   );
 };

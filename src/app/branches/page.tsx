@@ -39,7 +39,7 @@ export default function Home() {
             Industry. Each branch holds independent events to support its unique
             mission.
           </Typography>
-          <div className="flex flex-wrap justify-center gap-[2rem] md:gap-[5rem] mb-[7rem]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl px-6 mb-[7rem]">
             {branchData.map((branch, index) => (
               <Link href={`#${branch.name}`} key={index}>
                 <BranchCard index={index} branch={branch} />

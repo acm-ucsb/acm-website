@@ -4,13 +4,13 @@ import {
   AccordionSummary,
   AccordionDetails,
   Typography,
-  Container,
   Box,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { convertTextToLinks } from "@/util/convertTextToLinks";
 import { BranchFAQType, FAQType } from "@public/data/faq";
 import { getFAQBranchData } from "@/apis/getSheetsData";
+import FadeInOnScroll from "@/components/shared/FadeInOnScroll";
 
 const FAQ = async () => {
   const faq = await getFAQBranchData();
@@ -154,22 +154,25 @@ const FAQ = async () => {
 
   return (
     <section id="faq">
-      <Container maxWidth="md" sx={{ marginBottom: "128px" }}>
-        <Typography
-          variant="h4"
-          align="center"
-          gutterBottom
-          sx={{
-            fontWeight: "bold",
-            marginY: "64px",
-            color: "black",
-          }}
-        >
-          Frequently Asked Questions
-        </Typography>
+      <div className="w-full max-w-5xl mx-auto px-6 mb-32">
+        <FadeInOnScroll>
+          <Typography
+            variant="h4"
+            gutterBottom
+            sx={{
+              fontWeight: "bold",
+              marginY: "64px",
+              color: "black",
+            }}
+          >
+            Frequently Asked Questions
+          </Typography>
+        </FadeInOnScroll>
 
-        {faq.map(renderBranchAccordion)}
-      </Container>
+        <FadeInOnScroll delay={100}>
+          {faq.map(renderBranchAccordion)}
+        </FadeInOnScroll>
+      </div>
     </section>
   );
 };
