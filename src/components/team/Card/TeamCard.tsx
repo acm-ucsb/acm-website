@@ -6,8 +6,14 @@ import {
   //   CardActions,
   //   Button,
 } from "@mui/material";
-import { TeamMember } from "@public/data/team";
+import { TeamMember, Branches } from "@public/data/team";
 import Image from "next/image";
+
+const getBranchColor = (member: TeamMember) => {
+  if (member.color) return member.color;
+  if (!member.branch) return "#1e3a8a";
+  return Branches.find((b) => b.name === member.branch)?.color ?? "#1e3a8a";
+};
 
 const TeamCard = ({ member }: { member: TeamMember }) => {
   return (
@@ -41,7 +47,7 @@ const TeamCard = ({ member }: { member: TeamMember }) => {
           <Typography
             variant="h5"
             component="div"
-            sx={{ color: "#1e3a8a", fontWeight: "bold", marginBottom: "8px" }}
+            sx={{ color: getBranchColor(member), fontWeight: "bold", marginBottom: "8px" }}
           >
             {member.name}
           </Typography>

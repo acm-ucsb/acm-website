@@ -4,12 +4,15 @@ export type TeamMember = {
   picture: string;
   classOf?: string;
   branch?: string;
+  color?: string;
+  lastActiveYear?: string;
 };
 
 export type BranchInfo = {
   name: string;
+  suffix: string;
   color: string;
-  icon: string;
+  icon?: string;
   order: number;
 };
 
@@ -17,6 +20,7 @@ export type TeamYear = {
   academicYear: string;
   officers: TeamMember[];
   professors: TeamMember[];
+  alumni?: TeamMember[];
 };
 
 // import HeroLogo from "@public/assets/HeroLogo.png";
@@ -35,24 +39,24 @@ import DanielLokshtanov from "@public/assets/teamImages/DanielLokshtanov.png";
 import LingqiYan from "@public/assets/teamImages/LingqiYan.png";
 
 // Team Images - 2024-2025
-// import RohanKumar from "@public/assets/teamImages/2024-2025/RohanKumar.jpg";
-// import DavidWang from "@public/assets/teamImages/2024-2025/DavidWang.jpg";
-// import ZeelPatel from "@public/assets/teamImages/2024-2025/ZeelPatel.jpeg";
-// // import AarushNarang from "@public/assets/teamImages/2024-2025/AarushNarang.jpeg";
+import RohanKumar from "@public/assets/teamImages/2024-2025/RohanKumar.jpg";
+import DavidWang from "@public/assets/teamImages/2024-2025/DavidWang.jpg";
+import ZeelPatel from "@public/assets/teamImages/2024-2025/ZeelPatel.jpeg";
+// import AarushNarang from "@public/assets/teamImages/2024-2025/AarushNarang.jpeg";
 // import JeffreyKeem from "@public/assets/teamImages/2024-2025/JeffreyKeem.jpg";
 // import BobbyChavez from "@public/assets/teamImages/2024-2025/JuanChavez.png";
-// // import DonTran from "@public/assets/teamImages/2024-2025/DonTran.jpg";
+// import DonTran from "@public/assets/teamImages/2024-2025/DonTran.jpg";
 // import AnitAnnadi from "@public/assets/teamImages/2024-2025/AnitAnnadi.jpeg";
-// // import JohnVu from "@public/assets/teamImages/2024-2025/JohnVu.jpeg";
-// import RohilShah from "@public/assets/teamImages/2024-2025/RohilShah.jpg";
-// import KanavArora from "@public/assets/teamImages/2024-2025/KanavArora.jpg";
-// // import EugeneWong from "@public/assets/teamImages/2024-2025/EugeneWong.jpg";
-// import SamuelZhu from "@public/assets/teamImages/2024-2025/SamuelZhu.jpeg";
-// // import DenizLapsekili from "@public/assets/teamImages/2024-2025/DenizLapsekili.jpeg";
-// // import ShivaneDadi from "@public/assets/teamImages/2024-2025/ShivaneDadi.jpg";
-// import RitamSaha from "@public/assets/teamImages/2024-2025/RitamSaha.png";
+// import JohnVu from "@public/assets/teamImages/2024-2025/JohnVu.jpeg";
+import RohilShah from "@public/assets/teamImages/2024-2025/RohilShah.jpg";
+import KanavArora from "@public/assets/teamImages/2024-2025/KanavArora.jpg";
+// import EugeneWong from "@public/assets/teamImages/2024-2025/EugeneWong.jpg";
+import SamuelZhu from "@public/assets/teamImages/2024-2025/SamuelZhu.jpeg";
+// import DenizLapsekili from "@public/assets/teamImages/2024-2025/DenizLapsekili.jpeg";
+// import ShivaneDadi from "@public/assets/teamImages/2024-2025/ShivaneDadi.jpg";
+import RitamSaha from "@public/assets/teamImages/2024-2025/RitamSaha.png";
 // import GaborSzita from "@public/assets/teamImages/2024-2025/GaborSzita.jpg";
-// // import KenThampiratwong from "@public/assets/teamImages/2024-2025/KenThampiratwong.jpeg";
+// import KenThampiratwong from "@public/assets/teamImages/2024-2025/KenThampiratwong.jpeg";
 // import OmarAboutaleb from "@public/assets/teamImages/2024-2025/OmarAboutaleb.png";
 // import KarenaLai from "@public/assets/teamImages/2024-2025/KarenaLai.png";
 
@@ -91,65 +95,72 @@ import AryanGautam from "@public/assets/teamImages/2025-2026/AryanGautam.jpeg";
 export const Branches: BranchInfo[] = [
   {
     name: "Board",
-    color: "#60a5fa", // Lighter blue from ACM logo
+    suffix: "board",
+    color: "#60a5fa",
     icon: BoardIcon.src,
     order: 1,
   },
   {
     name: "Industry",
-    color: "#2f6c7c", // Darker teal-blue from logo
+    suffix: "industry",
+    color: "#2f6c7c",
     icon: IndustryIcon.src,
     order: 2,
   },
   {
     name: "Development",
-    color: "#16a34a", // Green
+    suffix: "dev",
+    color: "#16a34a",
     icon: WebDevIcon.src,
     order: 3,
   },
   {
     name: "ICPC",
-    color: "#dc2626", // Red
+    suffix: "icpc",
+    color: "#dc2626",
     icon: ICPCIcon.src,
     order: 4,
   },
   {
     name: "Research",
-    color: "#eab308", // Yellow
+    suffix: "research",
+    color: "#eab308",
     icon: ResearchIcon.src,
     order: 5,
   },
-  // {
-  //   name: "Marketing",
-  //   color: "#ea580c", // Orange
-  //   icon: MarketingIcon.src,
-  //   order: 6,
-  // },
 ];
 
 // current year
 export const CurrentTeam: TeamYear = {
-  academicYear: "2025-2026",
+  academicYear: "2025 - 2026",
   officers: [
     {
-      name: "Eugene Wong",
-      position: "Co-President",
-      classOf: "2026",
-      branch: "Board",
-      picture: EugeneWong.src,
-    },
-    {
       name: "Jiaming Liu",
-      position: "Vice President",
+      position: "President",
       classOf: "2027",
       branch: "Board",
       picture: JiamingLiu.src,
+    },
+    {
+      name: "Sachit Madaan",
+      position: "Co-Vice President",
+      classOf: "2028",
+      branch: "Board",
+      picture: SachitMadaan.src,
+    },
+    {
+      name: "Don Tran",
+      position: "Co-Vice President",
+      classOf: "2028",
+      branch: "Board",
+      picture: DonTran.src,
     },
     {
       name: "Aryan Vashishta",
       position: "Treasury Officer",
       classOf: "2028",
       branch: "Board",
+      color: "#1ABC9C",
       picture: AryanVashishta.src,
     },
     {
@@ -157,6 +168,7 @@ export const CurrentTeam: TeamYear = {
       position: "Treasury Officer",
       classOf: "2028",
       branch: "Board",
+      color: "#1ABC9C",
       picture: TylerLe.src,
     },
     {
@@ -164,20 +176,15 @@ export const CurrentTeam: TeamYear = {
       position: "Marketing Director",
       classOf: "2027",
       branch: "Board",
+      color: "#EB459E",
       picture: DemiraThaker.src,
-    },
-    {
-      name: "Shivane Dadi",
-      position: "Marketing Director",
-      classOf: "2026",
-      branch: "Board",
-      picture: ShivaneDadi.src,
     },
     {
       name: "Gurneet Bains",
       position: "Marketing Officer",
       classOf: "2028",
       branch: "Board",
+      color: "#EB459E",
       picture: GurneetBains.src,
     },
     {
@@ -185,6 +192,7 @@ export const CurrentTeam: TeamYear = {
       position: "Marketing Officer",
       classOf: "2028",
       branch: "Board",
+      color: "#EB459E",
       picture: MaitriAllani.src,
     },
     {
@@ -192,6 +200,7 @@ export const CurrentTeam: TeamYear = {
       position: "Social Director",
       classOf: "2028",
       branch: "Board",
+      color: "#9B59B6",
       picture: AbielaSarrieddine.src,
     },
     {
@@ -199,13 +208,23 @@ export const CurrentTeam: TeamYear = {
       position: "Social Director",
       classOf: "2028",
       branch: "Board",
+      color: "#9B59B6",
       picture: HenryZhao.src,
+    },
+    {
+      name: "Shreya Chati",
+      position: "Social Officer",
+      classOf: "2028",
+      branch: "Board",
+      color: "#9B59B6",
+      picture: ShreyaChati.src,
     },
     {
       name: "Anika Choudhary",
       position: "Sponsorships Director",
       classOf: "2028",
       branch: "Board",
+      color: "#0BBBCC",
       picture: AnikaChoudhary.src,
     },
     {
@@ -213,25 +232,19 @@ export const CurrentTeam: TeamYear = {
       position: "Sponsorships Director",
       classOf: "2027",
       branch: "Board",
+      color: "#0BBBCC",
       picture: DivyaSubramonian.src,
     },
     {
-      name: "Shreya Chati",
-      position: "Social Officer",
-      classOf: "2028",
-      branch: "Board",
-      picture: ShreyaChati.src,
-    },
-    {
       name: "Aarush Narang",
-      position: "Co-President",
+      position: "Technical Co-President",
       classOf: "2028",
-      branch: "Development",
+      branch: "Industry",
       picture: AarushNarang.src,
     },
     {
       name: "John Vu",
-      position: "Co-President",
+      position: "President",
       classOf: "2027",
       branch: "Development",
       picture: JohnVu.src,
@@ -307,15 +320,8 @@ export const CurrentTeam: TeamYear = {
       picture: LukeHerbelin.src,
     },
     {
-      name: "Aman Desai",
-      position: "President",
-      classOf: "2027",
-      branch: "Industry",
-      picture: AmanDesai.src,
-    },
-    {
       name: "Sachit Madaan",
-      position: "Outreach Director",
+      position: "Outreach Co-President",
       classOf: "2028",
       branch: "Industry",
       picture: SachitMadaan.src,
@@ -357,6 +363,90 @@ export const CurrentTeam: TeamYear = {
       name: "Lingqi Yan",
       position: "Associate Professor, Computer Science",
       picture: LingqiYan.src,
+    },
+  ],
+  alumni: [
+    {
+      name: "Eugene Wong",
+      position: "President (Fall 25)",
+      classOf: "2026",
+      branch: "Board",
+      lastActiveYear: "2024 - 2025",
+      picture: EugeneWong.src,
+    },
+    {
+      name: "Aman Desai",
+      position: "President",
+      classOf: "2027",
+      branch: "Industry",
+      lastActiveYear: "2024 - 2025",
+      picture: AmanDesai.src,
+    },
+    {
+      name: "Shivane Dadi",
+      position: "Marketing Director",
+      classOf: "2026",
+      branch: "Board",
+      color: "#EB459E",
+      lastActiveYear: "2024 - 2025",
+      picture: ShivaneDadi.src,
+    },
+    {
+      name: "Rohil Shah",
+      position: "Co-President",
+      classOf: "2026",
+      branch: "Board",
+      lastActiveYear: "2024 - 2025",
+      picture: RohilShah.src,
+    },
+    {
+      name: "Kanav Arora",
+      position: "Co-President",
+      classOf: "2026",
+      branch: "Board",
+      lastActiveYear: "2024 - 2025",
+      picture: KanavArora.src,
+    },
+    {
+      name: "Zeel Patel",
+      position: "Secretary",
+      classOf: "2026",
+      branch: "Board",
+      lastActiveYear: "2024 - 2025",
+      picture: ZeelPatel.src,
+    },
+    {
+      name: "David Wang",
+      position: "Senior Advisor",
+      classOf: "2025",
+      branch: "Board",
+      lastActiveYear: "2024 - 2025",
+      picture: DavidWang.src,
+    },
+    {
+      name: "Rohan Kumar",
+      position: "Co-Head of Web Development",
+      classOf: "2025",
+      branch: "Development",
+      lastActiveYear: "2024 - 2025",
+      picture: RohanKumar.src,
+    },
+    {
+      name: "Sam Zhu",
+      position: "Co-Head of Web Development",
+      classOf: "2026",
+      branch: "Development",
+      lastActiveYear: "2024 - 2025",
+      picture: SamuelZhu.src,
+    },
+    {
+      name: "Ritam Saha",
+      position: "Social Chair",
+      classOf: "2027",
+      branch: "Board",
+      color: "#9B59B6",
+      lastActiveYear: "2024 - 2025",
+      picture: RitamSaha.src,
     },
   ],
 };
