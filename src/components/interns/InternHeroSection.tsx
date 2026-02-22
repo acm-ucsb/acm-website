@@ -136,6 +136,8 @@ export const InternHeroSection = () => {
           <Button
             variant="contained"
             href="https://forms.gle/KHcjx1gyV6JGQCeFA"
+            target="_blank"
+            rel="noopener noreferrer"
             sx={{
               backgroundColor: "white",
               color: "#253985",
