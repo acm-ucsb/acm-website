@@ -47,7 +47,11 @@ const TeamCard = ({ member }: { member: TeamMember }) => {
           <Typography
             variant="h5"
             component="div"
-            sx={{ color: getBranchColor(member), fontWeight: "bold", marginBottom: "8px" }}
+            sx={{
+              color: getBranchColor(member),
+              fontWeight: "bold",
+              marginBottom: "8px",
+            }}
           >
             {member.name}
           </Typography>

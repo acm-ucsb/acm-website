@@ -27,7 +27,11 @@ const Branches = () => {
         </FadeInOnScroll>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {branchData.map((branch, index) => (
-            <FadeInOnScroll key={branch.id} delay={index * 100} className="h-full">
+            <FadeInOnScroll
+              key={branch.id}
+              delay={index * 100}
+              className="h-full"
+            >
               <BranchCard index={index} branch={branch} />
             </FadeInOnScroll>
           ))}

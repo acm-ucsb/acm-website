@@ -93,7 +93,6 @@ const BranchNavigation: React.FC<BranchNavigationProps> = ({
             </Typography>
           </Box>
         ))}
-
       </Box>
     </Box>
   );

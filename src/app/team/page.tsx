@@ -131,66 +131,90 @@ export default function TeamPage() {
             </Box>
           )}
 
-          {CurrentTeam.alumni && CurrentTeam.alumni.length > 0 && (() => {
-            const byYear = CurrentTeam.alumni!.reduce<Record<string, typeof CurrentTeam.alumni>>((acc, alumnus) => {
-              const year = alumnus.lastActiveYear ?? "Unknown";
-              if (!acc[year]) acc[year] = [];
-              acc[year]!.push(alumnus);
-              return acc;
-            }, {});
-            const sortedYears = Object.keys(byYear).sort((a, b) => b.localeCompare(a));
+          {CurrentTeam.alumni &&
+            CurrentTeam.alumni.length > 0 &&
+            (() => {
+              const byYear = CurrentTeam.alumni!.reduce<
+                Record<string, typeof CurrentTeam.alumni>
+              >((acc, alumnus) => {
+                const year = alumnus.lastActiveYear ?? "Unknown";
+                if (!acc[year]) acc[year] = [];
+                acc[year]!.push(alumnus);
+                return acc;
+              }, {});
+              const sortedYears = Object.keys(byYear).sort((a, b) =>
+                b.localeCompare(a),
+              );
 
-            return (
-              <Box id="alumni" sx={{ marginBottom: "60px", scrollMarginTop: "80px" }}>
+              return (
                 <Box
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    marginBottom: "30px",
-                    padding: "20px 20px 20px 36px",
-                    marginLeft: { xs: "auto", lg: "calc(50% - 600px - 140px)" },
-                  }}
+                  id="alumni"
+                  sx={{ marginBottom: "60px", scrollMarginTop: "80px" }}
                 >
-                  <Typography variant="h4" sx={{ fontWeight: "bold", color: "#1e3a8a", margin: 0 }}>
-                    Alumni
-                  </Typography>
-                </Box>
-
-                {sortedYears.map((year) => (
-                  <Box key={year} sx={{ marginBottom: "40px" }}>
-                    <Box
-                      sx={{
-                        padding: "8px 20px 8px 36px",
-                        marginLeft: { xs: "auto", lg: "calc(50% - 600px - 140px)" },
-                        marginBottom: "20px",
-                      }}
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      marginBottom: "30px",
+                      padding: "20px 20px 20px 36px",
+                      marginLeft: {
+                        xs: "auto",
+                        lg: "calc(50% - 600px - 140px)",
+                      },
+                    }}
+                  >
+                    <Typography
+                      variant="h4"
+                      sx={{ fontWeight: "bold", color: "#1e3a8a", margin: 0 }}
                     >
-                      <Typography variant="h6" sx={{ fontWeight: "600", color: "#999" }}>
-                        {year}
-                      </Typography>
-                    </Box>
-                    <Box
-                      sx={{
-                        display: "grid",
-                        gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
-                        gap: "24px",
-                        padding: "0 20px",
-                        justifyContent: "center",
-                        maxWidth: "1200px",
-                        margin: "0 auto",
-                        marginLeft: { xs: "auto", lg: "calc(50% - 600px - 140px)" },
-                      }}
-                    >
-                      {byYear[year]!.map((alumnus) => (
-                        <TeamCard key={alumnus.name} member={alumnus} />
-                      ))}
-                    </Box>
+                      Alumni
+                    </Typography>
                   </Box>
-                ))}
-              </Box>
-            );
-          })()}
 
+                  {sortedYears.map((year) => (
+                    <Box key={year} sx={{ marginBottom: "40px" }}>
+                      <Box
+                        sx={{
+                          padding: "8px 20px 8px 36px",
+                          marginLeft: {
+                            xs: "auto",
+                            lg: "calc(50% - 600px - 140px)",
+                          },
+                          marginBottom: "20px",
+                        }}
+                      >
+                        <Typography
+                          variant="h6"
+                          sx={{ fontWeight: "600", color: "#999" }}
+                        >
+                          {year}
+                        </Typography>
+                      </Box>
+                      <Box
+                        sx={{
+                          display: "grid",
+                          gridTemplateColumns:
+                            "repeat(auto-fill, minmax(320px, 1fr))",
+                          gap: "24px",
+                          padding: "0 20px",
+                          justifyContent: "center",
+                          maxWidth: "1200px",
+                          margin: "0 auto",
+                          marginLeft: {
+                            xs: "auto",
+                            lg: "calc(50% - 600px - 140px)",
+                          },
+                        }}
+                      >
+                        {byYear[year]!.map((alumnus) => (
+                          <TeamCard key={alumnus.name} member={alumnus} />
+                        ))}
+                      </Box>
+                    </Box>
+                  ))}
+                </Box>
+              );
+            })()}
         </Box>
       </Box>
       <Footer />

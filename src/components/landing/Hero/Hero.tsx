@@ -124,7 +124,10 @@ const Hero = () => {
           </FadeInOnScroll>
 
           {/* Image Section */}
-          <FadeInOnScroll delay={200} className="flex-1 flex justify-center items-center relative mt-8 md:mt-0">
+          <FadeInOnScroll
+            delay={200}
+            className="flex-1 flex justify-center items-center relative mt-8 md:mt-0"
+          >
             <CardMedia
               component="img"
               src="/assets/ACM logo.png"
