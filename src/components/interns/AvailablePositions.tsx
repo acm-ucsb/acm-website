@@ -194,8 +194,8 @@ const AvailablePositions = () => {
               px: 2,
             }}
           >
-            You&apos;ll have the chance to work across different parts of ACM —
-            exploring branches and teams — before finding where you have the
+            You&apos;ll have the chance to work across different parts of ACM -
+            exploring branches and teams - before finding where you have the
             most impact.
           </Typography>
         </FadeInOnScroll>
@@ -273,7 +273,7 @@ const AvailablePositions = () => {
                 }}
               >
                 Not every good idea fits an existing box. As an intern,
-                you&apos;ll have the chance to propose new initiatives — and the
+                you&apos;ll have the chance to propose new initiatives and the
                 opportunity to grow them into branches or ongoing programs
                 within ACM.
               </Typography>
