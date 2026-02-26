@@ -9,20 +9,19 @@ import { People } from "@/components/shared/NameCard/NameCard";
 export default function MeetTheTeam() {
   const [data, setData] = useState<[People[]]>([[]]);
 
-  const featuredTeamMembers = [
-    "Eugene Wong",
-    "Jiaming Liu",
-    "Aarush Narang",
-    "John Vu",
-    "Don Tran",
-    "Ken Thampiratwong",
-    "Aman Desai",
-    "Ezra Furtado-Tiwari",
-    "Adit Suman",
-    "Hubert Guan",
-  ];
-
   useEffect(() => {
+    const featuredTeamMembers = [
+      "Eugene Wong",
+      "Jiaming Liu",
+      "Aarush Narang",
+      "John Vu",
+      "Don Tran",
+      "Ken Thampiratwong",
+      "Aman Desai",
+      "Ezra Furtado-Tiwari",
+      "Adit Suman",
+      "Hubert Guan",
+    ];
     let idxCounter = 0;
     const dat: [People[]] = [[]];
     let arr: People[] = [];
@@ -50,7 +49,7 @@ export default function MeetTheTeam() {
       dat.push(arr);
     }
     setData(dat);
-  }, [featuredTeamMembers]);
+  }, []);
 
   return (
     <div>

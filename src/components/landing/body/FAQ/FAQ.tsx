@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import {
   Accordion,
   AccordionSummary,
@@ -113,10 +114,12 @@ const FAQ = async () => {
         }}
       >
         <Box sx={{ display: "flex", alignItems: "center" }}>
-          <img
+          <Image
             src={branch.image}
             alt={branch.branch}
-            style={{ width: "62px", height: "62px", marginRight: "16px" }}
+            width={62}
+            height={62}
+            style={{ marginRight: "16px" }}
           />
           <Typography
             variant="h6"

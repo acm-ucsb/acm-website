@@ -18,7 +18,6 @@ const Hero = () => {
         flexDirection: "column",
       }}
     >
-      {/* Content Container — flex: 1 so it fills space above the arrow */}
       <Box
         sx={{
           flex: 1,

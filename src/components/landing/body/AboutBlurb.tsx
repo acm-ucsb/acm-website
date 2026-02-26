@@ -11,7 +11,7 @@ const pillars = [
     icon: <ExploreOutlinedIcon sx={{ fontSize: "2rem", color: "#18A2F2" }} />,
     title: "Explore Your Interests",
     description:
-      "Discover what excites you in tech — from the practical to theoretical, and beyond.",
+      "Discover what excites you in tech! From the practical to theoretical, and beyond.",
   },
   {
     icon: <BuildOutlinedIcon sx={{ fontSize: "2rem", color: "#18A2F2" }} />,
@@ -47,7 +47,7 @@ const AboutBlurb = () => {
           </Typography>
           <Typography variant="h6" sx={{ color: "gray", fontWeight: "normal" }}>
             ACM at UCSB is a student-run organization that fosters a community
-            for students passionate about Computer Science — helping them build
+            for students passionate about Computer Science - helping them build
             real-world skills, explore career paths, and have fun following
             their passion.
           </Typography>
