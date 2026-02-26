@@ -1,5 +1,10 @@
 #!/usr/bin/env sh
 
+# Load nvm if available (picks up node/yarn installed via nvm)
+[ -s "$HOME/.nvm/nvm.sh" ] && . "$HOME/.nvm/nvm.sh"
+# Add common package manager locations (Homebrew, system)
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+
 echo "Running pre-push checks..." >&2
 
 echo "Linting..." >&2
