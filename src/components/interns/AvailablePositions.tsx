@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import { Typography, Box, Collapse } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import FadeInOnScroll from "@/components/shared/FadeInOnScroll";
@@ -79,10 +80,12 @@ const branches: AreaTileProps[] = [
     tagline: "A community for builders working on software projects together.",
     accentColor: "#1DAA2E",
     icon: (
-      <img
+      <Image
         src="/assets/branchImages/dev.png"
         alt=""
-        style={{ width: 20, height: 20, objectFit: "contain" }}
+        width={20}
+        height={20}
+        style={{ objectFit: "contain" }}
       />
     ),
     expandedDetail:
@@ -93,10 +96,12 @@ const branches: AreaTileProps[] = [
     tagline: "Competitive programming, algorithms, and community outreach.",
     accentColor: "#B93016",
     icon: (
-      <img
+      <Image
         src="/assets/branchImages/icpc.png"
         alt=""
-        style={{ width: 20, height: 20, objectFit: "contain" }}
+        width={20}
+        height={20}
+        style={{ objectFit: "contain" }}
       />
     ),
     expandedDetail:
@@ -107,10 +112,12 @@ const branches: AreaTileProps[] = [
     tagline: "Industry connections, mentorship, and real-world projects.",
     accentColor: "#087B90",
     icon: (
-      <img
+      <Image
         src="/assets/branchImages/industry.png"
         alt=""
-        style={{ width: 20, height: 20, objectFit: "contain" }}
+        width={20}
+        height={20}
+        style={{ objectFit: "contain" }}
       />
     ),
     expandedDetail:
@@ -121,10 +128,12 @@ const branches: AreaTileProps[] = [
     tagline: "Connecting students with CS research opportunities at UCSB.",
     accentColor: "#D3A739",
     icon: (
-      <img
+      <Image
         src="/assets/branchImages/research.png"
         alt=""
-        style={{ width: 20, height: 20, objectFit: "contain" }}
+        width={20}
+        height={20}
+        style={{ objectFit: "contain" }}
       />
     ),
     expandedDetail:

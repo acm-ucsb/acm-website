@@ -40,7 +40,7 @@ export function BranchCountdown(props: BranchCountdown) {
     }, 1000);
 
     return () => clearInterval(interval);
-  });
+  }, [releaseTime]);
 
   return isClient && isNewBranch ? (
     remainingTime < 0 ? (
