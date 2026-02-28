@@ -51,8 +51,8 @@ export default function Hero() {
               }}
             >
               ACM at UCSB is a student-run organization that aims to support
-              students interested in Technology by fostering a community
-              of individuals who seek to learn from each other. Specifically, we
+              students interested in Technology by fostering a community of
+              individuals who seek to learn from each other. Specifically, we
               create a place for students to prepare for a career in CS through
               hands-on experience developing real-world projects; gain exposure
               to a wide range of career paths within technology; network with

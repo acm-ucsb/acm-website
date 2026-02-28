@@ -20,8 +20,7 @@ export const timelineItems = [
   {
     cardTitle: "Decisions Announced",
     cardSubtitle: "Spring Break",
-    cardDetailedText:
-      "Decisions will be sent out during spring break.",
+    cardDetailedText: "Decisions will be sent out during spring break.",
   },
   {
     cardTitle: "Join and Make an Impact!",
