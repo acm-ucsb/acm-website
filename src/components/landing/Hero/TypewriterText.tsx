@@ -4,9 +4,11 @@ import Typewriter from "typewriter-effect";
 
 const typewriterStrings: string[] = [
   "Computer Science",
+  "Data Science",
+  "Technology",
   "Machine Learning",
   "Algorithms",
-  "CS Research",
+  "Research",
   "Web/App Design",
 ];
 
