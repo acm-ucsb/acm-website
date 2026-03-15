@@ -376,7 +376,7 @@ export const CurrentTeam: TeamYear = {
     },
     {
       name: "Aman Desai",
-      position: "President",
+      position: "Industry President",
       classOf: "2027",
       branch: "Industry",
       lastActiveYear: "2024 - 2025",
@@ -447,6 +447,23 @@ export const CurrentTeam: TeamYear = {
       color: "#9B59B6",
       lastActiveYear: "2024 - 2025",
       picture: RitamSaha.src,
+    },
+    {
+      name: "Jennifer Zhu",
+      position: "Marketing Director",
+      classOf: "2026",
+      branch: "Board",
+      color: "#EB459E",
+      lastActiveYear: "2024 - 2025",
+      picture: BoardIcon.src,
+    },
+    {
+      name: "Wesley Hung",
+      position: "ICPC Branch Head",
+      classOf: "2025",
+      branch: "ICPC",
+      lastActiveYear: "2024 - 2025",
+      picture: BoardIcon.src,
     },
   ],
 };
