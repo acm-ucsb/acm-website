@@ -464,7 +464,7 @@ export const CurrentTeam: TeamYear = {
       branch: "ICPC",
       lastActiveYear: "2024 - 2025",
       picture: BoardIcon.src,
-    }
+    },
   ],
 };
 
