@@ -7,9 +7,9 @@ export const timelineItems = [
   },
   {
     cardTitle: "Applications Close",
-    cardSubtitle: "March 3, 2026",
+    cardSubtitle: "March 4, 2026",
     cardDetailedText:
-      "Applications will close at 11:59 PM on March 3rd.  We can't wait to learn more about you!",
+      "Applications will close at 11:59 PM on March 4th.  We can't wait to learn more about you!",
   },
   {
     cardTitle: "Coffee Chats",

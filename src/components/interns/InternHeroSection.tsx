@@ -8,7 +8,7 @@ import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import BuildOutlinedIcon from "@mui/icons-material/BuildOutlined";
 
 const highlights = [
-  { icon: <PeopleOutlineIcon />, label: "Talented CS community" },
+  { icon: <PeopleOutlineIcon />, label: "Talented tech community" },
   { icon: <LightbulbOutlinedIcon />, label: "Propose your own initiatives" },
   { icon: <BuildOutlinedIcon />, label: "Hands-on experience" },
   { icon: <SchoolOutlinedIcon />, label: "Big/Little mentorship" },
@@ -166,7 +166,7 @@ export const InternHeroSection = () => {
               ...fadeIn("0.45s"),
             }}
           >
-            Applications close March 3rd · Decisions announced Spring Break
+            Applications close March 4th · Decisions announced Spring Break
           </Typography>
         </Box>
 
