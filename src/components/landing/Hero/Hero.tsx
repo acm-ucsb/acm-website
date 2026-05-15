@@ -77,7 +77,7 @@ const Hero = () => {
             >
               <Button
                 variant="contained"
-                href="#events"
+                href="/events"
                 sx={{
                   backgroundColor: "#18A2F2",
                   color: "white",

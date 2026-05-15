@@ -22,18 +22,6 @@ const EventsSection = async () => {
   return (
     <section id="events" className="mb-36">
       <div className="w-full max-w-5xl mx-auto px-6">
-        <Typography
-          variant="h4"
-          gutterBottom
-          sx={{
-            fontWeight: "bold",
-            marginY: "64px",
-            color: "black",
-          }}
-        >
-          Events
-        </Typography>
-
         <EventCards events={validEvents}></EventCards>
       </div>
     </section>
