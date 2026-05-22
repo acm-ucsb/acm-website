@@ -14,7 +14,7 @@ export const getSupabaseClient = (): SupabaseClient => {
 
   if (!url || !publishableKey) {
     throw new Error(
-      "Missing NEXT_PUBLIC_SUPABASE_URL or NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY"
+      "Missing NEXT_PUBLIC_SUPABASE_URL or NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY",
     );
   }
 
@@ -63,9 +63,7 @@ export const getEventsData = async (): Promise<ACMEvent[]> => {
 export const getFAQData = async (): Promise<FAQType[]> => {
   const supabase = getSupabaseClient();
 
-  const { data, error } = await supabase
-    .from("FAQ")
-    .select("question, answer");
+  const { data, error } = await supabase.from("FAQ").select("question, answer");
 
   if (error) {
     console.error("Error fetching FAQs from Supabase: ", error);
