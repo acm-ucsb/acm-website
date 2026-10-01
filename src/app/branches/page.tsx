@@ -35,8 +35,8 @@ export default function Home() {
               textAlign: "center",
             }}
           >
-            ACM has four branches: ICPC, Research, Web Development, and
-            Industry. Each branch holds independent events to support its unique
+            ACM has five branches: ICPC, Research, Web Development,
+            Industry, and Cyber Security. Each branch holds independent events to support its unique
             mission.
           </Typography>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl px-6 mb-[7rem]">

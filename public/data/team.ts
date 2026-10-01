@@ -31,6 +31,7 @@ import ICPCIcon from "@public/assets/branchImages/icpc.png";
 import ResearchIcon from "@public/assets/branchImages/research.png";
 import WebDevIcon from "@public/assets/branchImages/dev.png";
 import IndustryIcon from "@public/assets/branchImages/industry.png";
+import CyberIcon from "@public/assets/branchImages/cyber.png";
 // import MarketingIcon from "@public/assets/ACM logo.png";
 
 // Professor Images
@@ -60,37 +61,45 @@ import RitamSaha from "@public/assets/teamImages/2024-2025/RitamSaha.png";
 // import OmarAboutaleb from "@public/assets/teamImages/2024-2025/OmarAboutaleb.png";
 // import KarenaLai from "@public/assets/teamImages/2024-2025/KarenaLai.png";
 
-// Team Images - 2025-2026
-import ShivaneDadi from "@public/assets/teamImages/2025-2026/ShivaneDadi.jpg";
-import JiamingLiu from "@public/assets/teamImages/2025-2026/JiamingLiu.jpg";
-import HenryZhao from "@public/assets/teamImages/2025-2026/HenryZhao.jpg";
-import DonTran from "@public/assets/teamImages/2025-2026/DonTran.jpg";
-import HubertGuan from "@public/assets/teamImages/2025-2026/HubertGuan.jpeg";
-import AmanDesai from "@public/assets/teamImages/2025-2026/AmanDesai.jpg";
-import DanielCui from "@public/assets/teamImages/2025-2026/DanielCui.jpg";
-import GurneetBains from "@public/assets/teamImages/2025-2026/GurneetBains.jpeg";
-import AbielaSarrieddine from "@public/assets/teamImages/2025-2026/AbielaSarrieddine.jpeg";
-import SachitMadaan from "@public/assets/teamImages/2025-2026/SachitMadaan.jpeg";
-import AnikaChoudhary from "@public/assets/teamImages/2025-2026/AnikaChoudhary.jpeg";
-import DivyaSubramonian from "@public/assets/teamImages/2025-2026/DivyaSubramonian.jpg";
-import AditSuman from "@public/assets/teamImages/2025-2026/AditSuman.jpeg";
-import KelvinJou from "@public/assets/teamImages/2025-2026/KelvinJou.png";
-import ShreyaChati from "@public/assets/teamImages/2025-2026/ShreyaChati.jpg";
-import EzraFurtadoTiwari from "@public/assets/teamImages/2025-2026/EzraFurtado-Tiwari.jpg";
-import JohnVu from "@public/assets/teamImages/2025-2026/JohnVu.jpeg";
-import AarushNarang from "@public/assets/teamImages/2025-2026/AarushNarang.jpeg";
-import JuliannaFlores from "@public/assets/teamImages/2025-2026/JuliannaFlores.jpg";
-import LukeHerbelin from "@public/assets/teamImages/2025-2026/LukeHerbelin.jpeg";
-import MitulMarimuthu from "@public/assets/teamImages/2025-2026/MitulMarimuthu.jpeg";
-import DhruvPatel from "@public/assets/teamImages/2025-2026/DhruvPatel.jpeg";
-import AryanVashishta from "@public/assets/teamImages/2025-2026/AryanVashishta.jpeg";
-import DemiraThaker from "@public/assets/teamImages/2025-2026/DemiraThaker.jpg";
-import EugeneWong from "@public/assets/teamImages/2025-2026/EugeneWong.jpg";
-import TylerLe from "@public/assets/teamImages/2025-2026/TylerLe.png";
-import SanjanaBhupathi from "@public/assets/teamImages/2025-2026/SanjanaBhupathi.png";
-import MaitriAllani from "@public/assets/teamImages/2025-2026/MaitriAllani.jpg";
-import KenThampiratwong from "@public/assets/teamImages/2025-2026/KenThampiratwong.jpg";
-import AryanGautam from "@public/assets/teamImages/2025-2026/AryanGautam.jpeg";
+// Team Images - 2026-2027
+import ShivaneDadi from "@public/assets/teamImages/2026-2027/ShivaneDadi.jpg";
+import JiamingLiu from "@public/assets/teamImages/2026-2027/JiamingLiu.jpg";
+import HenryZhao from "@public/assets/teamImages/2026-2027/HenryZhao.jpg";
+import DonTran from "@public/assets/teamImages/2026-2027/DonTran.jpg";
+import HubertGuan from "@public/assets/teamImages/2026-2027/HubertGuan.jpeg";
+import AmanDesai from "@public/assets/teamImages/2026-2027/AmanDesai.jpg";
+import DanielCui from "@public/assets/teamImages/2026-2027/DanielCui.jpg";
+import GurneetBains from "@public/assets/teamImages/2026-2027/GurneetBains.jpeg";
+import AbielaSarrieddine from "@public/assets/teamImages/2026-2027/AbielaSarrieddine.jpeg";
+import SachitMadaan from "@public/assets/teamImages/2026-2027/SachitMadaan.jpeg";
+import AnikaChoudhary from "@public/assets/teamImages/2026-2027/AnikaChoudhary.jpeg";
+import DivyaSubramonian from "@public/assets/teamImages/2026-2027/DivyaSubramonian.jpg";
+import AditSuman from "@public/assets/teamImages/2026-2027/AditSuman.jpeg";
+import KelvinJou from "@public/assets/teamImages/2026-2027/KelvinJou.png";
+import ShreyaChati from "@public/assets/teamImages/2026-2027/ShreyaChati.jpg";
+import EzraFurtadoTiwari from "@public/assets/teamImages/2026-2027/EzraFurtado-Tiwari.jpg";
+import JohnVu from "@public/assets/teamImages/2026-2027/JohnVu.jpeg";
+import AarushNarang from "@public/assets/teamImages/2026-2027/AarushNarang.jpeg";
+import JuliannaFlores from "@public/assets/teamImages/2026-2027/JuliannaFlores.jpg";
+import LukeHerbelin from "@public/assets/teamImages/2026-2027/LukeHerbelin.jpeg";
+import MitulMarimuthu from "@public/assets/teamImages/2026-2027/MitulMarimuthu.jpeg";
+import DhruvPatel from "@public/assets/teamImages/2026-2027/DhruvPatel.jpeg";
+import AryanVashishta from "@public/assets/teamImages/2026-2027/AryanVashishta.jpeg";
+import DemiraThaker from "@public/assets/teamImages/2026-2027/DemiraThaker.jpg";
+import EugeneWong from "@public/assets/teamImages/2026-2027/EugeneWong.jpg";
+import TylerLe from "@public/assets/teamImages/2026-2027/TylerLe.png";
+import SanjanaBhupathi from "@public/assets/teamImages/2026-2027/SanjanaBhupathi.png";
+import MaitriAllani from "@public/assets/teamImages/2026-2027/MaitriAllani.jpg";
+import KenThampiratwong from "@public/assets/teamImages/2026-2027/KenThampiratwong.jpg";
+import AryanGautam from "@public/assets/teamImages/2026-2027/AryanGautam.jpeg";
+import AdityaVaswani from "@public/assets/teamImages/2026-2027/AdityaVaswani.png";
+import EmmaMa from "@public/assets/teamImages/2026-2027/EmmaMa.jpg";
+import MahasvinManikandan from "@public/assets/teamImages/2026-2027/MahasvinShanmugapriyaManikandan.jpg";
+import MayankKumar from "@public/assets/teamImages/2026-2027/MayankKumar.png";
+import NicholasShao from "@public/assets/teamImages/2026-2027/NicholasShao.jpg";
+import NicoMcMillian from "@public/assets/teamImages/2026-2027/NicoMcMillian.jpg";
+import SafwanRahman from "@public/assets/teamImages/2026-2027/SafwanRahman.jpg";
+import SiddharthSharma from "@public/assets/teamImages/2026-2027/SiddharthSharma.jpg";
 
 export const Branches: BranchInfo[] = [
   {
@@ -128,19 +137,19 @@ export const Branches: BranchInfo[] = [
     icon: ResearchIcon.src,
     order: 5,
   },
+  {
+    name: "Cyber Security",
+    suffix: "cyber",
+    color: "#7c3aed",
+    icon: CyberIcon.src,
+    order: 6,
+  },
 ];
 
 // current year
 export const CurrentTeam: TeamYear = {
-  academicYear: "2025 - 2026",
+  academicYear: "2026 - 2027",
   officers: [
-    {
-      name: "Jiaming Liu",
-      position: "President",
-      classOf: "2027",
-      branch: "Board",
-      picture: JiamingLiu.src,
-    },
     {
       name: "Sachit Madaan",
       position: "Co-Vice President",
@@ -157,83 +166,66 @@ export const CurrentTeam: TeamYear = {
     },
     {
       name: "Aryan Vashishta",
-      position: "Treasury Officer",
+      position: "Treasurer",
       classOf: "2028",
       branch: "Board",
       color: "#1ABC9C",
       picture: AryanVashishta.src,
     },
     {
-      name: "Tyler Le",
-      position: "Treasury Officer",
+      name: "Maitri Allani",
+      position: "Treasurer",
       classOf: "2028",
       branch: "Board",
       color: "#1ABC9C",
-      picture: TylerLe.src,
-    },
-    {
-      name: "Demira Thaker",
-      position: "Marketing Director",
-      classOf: "2027",
-      branch: "Board",
-      color: "#EB459E",
-      picture: DemiraThaker.src,
-    },
-    {
-      name: "Gurneet Bains",
-      position: "Marketing Officer",
-      classOf: "2028",
-      branch: "Board",
-      color: "#EB459E",
-      picture: GurneetBains.src,
-    },
-    {
-      name: "Maitri Allani",
-      position: "Marketing Officer",
-      classOf: "2028",
-      branch: "Board",
-      color: "#EB459E",
       picture: MaitriAllani.src,
     },
     {
-      name: "Abiela Sarrieddine",
-      position: "Social Director",
-      classOf: "2028",
+      name: "Julianna Flores",
+      position: "Marketing Chair",
+      classOf: "2027",
       branch: "Board",
-      color: "#9B59B6",
-      picture: AbielaSarrieddine.src,
+      color: "#EB459E",
+      picture: JuliannaFlores.src,
     },
     {
-      name: "Henry Zhao",
-      position: "Social Director",
+      name: "Joyce",
+      position: "Marketing Chair",
+      branch: "Board",
+      color: "#EB459E",
+      picture: BoardIcon.src,
+    },
+    {
+      name: "Emma Ma",
+      position: "Events Chair",
+      classOf: "2029",
+      branch: "Board",
+      color: "#9B59B6",
+      picture: EmmaMa.src,
+    },
+    {
+      name: "Anika Choudhary",
+      position: "Events Advisor",
       classOf: "2028",
       branch: "Board",
       color: "#9B59B6",
-      picture: HenryZhao.src,
+      picture: AnikaChoudhary.src,
     },
     {
       name: "Shreya Chati",
-      position: "Social Officer",
+      position: "Events Advisor",
       classOf: "2028",
       branch: "Board",
       color: "#9B59B6",
       picture: ShreyaChati.src,
     },
     {
-      name: "Anika Choudhary",
-      position: "Sponsorships Director",
+      name: "Abiela Sarrieddine",
+      position: "Events Officer",
       classOf: "2028",
       branch: "Board",
-      color: "#0BBBCC",
-      picture: AnikaChoudhary.src,
-    },
-    {
-      name: "Divya Subramonian",
-      position: "Sponsorships Director",
-      classOf: "2027",
-      branch: "Board",
-      color: "#0BBBCC",
-      picture: DivyaSubramonian.src,
+      color: "#9B59B6",
+      picture: AbielaSarrieddine.src,
     },
     {
       name: "Aarush Narang",
@@ -241,83 +233,6 @@ export const CurrentTeam: TeamYear = {
       classOf: "2028",
       branch: "Industry",
       picture: AarushNarang.src,
-    },
-    {
-      name: "John Vu",
-      position: "President",
-      classOf: "2027",
-      branch: "Development",
-      picture: JohnVu.src,
-    },
-    {
-      name: "Don Tran",
-      position: "Co-Vice President",
-      classOf: "2028",
-      branch: "Development",
-      picture: DonTran.src,
-    },
-    {
-      name: "Ken Thampiratwong",
-      position: "Co-Vice President",
-      classOf: "2027",
-      branch: "Development",
-      picture: KenThampiratwong.src,
-    },
-    {
-      name: "Mitul Marimuthu",
-      position: "Officer",
-      classOf: "2028",
-      branch: "Development",
-      picture: MitulMarimuthu.src,
-    },
-    {
-      name: "Dhruv Patel",
-      position: "Officer",
-      classOf: "2027",
-      branch: "Development",
-      picture: DhruvPatel.src,
-    },
-    {
-      name: "Daniel Cui",
-      position: "Officer",
-      classOf: "2028",
-      branch: "Development",
-      picture: DanielCui.src,
-    },
-    {
-      name: "Hubert Guan",
-      position: "Co-President",
-      classOf: "2028",
-      branch: "Research",
-      picture: HubertGuan.src,
-    },
-    {
-      name: "Adit Suman",
-      position: "Co-President",
-      classOf: "2026",
-      branch: "Research",
-      picture: AditSuman.src,
-    },
-    {
-      name: "Kelvin Jou",
-      position: "Officer",
-      classOf: "2028",
-      branch: "Research",
-      picture: KelvinJou.src,
-    },
-    {
-      name: "Aryan Gautam",
-      position: "Officer",
-      classOf: "2028",
-      branch: "Research",
-      picture: AryanGautam.src,
-    },
-    {
-      name: "Luke Herbelin",
-      position: "Officer",
-      classOf: "2028",
-      branch: "Research",
-      picture: LukeHerbelin.src,
     },
     {
       name: "Sachit Madaan",
@@ -341,11 +256,102 @@ export const CurrentTeam: TeamYear = {
       picture: SanjanaBhupathi.src,
     },
     {
+      name: "Mitul Marimuthu",
+      position: "Co-Head",
+      classOf: "2028",
+      branch: "Development",
+      picture: MitulMarimuthu.src,
+    },
+    {
+      name: "Siddharth Sharma",
+      position: "Co-Head",
+      classOf: "2029",
+      branch: "Development",
+      picture: SiddharthSharma.src,
+    },
+    {
+      name: "Mahasvin Shanmugapriya Manikandan",
+      position: "Officer",
+      classOf: "2029",
+      branch: "Development",
+      picture: MahasvinManikandan.src,
+    },
+    {
+      name: "Krithi Haresamudra",
+      position: "Officer",
+      classOf: "2029",
+      branch: "Development",
+      picture: BoardIcon.src,
+    },
+    {
+      name: "Nico McMillian",
+      position: "Officer",
+      classOf: "2029",
+      branch: "Development",
+      picture: NicoMcMillian.src,
+    },
+    {
+      name: "Mayank Kumar",
+      position: "Officer",
+      classOf: "2028",
+      branch: "Development",
+      picture: MayankKumar.src,
+    },
+    {
+      name: "Safwan Rahman",
+      position: "Officer",
+      classOf: "2028",
+      branch: "Development",
+      picture: SafwanRahman.src,
+    },
+    {
+      name: "Hubert Guan",
+      position: "Co-Head",
+      classOf: "2028",
+      branch: "Research",
+      picture: HubertGuan.src,
+    },
+    {
+      name: "Aditya Vaswani",
+      position: "Co-Head",
+      classOf: "2029",
+      branch: "Research",
+      picture: AdityaVaswani.src,
+    },
+    {
+      name: "Luke Herbelin",
+      position: "Officer",
+      classOf: "2028",
+      branch: "Research",
+      picture: LukeHerbelin.src,
+    },
+    {
+      name: "Aryan Gautam",
+      position: "Officer",
+      classOf: "2028",
+      branch: "Research",
+      picture: AryanGautam.src,
+    },
+    {
+      name: "Kelvin Jou",
+      position: "Officer",
+      classOf: "2028",
+      branch: "Research",
+      picture: KelvinJou.src,
+    },
+    {
       name: "Ezra Furtado-Tiwari",
       position: "President",
       classOf: "2028",
       branch: "ICPC",
       picture: EzraFurtadoTiwari.src,
+    },
+    {
+      name: "Nicholas Shao",
+      position: "Head",
+      classOf: "2029",
+      branch: "Cyber Security",
+      picture: NicholasShao.src,
     },
   ],
   professors: [
@@ -366,6 +372,99 @@ export const CurrentTeam: TeamYear = {
     },
   ],
   alumni: [
+    {
+      name: "Jiaming Liu",
+      position: "President",
+      classOf: "2027",
+      branch: "Board",
+      lastActiveYear: "2025 - 2026",
+      picture: JiamingLiu.src,
+    },
+    {
+      name: "John Vu",
+      position: "Development President",
+      classOf: "2027",
+      branch: "Development",
+      lastActiveYear: "2025 - 2026",
+      picture: JohnVu.src,
+    },
+    {
+      name: "Ken Thampiratwong",
+      position: "Development Co-Vice President",
+      classOf: "2027",
+      branch: "Development",
+      lastActiveYear: "2025 - 2026",
+      picture: KenThampiratwong.src,
+    },
+    {
+      name: "Dhruv Patel",
+      position: "Development Officer",
+      classOf: "2027",
+      branch: "Development",
+      lastActiveYear: "2025 - 2026",
+      picture: DhruvPatel.src,
+    },
+    {
+      name: "Daniel Cui",
+      position: "Development Officer",
+      classOf: "2028",
+      branch: "Development",
+      lastActiveYear: "2025 - 2026",
+      picture: DanielCui.src,
+    },
+    {
+      name: "Adit Suman",
+      position: "Research Co-President",
+      classOf: "2026",
+      branch: "Research",
+      lastActiveYear: "2025 - 2026",
+      picture: AditSuman.src,
+    },
+    {
+      name: "Tyler Le",
+      position: "Treasury Officer",
+      classOf: "2028",
+      branch: "Board",
+      color: "#1ABC9C",
+      lastActiveYear: "2025 - 2026",
+      picture: TylerLe.src,
+    },
+    {
+      name: "Demira Thaker",
+      position: "Marketing Director",
+      classOf: "2027",
+      branch: "Board",
+      color: "#EB459E",
+      lastActiveYear: "2025 - 2026",
+      picture: DemiraThaker.src,
+    },
+    {
+      name: "Gurneet Bains",
+      position: "Marketing Officer",
+      classOf: "2028",
+      branch: "Board",
+      color: "#EB459E",
+      lastActiveYear: "2025 - 2026",
+      picture: GurneetBains.src,
+    },
+    {
+      name: "Henry Zhao",
+      position: "Social Director",
+      classOf: "2028",
+      branch: "Board",
+      color: "#9B59B6",
+      lastActiveYear: "2025 - 2026",
+      picture: HenryZhao.src,
+    },
+    {
+      name: "Divya Subramonian",
+      position: "Sponsorships Director",
+      classOf: "2027",
+      branch: "Board",
+      color: "#0BBBCC",
+      lastActiveYear: "2025 - 2026",
+      picture: DivyaSubramonian.src,
+    },
     {
       name: "Eugene Wong",
       position: "President (Fall 25)",
@@ -467,6 +566,344 @@ export const CurrentTeam: TeamYear = {
     },
   ],
 };
+
+// // Archive 2025-2026 year
+// export const CurrentTeam: TeamYear = {
+//   academicYear: "2025 - 2026",
+//   officers: [
+//     {
+//       name: "Jiaming Liu",
+//       position: "President",
+//       classOf: "2027",
+//       branch: "Board",
+//       picture: JiamingLiu.src,
+//     },
+//     {
+//       name: "Sachit Madaan",
+//       position: "Co-Vice President",
+//       classOf: "2028",
+//       branch: "Board",
+//       picture: SachitMadaan.src,
+//     },
+//     {
+//       name: "Don Tran",
+//       position: "Co-Vice President",
+//       classOf: "2028",
+//       branch: "Board",
+//       picture: DonTran.src,
+//     },
+//     {
+//       name: "Aryan Vashishta",
+//       position: "Treasury Officer",
+//       classOf: "2028",
+//       branch: "Board",
+//       color: "#1ABC9C",
+//       picture: AryanVashishta.src,
+//     },
+//     {
+//       name: "Tyler Le",
+//       position: "Treasury Officer",
+//       classOf: "2028",
+//       branch: "Board",
+//       color: "#1ABC9C",
+//       picture: TylerLe.src,
+//     },
+//     {
+//       name: "Demira Thaker",
+//       position: "Marketing Director",
+//       classOf: "2027",
+//       branch: "Board",
+//       color: "#EB459E",
+//       picture: DemiraThaker.src,
+//     },
+//     {
+//       name: "Gurneet Bains",
+//       position: "Marketing Officer",
+//       classOf: "2028",
+//       branch: "Board",
+//       color: "#EB459E",
+//       picture: GurneetBains.src,
+//     },
+//     {
+//       name: "Maitri Allani",
+//       position: "Marketing Officer",
+//       classOf: "2028",
+//       branch: "Board",
+//       color: "#EB459E",
+//       picture: MaitriAllani.src,
+//     },
+//     {
+//       name: "Abiela Sarrieddine",
+//       position: "Social Director",
+//       classOf: "2028",
+//       branch: "Board",
+//       color: "#9B59B6",
+//       picture: AbielaSarrieddine.src,
+//     },
+//     {
+//       name: "Henry Zhao",
+//       position: "Social Director",
+//       classOf: "2028",
+//       branch: "Board",
+//       color: "#9B59B6",
+//       picture: HenryZhao.src,
+//     },
+//     {
+//       name: "Shreya Chati",
+//       position: "Social Officer",
+//       classOf: "2028",
+//       branch: "Board",
+//       color: "#9B59B6",
+//       picture: ShreyaChati.src,
+//     },
+//     {
+//       name: "Anika Choudhary",
+//       position: "Sponsorships Director",
+//       classOf: "2028",
+//       branch: "Board",
+//       color: "#0BBBCC",
+//       picture: AnikaChoudhary.src,
+//     },
+//     {
+//       name: "Divya Subramonian",
+//       position: "Sponsorships Director",
+//       classOf: "2027",
+//       branch: "Board",
+//       color: "#0BBBCC",
+//       picture: DivyaSubramonian.src,
+//     },
+//     {
+//       name: "Aarush Narang",
+//       position: "Technical Co-President",
+//       classOf: "2028",
+//       branch: "Industry",
+//       picture: AarushNarang.src,
+//     },
+//     {
+//       name: "John Vu",
+//       position: "President",
+//       classOf: "2027",
+//       branch: "Development",
+//       picture: JohnVu.src,
+//     },
+//     {
+//       name: "Don Tran",
+//       position: "Co-Vice President",
+//       classOf: "2028",
+//       branch: "Development",
+//       picture: DonTran.src,
+//     },
+//     {
+//       name: "Ken Thampiratwong",
+//       position: "Co-Vice President",
+//       classOf: "2027",
+//       branch: "Development",
+//       picture: KenThampiratwong.src,
+//     },
+//     {
+//       name: "Mitul Marimuthu",
+//       position: "Officer",
+//       classOf: "2028",
+//       branch: "Development",
+//       picture: MitulMarimuthu.src,
+//     },
+//     {
+//       name: "Dhruv Patel",
+//       position: "Officer",
+//       classOf: "2027",
+//       branch: "Development",
+//       picture: DhruvPatel.src,
+//     },
+//     {
+//       name: "Daniel Cui",
+//       position: "Officer",
+//       classOf: "2028",
+//       branch: "Development",
+//       picture: DanielCui.src,
+//     },
+//     {
+//       name: "Hubert Guan",
+//       position: "Co-President",
+//       classOf: "2028",
+//       branch: "Research",
+//       picture: HubertGuan.src,
+//     },
+//     {
+//       name: "Adit Suman",
+//       position: "Co-President",
+//       classOf: "2026",
+//       branch: "Research",
+//       picture: AditSuman.src,
+//     },
+//     {
+//       name: "Kelvin Jou",
+//       position: "Officer",
+//       classOf: "2028",
+//       branch: "Research",
+//       picture: KelvinJou.src,
+//     },
+//     {
+//       name: "Aryan Gautam",
+//       position: "Officer",
+//       classOf: "2028",
+//       branch: "Research",
+//       picture: AryanGautam.src,
+//     },
+//     {
+//       name: "Luke Herbelin",
+//       position: "Officer",
+//       classOf: "2028",
+//       branch: "Research",
+//       picture: LukeHerbelin.src,
+//     },
+//     {
+//       name: "Sachit Madaan",
+//       position: "Outreach Co-President",
+//       classOf: "2028",
+//       branch: "Industry",
+//       picture: SachitMadaan.src,
+//     },
+//     {
+//       name: "Julianna Flores",
+//       position: "Marketing Director",
+//       classOf: "2027",
+//       branch: "Industry",
+//       picture: JuliannaFlores.src,
+//     },
+//     {
+//       name: "Sanjana Bhupathi",
+//       position: "Marketing Co-President",
+//       classOf: "2028",
+//       branch: "Industry",
+//       picture: SanjanaBhupathi.src,
+//     },
+//     {
+//       name: "Ezra Furtado-Tiwari",
+//       position: "President",
+//       classOf: "2028",
+//       branch: "ICPC",
+//       picture: EzraFurtadoTiwari.src,
+//     },
+//   ],
+//   professors: [
+//     {
+//       name: "Ziad Matni",
+//       position: "Professor, Computer Science",
+//       picture: ZiadMatni.src,
+//     },
+//     {
+//       name: "Daniel Lokshtanov",
+//       position: "Professor & Vice Chair, Computer Science",
+//       picture: DanielLokshtanov.src,
+//     },
+//     {
+//       name: "Lingqi Yan",
+//       position: "Associate Professor, Computer Science",
+//       picture: LingqiYan.src,
+//     },
+//   ],
+//   alumni: [
+//     {
+//       name: "Eugene Wong",
+//       position: "President (Fall 25)",
+//       classOf: "2026",
+//       branch: "Board",
+//       lastActiveYear: "2024 - 2025",
+//       picture: EugeneWong.src,
+//     },
+//     {
+//       name: "Aman Desai",
+//       position: "Industry President",
+//       classOf: "2027",
+//       branch: "Industry",
+//       lastActiveYear: "2024 - 2025",
+//       picture: AmanDesai.src,
+//     },
+//     {
+//       name: "Shivane Dadi",
+//       position: "Marketing Director",
+//       classOf: "2026",
+//       branch: "Board",
+//       color: "#EB459E",
+//       lastActiveYear: "2024 - 2025",
+//       picture: ShivaneDadi.src,
+//     },
+//     {
+//       name: "Rohil Shah",
+//       position: "Co-President",
+//       classOf: "2026",
+//       branch: "Board",
+//       lastActiveYear: "2024 - 2025",
+//       picture: RohilShah.src,
+//     },
+//     {
+//       name: "Kanav Arora",
+//       position: "Co-President",
+//       classOf: "2026",
+//       branch: "Board",
+//       lastActiveYear: "2024 - 2025",
+//       picture: KanavArora.src,
+//     },
+//     {
+//       name: "Zeel Patel",
+//       position: "Secretary",
+//       classOf: "2026",
+//       branch: "Board",
+//       lastActiveYear: "2024 - 2025",
+//       picture: ZeelPatel.src,
+//     },
+//     {
+//       name: "David Wang",
+//       position: "Senior Advisor",
+//       classOf: "2025",
+//       branch: "Board",
+//       lastActiveYear: "2024 - 2025",
+//       picture: DavidWang.src,
+//     },
+//     {
+//       name: "Rohan Kumar",
+//       position: "Co-Head of Web Development",
+//       classOf: "2025",
+//       branch: "Development",
+//       lastActiveYear: "2024 - 2025",
+//       picture: RohanKumar.src,
+//     },
+//     {
+//       name: "Sam Zhu",
+//       position: "Co-Head of Web Development",
+//       classOf: "2026",
+//       branch: "Development",
+//       lastActiveYear: "2024 - 2025",
+//       picture: SamuelZhu.src,
+//     },
+//     {
+//       name: "Ritam Saha",
+//       position: "Social Chair",
+//       classOf: "2027",
+//       branch: "Board",
+//       color: "#9B59B6",
+//       lastActiveYear: "2024 - 2025",
+//       picture: RitamSaha.src,
+//     },
+//     {
+//       name: "Jennifer Zhu",
+//       position: "Marketing Director",
+//       classOf: "2026",
+//       branch: "Board",
+//       color: "#EB459E",
+//       lastActiveYear: "2024 - 2025",
+//       picture: BoardIcon.src,
+//     },
+//     {
+//       name: "Wesley Hung",
+//       position: "ICPC Branch Head",
+//       classOf: "2025",
+//       branch: "ICPC",
+//       lastActiveYear: "2024 - 2025",
+//       picture: BoardIcon.src,
+//     },
+//   ],
+// };
 
 // Archive: 2024-2025 Academic Year
 // export const Team2024_2025: TeamYear = {

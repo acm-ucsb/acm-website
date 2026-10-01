@@ -21,7 +21,7 @@ const Branches = () => {
             Branches
           </Typography>
           <Typography variant="h6" sx={{ color: "gray", mb: "48px" }}>
-            ACM at UCSB consists of 4 communities that each focus on a specific
+            ACM at UCSB consists of 5 communities that each focus on a specific
             area of tech.
           </Typography>
         </FadeInOnScroll>

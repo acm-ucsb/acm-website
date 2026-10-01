@@ -53,6 +53,7 @@ const getBranchType = (str: string): BranchType => {
     research: BranchType.Research,
     icpc: BranchType.ICPC,
     industry: BranchType.Industry,
+    cyber: BranchType.CyberSecurity,
     social: BranchType.Social,
     Board: BranchType.Board,
   };
