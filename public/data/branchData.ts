@@ -2,6 +2,7 @@ import icpcLogo from "@public/assets/branchImages/icpc.png";
 import researchLogo from "@public/assets/branchImages/research.png";
 import developmentLogo from "@public/assets/branchImages/dev.png";
 import industryLogo from "@public/assets/branchImages/industry.png";
+import cyberLogo from "@public/assets/branchImages/cyber.png";
 import { StaticImageData } from "next/image";
 
 export enum BranchType {
@@ -9,6 +10,7 @@ export enum BranchType {
   Research,
   ICPC,
   Industry,
+  CyberSecurity,
   Social,
   Board,
 }
@@ -30,7 +32,7 @@ const branchData: Branch[] = [
     name: "Development Branch",
     img: developmentLogo,
     suffix: "dev",
-    tagline: "Think It, Dev It",
+    tagline: "All Things Development",
     description:
       "The Development branch is a specialized division within our ACM chapter dedicated to Development. Our goal is to share expertise in full-stack development, including frameworks like React and Flask, with undergraduate students pursuing computer science. Watch for our upcoming website portfolio workshop and an exciting update to the former Coders SB project series!",
     branchColors: ["#1DAA2E", "#2DC439", "#1DAA2E"],
@@ -68,6 +70,17 @@ const branchData: Branch[] = [
       "The Industry branch of ACM at UCSB bridges the gap between students and the tech world by offering real-world project experience with local startups, established companies, and nonprofits. Through ACM.Industry, students collaborate in teams to build full-stack products, gain mentorship from industry professionals, and develop skills in project management, design, and deployment. Stay tuned for recruitment cycles, new client partnerships, and opportunities to lead your own technical team.",
     branchColors: ["#087B90", "#0AA3BF", "#087B90"],
     branchBannerColor: "#B9E2DC",
+  },
+  {
+    id: BranchType.CyberSecurity,
+    name: "Cyber Security Branch",
+    img: cyberLogo,
+    suffix: "cyber",
+    tagline: "Cybersecurity",
+    description:
+      "The Cyber Security branch of ACM at UCSB introduces students to the world of information security through hands-on workshops, Capture the Flag (CTF) competitions, and guest talks from security professionals. Whether you are brand new to security or already competing in CTFs, the branch is a place to learn offensive and defensive techniques, build practical skills, and connect with a community of security-minded students.",
+    branchColors: ["#7C3AED", "#8B5CF6", "#7C3AED"],
+    branchBannerColor: "#C4B5FD",
   },
 ];
 
